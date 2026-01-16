@@ -158,7 +158,7 @@ description: Short description        # Shows on card
 img: assets/img/project_image.png     # Card thumbnail
 importance: 1                         # Sort order (lower = first)
 category: research                    # Must match display_categories
-related_publications: true            # Enable {% cite %} tags
+related_publications: true            # Enable cite tags
 ---
 ```
 
@@ -192,9 +192,9 @@ related_publications: true            # Enable {% cite %} tags
 
 ### Citing Publications in Projects
 
-Only use `{% cite key %}` in projects where you are **first author**:
+Only use `{%raw%}{% cite key %}{%endraw%}` in projects where you are **first author**:
 ```markdown
-{% cite quidwai2025oncocite %}
+{%raw%}{% cite quidwai2025oncocite %}{%endraw%}
 ```
 
 For contributing author projects, set `related_publications: false` and mention paper in text without cite tag.
