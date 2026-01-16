@@ -18,7 +18,7 @@
   type: map
   contents:
     - name: Summary
-      value: "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision; Submitted to Nature Cancer) and GPU-accelerated pipelines (95.8% time reduction enabling same-day tumor board). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. Research includes a widely cited clinical RAG framework (35+ citations) and first-author work at ACL (BEA Workshop)."
+      value: "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision; Submitted to Nature Cancer) and GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. Research includes a widely cited clinical RAG framework (35+ citations) and first-author work at ACL (BEA Workshop)."
 
 - title: Education
   type: time_table
@@ -156,7 +156,7 @@
     - year: 2024
       items:
         - "Quidwai MA, Laganà A. \"A RAG Chatbot for Precision Medicine of Multiple Myeloma.\" medRxiv 2024. DOI: 10.1101/2024.03.14.24304293 [36 citations]"
-        - "Quidwai MA, et al. \"P-145 Innovative AI-Driven Decision Support Tool for Multiple Myeloma Using RAG.\" Clin Lymph Myel Leuk 24, S123-S124 (IMS 2024) [1 citation]"
+        - "Quidwai MA, et al. \"2P-145 Innovative AI-Driven Decision Support Tool for Multiple Myeloma Using RAG.\" Clin Lymph Myel Leuk 24, S123-S124 (IMS 2024) [1 citation]"
         - "Rajeeve S, ..., Quidwai M, et al. \"Early Detection of CRS Using Wearable Devices.\" Information (MDPI), under review; SSRN 5217949"
     - year: 2023
       items:
