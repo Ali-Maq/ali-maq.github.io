@@ -112,9 +112,9 @@ ninja.data = [{
           description: "Early CRS Detection Using Wearables + ML (84.62% Accuracy, 7-Hour Lead Time)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_cart/";
-            },},{id: "projects-real-time-voice-agent",
-          title: 'Real-Time Voice Agent',
-          description: "Low-Latency Voice Pipeline (&lt;600ms End-to-End)",
+            },},{id: "projects-voice-asr-prototype",
+          title: 'Voice ASR Prototype',
+          description: "Clinical Terminology Recognition for Multiple Myeloma",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6a_voice_agent/";
             },},{id: "projects-aya",
