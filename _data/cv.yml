@@ -4,7 +4,7 @@
     - name: Full Name
       value: Mujahid Ali Quidwai
     - name: Position
-      value: AI Systems Engineer
+      value: Computational Scientist
     - name: Institution
       value: Icahn School of Medicine at Mount Sinai
     - name: Email
@@ -18,7 +18,7 @@
   type: map
   contents:
     - name: Summary
-      value: "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision, submitted to Nature Cancer), GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board), and real-time voice interfaces (<600ms latency). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. First-author at ACL 2023 (BEA Workshop); 70+ citations."
+      value: "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision; Submitted to Nature Cancer) and GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. Research includes a widely cited clinical RAG framework (35+ citations) and first-author work at ACL (BEA Workshop)."
 
 - title: Education
   type: time_table
@@ -45,7 +45,7 @@
       institution: Icahn School of Medicine at Mount Sinai, New York, NY
       year: Dec 2024 - Present
       description:
-        - title: OncoCITE - Multi-Agent Genomic Evidence Extraction (Under Review)
+        - title: OncoCITE - Multi-Agent Genomic Evidence Extraction (Submitted to Nature Cancer)
           contents:
             - Performed systematic EDA on CIViC database (11,312 evidence items, 3,083 publications) quantifying 12 structural bottlenecks
             - "Curation latency (median 31d, P90 >21 months), Pareto inefficiency (top 100 sources = 29% coverage), emerging target gaps (GPRC5D: 0 items despite FDA approval)"
@@ -54,18 +54,18 @@
             - Developed novel three-way validation framework treating source publications as ground truth—identified 24.2% curation errors in expert-curated databases
             - "Validated on 15-paper corpus: 84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors (n=108)"
             - Deployed normalizer to enrich all 11,312 items achieving 83.12% ontology resolution across 20 Tier-2 fields
-            - Estimated 40+ hours of manual curation time saved per publication processed
+            - Estimated 40+ hours of manual curation time saved per publication processed, with potential to scale across 3,000+ unprocessed CIViC sources
             - Published at ASH 2025
         - title: PRIME Model - Predictive Relapse Indicators for Myeloma T-Cell Engagers (Blood 2025)
           contents:
             - Co-developed predictive model for patients receiving BCMA- and GPRC5D-targeting T-cell engagers
             - Integrated clinical, genomic, and treatment response data to identify early relapse indicators
             - Presented at ASH 2025
-        - title: MMAP - GPU-Accelerated Genomic Pipeline (56× Speedup)
+        - title: MMAP - GPU-Accelerated Genomic Pipeline (56x Speedup)
           contents:
             - Engineered production pipeline on Minerva HPC using NVIDIA H100 GPUs with Parabricks (fq2bam, HaplotypeCaller), RAPIDS (cuDF/cuML), and DeepVariant
             - Orchestrated 57 computational processes across 3 integrated workflows (RNA-seq, WES, Integration) using Nextflow DSL2 with LSF scheduling
-            - "Achieved 95.8% processing time reduction (7 days → 3 hours, 56× speedup), enabling 8 patients/day throughput vs. 0.14 previously"
+            - "Achieved 95.8% processing time reduction (7 days → 3 hours, 56x speedup), enabling 8 patients/day throughput vs. 0.14 previously"
             - Generates 10 clinical outputs including actionable variants, drug recommendations, venetoclax sensitivity predictions, and PSN molecular subtyping
             - Enabled same-day molecular tumor board readiness, transforming clinical timelines from 14 days to 1-2 days
         - title: Multi-Omics Integration (Clinical Lymphoma Myeloma Leukemia 2025)
@@ -117,7 +117,7 @@
       institution: AYA - EdTech Startup, New York, NY
       year: Jul 2023 - Oct 2023
       description:
-        - Founded AYA leveraging reinforcement learning-optimized NLP model to extract and formulate questions from academic video content
+        - Conceptualized and built AYA, leveraging reinforcement learning-optimized NLP model to extract and formulate questions from academic video content
         - Selected for Summer Sprint at NYU's Entrepreneurial Institute (10 selected from 150 startups)
         - Developed end-to-end product combining speech processing, natural language generation, and educational content analysis
 
@@ -140,7 +140,7 @@
       institution: Carcrew - Automotive Marketplace, New Delhi, India
       year: Aug 2016 - Sep 2017
       description:
-        - Built MVP for automotive marketplace using Django, Flask, PostgreSQL
+        - "Founding Technical Team: Built MVP for automotive marketplace using Django, Flask, PostgreSQL"
         - Contributed to technical due diligence that secured $2M Series A from TVS Group
         - Scaled to 10,000+ DAU
 
@@ -149,7 +149,7 @@
   contents:
     - year: 2025
       items:
-        - "Quidwai MA, et al. \"OncoCITE: AI-Driven Genomic Evidence Curation.\" Submitted to Nature Cancer"
+        - "Quidwai MA, et al. \"OncoCITE: AI-Driven Genomic Evidence Curation.\" (Submitted to Nature Cancer, 2025)"
         - "Quidwai MA, et al. \"Oncodif: An Auditable AI Framework for Automated Genomic Curation.\" Blood 146, 2646 (ASH 2025)"
         - "Mouhieddine T, ..., Quidwai M, et al. \"PRIME: Predictive Relapse Indicators for Myeloma T-Cell Engagers.\" Blood 146 (Suppl 1), 3996-3996 (ASH 2025)"
         - "Hamidi H, ..., Quidwai M, et al. \"Integrating Microenvironment with Tumor Multi-Omic.\" Clin Lymph Myel Leuk 25, S181-S182 (IMS 2025)"
@@ -165,81 +165,49 @@
 - title: Technical Skills
   type: nested_list
   contents:
-    - title: LLM Fine-tuning & Training
+    - title: LLM & Agents
       items:
-        - "Fine-tuned 7B-235B parameter models (Qwen, Qwen VL, Mistral, MedGemma, Whisper Large)"
-        - "LoRA/QLoRA adapters • Full fine-tuning • DPO (Direct Preference Optimization)"
-        - "Hugging Face Transformers • Multi-GPU training (H100 NVL, A100)"
-        - "LSF/SLURM scheduling • Singularity containers • NVIDIA Parabricks"
-        - "Lambda Labs research grant"
-    - title: Multi-Agent Systems & Orchestration
+        - "Fine-tuning (7B-235B, Qwen/Mistral/MedGemma, LoRA/QLoRA, DPO, Unsloth)"
+        - "Multi-Agent Orchestration (Claude/OpenAI Agent SDK, LangGraph, Supervisor-Worker, MCP 22 tools)"
+        - "RAG (Vector DBs, Tool-calling), State Serialization, Deterministic Replay"
+        - "Chain-of-Thought, Guardrails"
+    - title: Serving & MLOps
       items:
-        - "Claude Agent SDK • OpenAI Agent SDK • LangChain • LangGraph • DSPy"
-        - "6-agent collaborative architectures • Hierarchical multi-tier systems • Supervisor-Worker Pattern"
-        - "State Graphs • State Serialization • Pause-Resume Workflows • Agent State Persistence • Deterministic Replay"
-        - "RAG with tool calling • MCP (22 tools) • Vector databases (Amazon OpenSearch, FAISS)"
-        - "Input/output guardrails • Hallucination prevention • Conflict resolution • Reasoning chains • Chain-of-Thought • Cross-field validation"
-    - title: Model Serving & Deployment
+        - "vLLM, SGLang, TensorRT-LLM, Ollama"
+        - "KV Cache Optimization, <100ms TTFT, Streaming Inference"
+        - "Quantization (FP8/INT4)"
+        - "OpenAI Evals, DeepEval, LangSmith, Logfire, MLflow"
+        - "CI/CD, A/B Testing, Three-way Validation"
+    - title: Multimodal AI
       items:
-        - "vLLM • SGLang • TGI • TensorRT-LLM • Ollama • Unsloth"
-        - "PagedAttention • KV Cache Optimization • Context Minimization • Prompt Compression"
-        - "High-throughput API endpoints (<100ms TTFT) • Real-time serving • Batch inference optimization"
-        - "FP8/INT4 quantization • Model routing for cost optimization • Token Economics • Multi-modal model deployment"
-    - title: MLOps & Evaluation
+        - "Vision (Claude 3.5, Qwen-VL, DeepSeek-OCR, PDF-to-Image 300 DPI)"
+        - "Voice (Whisper Fine-tuning, Silero VAD, Piper TTS)"
+        - "Domain-specific ASR"
+    - title: Genomics & Bio
       items:
-        - "OpenAI Agent SDK evals • DeepEval • Fireworks eval framework"
-        - "Logfire (Pydantic AI) • MLflow • LangChain monitoring"
-        - "Model versioning • CI/CD pipelines • A/B testing • Performance benchmarking"
-        - "Three-way validation frameworks • Deterministic Testing"
-    - title: Real-Time AI & Voice Systems
+        - "Nextflow, Parabricks (fq2bam, markdup, haplotypecaller), DeepVariant"
+        - "NGS Pipelines (STAR, BWA-MEM, fastp, GATK, FeatureCounts)"
+        - "Variant Calling (Mutect2, Lancet, HaplotypeCaller, Manta)"
+        - "CNV/Fusion (FACETS, BEDTools, Arriba), Annotation (VEP, SnpEff)"
+        - "Biomarkers (MSI, TMB, HRD, GEP70)"
+        - "Single-Cell (Scanpy, Geneformer), PhyloWGS"
+    - title: Healthcare Data
       items:
-        - "Whisper Fine-tuning • Voice Activity Detection (Silero VAD) • WebSocket Streaming"
-        - "Barge-in Handling • End-to-End Latency Optimization (<600ms)"
-        - "WebRTC • Hume AI • Cartesia • Custom TTS (Piper) • Real-time ASR"
-    - title: Vision-Language Models
+        - "Precision Medicine, Clinical NLP"
+        - "EHR Integration (EPIC/REDCap), HIPAA, CAP/CLIA Validation"
+        - "Ontologies (CIViC, ClinVar, RxNorm, HPO, NCIt)"
+        - "PubMed E-utilities"
+    - title: HPC & Cloud
       items:
-        - "Claude 3.5 Sonnet Vision • Qwen-VL • DeepSeek-OCR"
-        - "PDF-to-Image Processing (300 DPI) • Scientific Figure Extraction"
-    - title: Genomics & Bioinformatics
+        - "NVIDIA H100/A100 Clusters (196-GPU Minerva)"
+        - "Multi-GPU (CUDA, NVLink), LSF/SLURM"
+        - "Docker/Singularity"
+        - "AWS (Bedrock, SageMaker, OpenSearch), Azure OpenAI"
+        - "RAPIDS (cuDF/cuML)"
+    - title: Languages & Core
       items:
-        - "Nextflow • NGS Processing (STAR, BWA-MEM, fastp, GATK BQSR/MarkDuplicates, FeatureCounts)"
-        - "Variant Calling (Mutect2, Lancet, HaplotypeCaller, DeepVariant, Manta SV)"
-        - "CNV Analysis (FACETS, BEDTools) • Gene Fusion (Arriba) • Annotation (VEP, SnpEff, Funcotator)"
-        - "Biomarkers (MSI, HRD SCAR, TMB, GEP70, PROGENy) • Phylogenetics (PhyloWGS MCMC)"
-        - "Scanpy • Geneformer • IntegrAO • RNA-seq • WES • Multi-omics integration"
-    - title: Clinical AI & Healthcare
-      items:
-        - "Precision Medicine • Clinical NLP • Variant Annotation"
-        - "EHR Integration (EPIC) • REDCap • HIPAA Compliance"
-        - "Regulatory validation (CAP/CLIA) • Clinical Decision Support"
-    - title: Biomedical APIs & Ontologies
-      items:
-        - "MyGene.info • MyVariant.info • EMBL-EBI OLS (DOID, EFO, NCIt, HPO)"
-        - "RxNorm • ClinVar • PubMed E-utilities • CIViC"
-    - title: Distributed Computing
-      items:
-        - "NVIDIA H100 NVL/A100/A10 • 196-GPU cluster (Minerva) • Multi-GPU (144 GPU-hours)"
-        - "CUDA • HPC (LSF/SLURM) • NVLink • GPU memory management"
-        - "Parabricks (pbrun fq2bam, pbrun markdup, pbrun haplotypecaller) • cuDF/cuML • Spark"
-    - title: Cloud & DevOps
-      items:
-        - "AWS (Bedrock, EC2, OpenSearch, SageMaker, EBS) • Azure OpenAI"
-        - "Multi-cloud deployment • Docker • Singularity • Kubernetes"
-        - "Infrastructure-as-code • MLflow • CI/CD"
-    - title: Data Science & ML Frameworks
-      items:
-        - "PyTorch • TensorFlow • Transformers • scikit-learn • XGBoost"
-        - "pandas • NumPy • SciPy • RAPIDS (cuML/cuDF)"
-        - "Pareto Analysis • EDA • Validation Frameworks • Confidence Intervals • Statistical Significance Testing"
-    - title: Data Engineering
-      items:
-        - "Python • R • SQL • Spark • Database Design"
-        - "Vector databases (OpenSearch, Pinecone) • Graph databases"
-        - "SQLite • PostgreSQL • MongoDB • ETL pipelines • Data streaming"
-    - title: LLM Platforms & APIs
-      items:
-        - "AWS Bedrock (Claude 4/3.7/3.5, Nova) • Cohere (embeddings, reranker)"
-        - "OpenAI API • Anthropic API • DeepSeek"
+        - "Python (PyTorch, Transformers, Pandas, scikit-learn, XGBoost)"
+        - "SQL (PostgreSQL, MongoDB), Bash, Git"
 
 - title: Honors and Awards
   type: time_table
