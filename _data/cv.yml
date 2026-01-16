@@ -18,7 +18,7 @@
   type: map
   contents:
     - name: Summary
-      value: "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision, Nature Cancer under review), GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board), and real-time voice interfaces (<600ms latency). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. First-author at ACL; 70+ citations."
+      value: "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision, submitted to Nature Cancer), GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board), and real-time voice interfaces (<600ms latency). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. First-author at ACL 2023 (BEA Workshop); 70+ citations."
 
 - title: Education
   type: time_table
@@ -45,7 +45,7 @@
       institution: Icahn School of Medicine at Mount Sinai, New York, NY
       year: Dec 2024 - Present
       description:
-        - title: OncoCITE - Multi-Agent Genomic Evidence Extraction (Nature Cancer, under review)
+        - title: OncoCITE - Multi-Agent Genomic Evidence Extraction (Under Review)
           contents:
             - Performed systematic EDA on CIViC database (11,312 evidence items, 3,083 publications) quantifying 12 structural bottlenecks
             - "Curation latency (median 31d, P90 >21 months), Pareto inefficiency (top 100 sources = 29% coverage), emerging target gaps (GPRC5D: 0 items despite FDA approval)"
@@ -113,7 +113,7 @@
             - Built automated pipelines using Git/GitHub
             - Leveraged LLaMA-3 with RAG architecture for structured data extraction
 
-    - title: Founder
+    - title: Entrepreneurial Fellow
       institution: AYA - EdTech Startup, New York, NY
       year: Jul 2023 - Oct 2023
       description:
@@ -125,7 +125,7 @@
       institution: New York University, New York, NY
       year: Sep 2021 - May 2023
       description:
-        - title: AI-Generated Plagiarism Detection (ACL 2023)
+        - title: AI-Generated Plagiarism Detection (ACL 2023, BEA Workshop)
           contents:
             - Developed novel multi-faceted NLP approach with Prof. Parijat Dube (IBM Research) achieving 94% accuracy in human-AI text classification
             - Method employs contrastive loss and LLM-generated paraphrases
@@ -149,7 +149,7 @@
   contents:
     - year: 2025
       items:
-        - "Quidwai MA, et al. \"OncoCITE: AI-Driven Genomic Evidence Curation.\" Nature Cancer (under review)"
+        - "Quidwai MA, et al. \"OncoCITE: AI-Driven Genomic Evidence Curation.\" Submitted to Nature Cancer"
         - "Quidwai MA, et al. \"Oncodif: An Auditable AI Framework for Automated Genomic Curation.\" Blood 146, 2646 (ASH 2025)"
         - "Mouhieddine T, ..., Quidwai M, et al. \"PRIME: Predictive Relapse Indicators for Myeloma T-Cell Engagers.\" Blood 146 (Suppl 1), 3996-3996 (ASH 2025)"
         - "Hamidi H, ..., Quidwai M, et al. \"Integrating Microenvironment with Tumor Multi-Omic.\" Clin Lymph Myel Leuk 25, S181-S182 (IMS 2025)"
@@ -254,7 +254,7 @@
         - medRxiv Preprint - 36 citations
     - year: 2023
       items:
-        - ACL 2023 Publication - 31 citations (IBM Research)
+        - ACL 2023 (BEA Workshop) Publication - 31 citations (IBM Research)
         - NYU Entrepreneurial Institute Summer Sprint (Top 7%)
     - year: 2021-2023
       items:

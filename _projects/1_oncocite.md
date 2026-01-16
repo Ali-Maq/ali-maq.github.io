@@ -1,7 +1,7 @@
 ---
 layout: page
 title: OncoCITE
-description: Multi-Agent Genomic Evidence Extraction System (Nature Cancer, under review)
+description: Multi-Agent Genomic Evidence Extraction System (Submitted to Nature Cancer)
 img: assets/img/oncocite_architecture.png
 importance: 1
 category: research
@@ -10,7 +10,7 @@ related_publications: true
 
 ## Overview
 
-OncoCITE is a multi-agent AI system for automated genomic evidence extraction from scientific literature, currently under review at **Nature Cancer**.
+OncoCITE is a multi-agent AI system for automated genomic evidence extraction from scientific literature, currently submitted to **Nature Cancer**.
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 12px; text-align: center; margin: 20px 0;">
   <h3 style="color: white; margin: 0 0 10px 0;">Try OncoCITE Live</h3>
@@ -60,7 +60,7 @@ Validated on 15-paper corpus and deployed normalizer to enrich all 11,312 CIViC 
 
 This project resulted in the following publications:
 
-- {% cite quidwai2025oncocite %} - Full paper under review at Nature Cancer
+- {% cite quidwai2025oncocite %} - Full paper submitted to Nature Cancer
 - {% cite quidwai2025oncodif %} - Conference abstract presented at ASH 2025
 
 ## Technical Stack

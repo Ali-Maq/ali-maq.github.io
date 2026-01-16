@@ -6,7 +6,7 @@
     "email": "quidwaiali@gmail.com",
     "phone": "(224) 322-6446",
     "url": "https://ali-maq.github.io/",
-    "summary": "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 6 agents, 97.8% precision on 11K evidence items), GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board), and real-time voice interfaces (<600ms latency). Deep expertise across the AI stack: fine-tuning 7B-235B parameter models, inference optimization (KV caching, PagedAttention, context minimization), multi-agent orchestration (state serialization, deterministic replay), and production deployment on distributed H100/A100 infrastructure. OncoCITE under review at Nature Cancer; first-author at ACL (IBM Research); contributing author in The Lancet and Blood. 70+ citations.",
+    "summary": "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 6 agents, 97.8% precision on 11K evidence items), GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board), and real-time voice interfaces (<600ms latency). Deep expertise across the AI stack: fine-tuning 7B-235B parameter models, inference optimization (KV caching, PagedAttention, context minimization), multi-agent orchestration (state serialization, deterministic replay), and production deployment on distributed H100/A100 infrastructure. OncoCITE submitted to Nature Cancer; first-author at ACL 2023 (BEA Workshop, IBM Research); contributing author in The Lancet and Blood. 70+ citations.",
     "location": {
       "city": "New York",
       "countryCode": "US",
@@ -39,7 +39,7 @@
       "startDate": "2024-12-01",
       "summary": "Leading AI/ML initiatives for precision oncology including multi-agent genomic systems, GPU-accelerated pipelines, and predictive modeling.",
       "highlights": [
-        "OncoCITE (Nature Cancer, under review): Performed systematic EDA on CIViC database (11,312 evidence items, 3,083 publications) quantifying 12 structural bottlenecks. Architected 6-agent solution (Claude Agent SDK, 22 MCP tools) with state serialization and vision-based PDF extraction. Validated on 15-paper corpus: 84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors (n=108). Published at ASH 2025.",
+        "OncoCITE (Under Review): Performed systematic EDA on CIViC database (11,312 evidence items, 3,083 publications) quantifying 12 structural bottlenecks. Architected 6-agent solution (Claude Agent SDK, 22 MCP tools) with state serialization and vision-based PDF extraction. Validated on 15-paper corpus: 84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors (n=108). Published at ASH 2025.",
         "PRIME Model (Blood 2025): Co-developed predictive model for patients receiving BCMA- and GPRC5D-targeting T-cell engagers. Integrated clinical, genomic, and treatment response data. Presented at ASH 2025.",
         "MMAP Pipeline: Engineered HPC pipeline on Minerva cluster using 4x NVIDIA H100 GPUs with Parabricks and cuDF. Orchestrated 57 computational processes across 3 integrated workflows. Achieved 92.3% processing time reduction (7 days to 13 hours). Enabled same-day molecular tumor board readiness.",
         "Multi-Omics Integration (Clin Lymph Myel Leuk 2025): Applied modified IntegrAO GNN to MMRF COMPASS cohort (N=655). Achieved 50% classification granularity improvement and 258% high-risk detection enhancement. Identified 18 distinct vulnerability profiles with 94% actionable targets."
@@ -63,7 +63,7 @@
     },
     {
       "name": "AYA",
-      "position": "Founder",
+      "position": "Entrepreneurial Fellow",
       "location": "New York, NY",
       "startDate": "2023-07-01",
       "endDate": "2023-10-01",
@@ -82,7 +82,7 @@
       "endDate": "2023-05-01",
       "summary": "Research on AI-generated text detection with IBM Research; taught bioinformatics algorithms.",
       "highlights": [
-        "AI-Generated Plagiarism Detection (ACL 2023): Developed novel multi-faceted NLP approach with Prof. Parijat Dube (IBM Research) achieving 94% accuracy in human-AI text classification. Method employs contrastive loss and LLM-generated paraphrases. [31 citations]",
+        "AI-Generated Plagiarism Detection (ACL 2023, BEA Workshop): Developed novel multi-faceted NLP approach with Prof. Parijat Dube (IBM Research) achieving 94% accuracy in human-AI text classification. Method employs contrastive loss and LLM-generated paraphrases. [31 citations]",
         "Teaching Assistant - Data Structures & Algorithms for Bioinformatics: Supported graduate course under Prof. Manpreet S. Katari for 3 semesters, teaching 130+ master's students. Created assignments bridging CS fundamentals with bioinformatics applications."
       ]
     },
@@ -367,7 +367,7 @@
   "projects": [
     {
       "name": "OncoCITE - Multi-Agent Genomic Evidence Extraction",
-      "summary": "6-agent system using Claude Agent SDK with 22 MCP tools for automated genomic curation from scientific literature. Nature Cancer under review.",
+      "summary": "6-agent system using Claude Agent SDK with 22 MCP tools for automated genomic curation from scientific literature. Submitted to Nature Cancer.",
       "highlights": [
         "Systematic EDA on CIViC database (11,312 evidence items, 3,083 publications)",
         "84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors",

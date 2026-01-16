@@ -83,7 +83,7 @@ Teaching Assistant for graduate-level course under **Prof. Manpreet S. Katari** 
 
 I actively participate in academic conferences to share research and stay connected with the broader scientific community.
 
-**ACL 2023** (Association for Computational Linguistics) - Toronto, Canada
+**ACL 2023 (BEA Workshop)** - Association for Computational Linguistics, Toronto, Canada
 - Presented work on detecting LLM-generated text in computing education
 - Engaged with the NLP research community on AI-generated content detection
 
