@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-rag-chatbot-for-multiple-myeloma-preprint-on-medrxiv-now-at-36-citations-production-rag-system-for-precision-medicine-achieving-88-effectiveness",
+        },{id: "post-why-i-39-m-finally-building-in-public",
+        
+          title: "Why I&#39;m Finally Building in Public",
+        
+        description: "After years of keeping tools locked in production, I&#39;m committing to open source.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/welcome/";
+          
+        },
+      },{id: "news-rag-chatbot-for-multiple-myeloma-preprint-on-medrxiv-now-at-36-citations-production-rag-system-for-precision-medicine-achieving-88-effectiveness",
           title: 'RAG Chatbot for Multiple Myeloma preprint on medRxiv - Now at 36 citations....',
           description: "",
           section: "News",},{id: "news-oncodif-published-in-blood-2025-an-auditable-ai-framework-for-automated-genomic-curation-achieving-97-8-precision-in-novel-discovery-with-0-critical-errors",
