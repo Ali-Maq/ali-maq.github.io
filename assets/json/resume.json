@@ -67,7 +67,7 @@
       "location": "New York, NY",
       "startDate": "2023-07-01",
       "endDate": "2023-10-01",
-      "summary": "Founded EdTech startup leveraging RL-optimized NLP for academic video content extraction.",
+      "summary": "Conceptualized and built AYA, leveraging RL-optimized NLP model to extract and formulate questions from academic video content.",
       "highlights": [
         "Selected for Summer Sprint at NYU's Entrepreneurial Institute (10 selected from 150 startups)",
         "Developed end-to-end product combining speech processing, natural language generation, and educational content analysis"
