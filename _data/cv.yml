@@ -18,7 +18,7 @@
   type: map
   contents:
     - name: Summary
-      value: "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision; Submitted to Nature Cancer) and GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. Research includes a widely cited clinical RAG framework (35+ citations) and first-author work at ACL (BEA Workshop)."
+      value: "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision; Submitted to Nature Cancer) and GPU-accelerated pipelines (95.8% time reduction enabling same-day tumor board). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. Research includes a widely cited clinical RAG framework (35+ citations) and first-author work at ACL (BEA Workshop)."
 
 - title: Education
   type: time_table

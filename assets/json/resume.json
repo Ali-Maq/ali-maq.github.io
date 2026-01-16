@@ -6,7 +6,7 @@
     "email": "quidwaiali@gmail.com",
     "phone": "(224) 322-6446",
     "url": "https://ali-maq.github.io/",
-    "summary": "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 6 agents, 97.8% precision on 11K evidence items), GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board), and real-time voice interfaces (<600ms latency). Deep expertise across the AI stack: fine-tuning 7B-235B parameter models, inference optimization (KV caching, PagedAttention, context minimization), multi-agent orchestration (state serialization, deterministic replay), and production deployment on distributed H100/A100 infrastructure. OncoCITE submitted to Nature Cancer; first-author at ACL 2023 (BEA Workshop, IBM Research); contributing author in The Lancet and Blood. 70+ citations.",
+    "summary": "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision; Submitted to Nature Cancer) and GPU-accelerated pipelines (95.8% time reduction enabling same-day tumor board). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. Research includes a widely cited clinical RAG framework (35+ citations) and first-author work at ACL (BEA Workshop).",
     "location": {
       "city": "New York",
       "countryCode": "US",
@@ -39,9 +39,9 @@
       "startDate": "2024-12-01",
       "summary": "Leading AI/ML initiatives for precision oncology including multi-agent genomic systems, GPU-accelerated pipelines, and predictive modeling.",
       "highlights": [
-        "OncoCITE (Under Review): Performed systematic EDA on CIViC database (11,312 evidence items, 3,083 publications) quantifying 12 structural bottlenecks. Architected 6-agent solution (Claude Agent SDK, 22 MCP tools) with state serialization and vision-based PDF extraction. Validated on 15-paper corpus: 84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors (n=108). Published at ASH 2025.",
+        "OncoCITE (Submitted to Nature Cancer): Performed systematic EDA on CIViC database (11,312 evidence items, 3,083 publications) quantifying 12 structural bottlenecks. Architected 6-agent solution (Claude Agent SDK, 22 MCP tools) with state serialization and vision-based PDF extraction. Validated on 15-paper corpus: 84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors (n=108). Published at ASH 2025.",
         "PRIME Model (Blood 2025): Co-developed predictive model for patients receiving BCMA- and GPRC5D-targeting T-cell engagers. Integrated clinical, genomic, and treatment response data. Presented at ASH 2025.",
-        "MMAP Pipeline: Engineered HPC pipeline on Minerva cluster using 4x NVIDIA H100 GPUs with Parabricks and cuDF. Orchestrated 57 computational processes across 3 integrated workflows. Achieved 92.3% processing time reduction (7 days to 13 hours). Enabled same-day molecular tumor board readiness.",
+        "MMAP Pipeline (56x Speedup): Engineered production pipeline on Minerva HPC using NVIDIA H100 GPUs with Parabricks and RAPIDS. Orchestrated 57 computational processes across 3 integrated workflows. Achieved 95.8% processing time reduction (7 days → 3 hours), enabling 8 patients/day throughput. Enabled same-day molecular tumor board readiness.",
         "Multi-Omics Integration (Clin Lymph Myel Leuk 2025): Applied modified IntegrAO GNN to MMRF COMPASS cohort (N=655). Achieved 50% classification granularity improvement and 258% high-risk detection enhancement. Identified 18 distinct vulnerability profiles with 94% actionable targets."
       ]
     },
@@ -57,7 +57,7 @@
         "LLM Inference Optimization: Designed model-routing gateway for cost-performance optimization. Implemented KV cache optimization and prompt compression. Achieved 60-80% inference cost reduction using vLLM batch inference on HPC. Multi-cloud deployment across AWS and Azure OpenAI.",
         "RAG System (medRxiv, 36 citations): Led development using LangGraph orchestration, BAAI/bge-large-en-v1.5 embeddings, and Mistral-7B. Processed 5,000+ documents achieving 88% clinical effectiveness. First prototype deployed and used by 2-3 clinicians for multiple myeloma research. Presented at IMS 2024.",
         "CAR-T Adverse Event Prediction (Information MDPI, under review): Led ML development for early CRS detection (N=25 patients). Engineered time-lagged features from wearables and 92-biomarker Olink panel. Achieved 84.62% accuracy (ide-cel), 80.62% (cilta-cel) within 6-hour prediction window. SHAP analysis identified IFN-gamma as cross-product predictor.",
-        "Real-Time Voice Agent Pipeline: Fine-tuned OpenAI Whisper Large on local voice data. Built low-latency voice pipeline using WebSocket streaming with Silero VAD. Achieved <600ms end-to-end latency for real-time conversational AI.",
+        "Voice ASR Prototype for Clinical Terminology: Fine-tuned OpenAI Whisper Small for on-device deployment. Trained on recorded patient voice dataset to reduce word error rate for multiple myeloma terminology. Prototype demonstrated improved recognition accuracy for domain-specific medical terms.",
         "Graduate Student Mentorship: Mentored 6 Carnegie Mellon University graduate students on CAR-T therapy monitoring capstone project. Guided experiment design, baselining, and reporting."
       ]
     },
@@ -165,7 +165,7 @@
       "name": "OncoCITE: AI-Driven Genomic Evidence Curation",
       "publisher": "Nature Cancer",
       "releaseDate": "2025-01-01",
-      "summary": "Multi-agent system for automated genomic evidence extraction. 6 agents, 22 MCP tools, 84% ground truth recovery, 97.8% novel discovery precision. Under review."
+      "summary": "Multi-agent system for automated genomic evidence extraction. 6-agent solution with 22 MCP tools, 84% ground truth recovery, 97.8% novel discovery precision. Submitted to Nature Cancer."
     },
     {
       "name": "A RAG Chatbot for Precision Medicine of Multiple Myeloma",
@@ -254,19 +254,16 @@
       ]
     },
     {
-      "name": "Real-Time AI & Voice Systems",
+      "name": "Multimodal AI",
       "level": "Advanced",
       "icon": "fa-solid fa-microphone",
       "keywords": [
+        "Vision (Claude 3.5, Qwen-VL, DeepSeek-OCR)",
+        "PDF-to-Image Processing (300 DPI)",
         "Whisper Fine-tuning",
         "Voice Activity Detection (Silero VAD)",
-        "WebSocket Streaming",
-        "Barge-in Handling",
-        "<600ms End-to-End Latency",
-        "WebRTC",
-        "Hume AI",
-        "Cartesia",
-        "Custom TTS (Piper)"
+        "Piper TTS",
+        "Domain-specific ASR"
       ]
     },
     {
@@ -378,25 +375,25 @@
       "url": ""
     },
     {
-      "name": "MMAP - GPU-Accelerated Genomic Pipeline",
-      "summary": "HPC pipeline on Minerva cluster using 4x NVIDIA H100 GPUs with Parabricks and cuDF.",
+      "name": "MMAP - GPU-Accelerated Genomic Pipeline (56x Speedup)",
+      "summary": "Production pipeline on Minerva HPC using NVIDIA H100 GPUs with Parabricks, RAPIDS, and DeepVariant.",
       "highlights": [
-        "92.3% processing time reduction (7 days to 13 hours, 12.9x speedup)",
+        "95.8% processing time reduction (7 days → 3 hours, 56x speedup)",
         "57 computational processes across 3 integrated workflows",
-        "Enabled same-day molecular tumor board readiness",
-        "Local MedGemma and DeepSeek deployment, ~$100/report savings"
+        "8 patients/day throughput vs. 0.14 previously",
+        "Enabled same-day molecular tumor board readiness"
       ],
       "startDate": "2024-12-01",
       "url": ""
     },
     {
-      "name": "Real-Time Voice Agent Pipeline",
-      "summary": "Low-latency voice pipeline for real-time conversational AI applications.",
+      "name": "Voice ASR Prototype for Clinical Terminology",
+      "summary": "Fine-tuned ASR for multiple myeloma medical terminology recognition.",
       "highlights": [
-        "Fine-tuned Whisper Large for domain-specific ASR",
-        "WebSocket streaming with Silero VAD",
-        "<600ms end-to-end latency",
-        "Barge-in handling for user interruptions"
+        "Fine-tuned Whisper Small for on-device deployment",
+        "Trained on patient voice recordings",
+        "Reduced word error rate for myeloma terminology",
+        "Improved recognition of domain-specific medical terms"
       ],
       "startDate": "2024-01-01",
       "url": ""
