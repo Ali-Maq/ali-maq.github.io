@@ -3,6 +3,7 @@
 **Site:** https://ali-maq.github.io
 **Theme:** al-folio (Jekyll)
 **Owner:** Mujahid Ali Quidwai (Ali)
+**Google Scholar:** rAAtZi0AAAAJ
 
 ---
 
@@ -19,267 +20,707 @@ Site auto-deploys via GitHub Actions in ~2-3 minutes.
 
 ---
 
-## Project Structure
+## Complete File Paths
 
-```
-ali-maq.github.io/
-├── _config.yml              # Site configuration (name, social links, etc.)
-├── _data/
-│   ├── cv.yml               # CV content (experience, skills, education)
-│   ├── socials.yml          # Social media links (GitHub, LinkedIn, Scholar)
-│   ├── repositories.yml     # GitHub repos to display
-│   └── coauthors.yml        # Co-author links for publications
-├── _bibliography/
-│   └── papers.bib           # Publications (BibTeX format)
-├── _pages/
-│   ├── about.md             # Homepage/landing page
-│   ├── cv.md                # CV page settings
-│   ├── projects.md          # Projects listing page
-│   ├── publications.md      # Publications page
-│   ├── teaching.md          # Teaching & mentorship
-│   ├── repositories.md      # GitHub repos page
-│   └── blog.md              # Blog listing
-├── _projects/               # Individual project pages
-│   ├── 1_oncocite.md
-│   ├── 1b_prime.md
-│   ├── 2_mmap.md
-│   └── ...
-├── _news/                   # News announcements
-│   ├── announcement_1.md
-│   └── ...
-├── _posts/                  # Blog posts (empty for now)
-├── assets/
-│   ├── img/                 # All images
-│   │   ├── prof_pic.png     # Profile photo
-│   │   ├── fire.gif         # Favicon
-│   │   └── publication_preview/  # Publication thumbnails
-│   └── pdf/                 # PDF files (CV, papers)
-└── .github/workflows/       # GitHub Actions
-    ├── deploy.yml           # Main deploy workflow
-    └── daily-rebuild.yml    # Daily rebuild (for future Substack)
-```
+### Root Configuration
+| File | Full Path | Purpose |
+|------|-----------|---------|
+| Site Config | `/Users/ali/Downloads/resume/ali-maq.github.io/_config.yml` | Main site settings |
+| Gemfile | `/Users/ali/Downloads/resume/ali-maq.github.io/Gemfile` | Ruby dependencies |
+
+### Data Files (YAML)
+| File | Full Path | Purpose |
+|------|-----------|---------|
+| CV | `/Users/ali/Downloads/resume/ali-maq.github.io/_data/cv.yml` | All CV content |
+| Socials | `/Users/ali/Downloads/resume/ali-maq.github.io/_data/socials.yml` | Social media links |
+| Repositories | `/Users/ali/Downloads/resume/ali-maq.github.io/_data/repositories.yml` | GitHub repos |
+| Coauthors | `/Users/ali/Downloads/resume/ali-maq.github.io/_data/coauthors.yml` | Co-author links |
+| Citations | `/Users/ali/Downloads/resume/ali-maq.github.io/_data/citations.yml` | Citation overrides |
+
+### Pages (Markdown)
+| Page | Full Path | URL |
+|------|-----------|-----|
+| About/Home | `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/about.md` | `/` |
+| Projects | `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/projects.md` | `/projects/` |
+| Publications | `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/publications.md` | `/publications/` |
+| Blog | `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/blog.md` | `/blog/` |
+| Repositories | `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/repositories.md` | `/repositories/` |
+| Teaching | `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/teaching.md` | `/teaching/` |
+| CV | `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/cv.md` | `/cv/` |
+| 404 | `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/404.md` | Error page |
+
+### Bibliography
+| File | Full Path | Purpose |
+|------|-----------|---------|
+| Papers | `/Users/ali/Downloads/resume/ali-maq.github.io/_bibliography/papers.bib` | All publications (BibTeX) |
+
+### Projects
+| Project | Full Path |
+|---------|-----------|
+| OncoCITE | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/1_oncocite.md` |
+| PRIME | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/1b_prime.md` |
+| MMAP | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/2_mmap.md` |
+| Clinical RAG | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/3_rag_clinical.md` |
+| Multi-Omics | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/4_multiomics.md` |
+| CAR-T CRS | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/5_cart.md` |
+| Voice Agent | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/6a_voice_agent.md` |
+| AYA | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/7_aya.md` |
+| Carcrew | `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/8_carcrew.md` |
+
+### News
+| File | Full Path |
+|------|-----------|
+| ASH 2025 | `/Users/ali/Downloads/resume/ali-maq.github.io/_news/announcement_1.md` |
+| Nature Cancer | `/Users/ali/Downloads/resume/ali-maq.github.io/_news/announcement_2.md` |
+| Site Launch | `/Users/ali/Downloads/resume/ali-maq.github.io/_news/announcement_3.md` |
+
+### Assets
+| Type | Full Path |
+|------|-----------|
+| All Images | `/Users/ali/Downloads/resume/ali-maq.github.io/assets/img/` |
+| Profile Photo | `/Users/ali/Downloads/resume/ali-maq.github.io/assets/img/prof_pic.png` |
+| Favicon | `/Users/ali/Downloads/resume/ali-maq.github.io/assets/img/fire.gif` |
+| Publication Previews | `/Users/ali/Downloads/resume/ali-maq.github.io/assets/img/publication_preview/` |
+| PDF Files | `/Users/ali/Downloads/resume/ali-maq.github.io/assets/pdf/` |
+| CV PDF | `/Users/ali/Downloads/resume/ali-maq.github.io/assets/pdf/Mujahid_Ali_Quidwai_Resume.docx.pdf` |
 
 ---
 
-## Common Tasks
+## TAB 1: ABOUT PAGE (Homepage)
 
-### Update About/Bio
+**File:** `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/about.md`
+**URL:** `https://ali-maq.github.io/`
 
-Edit: `_pages/about.md`
+### Front Matter Fields
 
-The bio content starts after the `---` front matter block.
+```yaml
+---
+layout: about                    # Must be "about"
+title: about                     # Tab title (lowercase)
+permalink: /                     # URL path (/ = homepage)
+subtitle: AI Systems Engineer @ <a href='URL'>Mount Sinai</a>  # Shows under name
 
-### Add/Edit Publications
+profile:
+  align: right                   # Image alignment: left, right
+  image: prof_pic.png            # Filename in assets/img/
+  image_circular: false          # true = circular crop
+  more_info:                     # Text below image (currently empty)
 
-Edit: `_bibliography/papers.bib`
+selected_papers: true            # Show selected publications section
+social: true                     # Show social icons
 
-**BibTeX template:**
+announcements:
+  enabled: true                  # Show news section
+  scrollable: true               # Scroll if >3 items
+  limit: 5                       # Max items shown
+
+latest_posts:
+  enabled: true                  # Show blog posts section
+  scrollable: true
+  limit: 3
+---
+```
+
+### Content Section
+
+After the `---`, write bio in Markdown. Use `**bold**` for emphasis.
+
+---
+
+## TAB 2: PROJECTS
+
+**Listing Page:** `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/projects.md`
+**Individual Projects:** `/Users/ali/Downloads/resume/ali-maq.github.io/_projects/*.md`
+**URL:** `https://ali-maq.github.io/projects/`
+
+### Projects Page Front Matter
+
+```yaml
+---
+layout: page
+title: projects
+permalink: /projects/
+description: Your description here
+nav: true
+nav_order: 2                          # Position in navbar
+display_categories: [research, engineering, startup]  # Categories to show
+horizontal: false                     # Card layout
+---
+```
+
+### Individual Project Front Matter
+
+```yaml
+---
+layout: page
+title: Project Name                   # Display title
+description: Short description        # Shows on card
+img: assets/img/project_image.png     # Card thumbnail
+importance: 1                         # Sort order (lower = first)
+category: research                    # Must match display_categories
+related_publications: true            # Enable {% cite %} tags
+---
+```
+
+### Project Fields Explained
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `layout` | string | Yes | Always `page` |
+| `title` | string | Yes | Project name |
+| `description` | string | Yes | Card description (1-2 sentences) |
+| `img` | path | Yes | Image path from root |
+| `importance` | integer | Yes | Sort priority (1 = highest) |
+| `category` | string | Yes | `research`, `engineering`, or `startup` |
+| `related_publications` | boolean | No | Set `true` only for first-author papers |
+| `redirect` | URL | No | External link instead of page |
+| `github` | string | No | GitHub repo (user/repo format) |
+
+### Current Projects
+
+| # | Title | Category | Importance | File |
+|---|-------|----------|------------|------|
+| 1 | OncoCITE | research | 1 | `1_oncocite.md` |
+| 2 | PRIME Model | research | 2 | `1b_prime.md` |
+| 3 | MMAP Pipeline | engineering | 2 | `2_mmap.md` |
+| 4 | Clinical RAG | research | 3 | `3_rag_clinical.md` |
+| 5 | Multi-Omics GNN | research | 4 | `4_multiomics.md` |
+| 6 | CAR-T CRS | research | 5 | `5_cart.md` |
+| 7 | Voice Agent | engineering | 6 | `6a_voice_agent.md` |
+| 8 | AYA | startup | 7 | `7_aya.md` |
+| 9 | Carcrew | startup | 8 | `8_carcrew.md` |
+
+### Citing Publications in Projects
+
+Only use `{% cite key %}` in projects where you are **first author**:
+```markdown
+{% cite quidwai2025oncocite %}
+```
+
+For contributing author projects, set `related_publications: false` and mention paper in text without cite tag.
+
+---
+
+## TAB 3: PUBLICATIONS
+
+**Page:** `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/publications.md`
+**Data:** `/Users/ali/Downloads/resume/ali-maq.github.io/_bibliography/papers.bib`
+**URL:** `https://ali-maq.github.io/publications/`
+
+### BibTeX Entry Template
+
 ```bibtex
-@article{key2025title,
-  abbr={VENUE},
-  bibtex_show={true},
-  title={Full Paper Title},
-  author={LastName, FirstName and LastName2, FirstName2},
-  abstract={Abstract text here.},
+@article{uniquekey2025,
+  abbr={VENUE},                    # Badge text (Nature, ASH, ACL, etc.)
+  bibtex_show={true},              # Show BibTeX button
+  title={Full Paper Title Here},
+  author={LastName, FirstName and LastName2, FirstName2 and LastName3, FirstName3},
+  abstract={Abstract text goes here. Can be multiple sentences.},
   journal={Journal Name},
   volume={146},
-  pages={1234},
+  number={Supplement 1},           # Optional
+  pages={1234-1235},
   year={2025},
-  doi={10.1234/doi-here},
-  html={https://link-to-paper},
-  note={Additional notes},
-  selected={true},           # Shows on homepage
-  preview={filename.png}     # Image in assets/img/publication_preview/
+  doi={10.1234/example-doi},       # Optional - creates DOI link
+  html={https://link-to-paper},    # Optional - creates link button
+  pdf={filename.pdf},              # Optional - PDF in assets/pdf/
+  code={https://github.com/...},   # Optional - code link
+  website={https://...},           # Optional - project website
+  google_scholar_id={XXXXXX},      # Optional - for citation count
+  note={Additional notes},         # Shows as annotation
+  selected={true},                 # true = shows on homepage
+  preview={image.png}              # Image in publication_preview/
 }
 ```
 
-**Important fields:**
-- `selected={true}` — appears on homepage "Selected Publications"
-- `preview={image.png}` — thumbnail (must exist in `assets/img/publication_preview/`)
-- `html={url}` — clickable link to paper
-- `doi={...}` — DOI link
+### BibTeX Fields Reference
 
-### Add/Edit Projects
+| Field | Required | Description |
+|-------|----------|-------------|
+| `abbr` | Yes | Badge label (VENUE name) |
+| `bibtex_show` | Yes | Always `{true}` |
+| `title` | Yes | Full paper title |
+| `author` | Yes | Authors in BibTeX format |
+| `year` | Yes | Publication year |
+| `journal` | Yes | Journal/venue name |
+| `abstract` | No | Paper abstract |
+| `volume` | No | Journal volume |
+| `pages` | No | Page numbers |
+| `doi` | No | DOI (without https://doi.org/) |
+| `html` | No | Direct link to paper |
+| `pdf` | No | PDF filename in assets/pdf/ |
+| `code` | No | GitHub/code link |
+| `selected` | No | `{true}` for homepage display |
+| `preview` | No | Image filename in publication_preview/ |
+| `google_scholar_id` | No | For citation tracking |
+| `note` | No | Extra info (citations, status) |
 
-Create/edit files in `_projects/` folder.
+### Current Publications
 
-**Template:**
-```markdown
+| Key | Title | Venue | Year | Selected | First Author |
+|-----|-------|-------|------|----------|--------------|
+| `quidwai2025oncocite` | OncoCITE | Nature Cancer | 2025 | Yes | Yes |
+| `quidwai2025oncodif` | OncoDIF | Blood (ASH) | 2025 | No | Yes |
+| `quidwai2024rag` | RAG Chatbot | medRxiv | 2024 | Yes | Yes |
+| `quidwai2024decision` | P-145 RAG | CLML (IMS) | 2024 | No | Yes |
+| `quidwai2023plagiarism` | Plagiarism Detection | ACL BEA | 2023 | Yes | Yes |
+| `mouhieddine2025prime` | PRIME Model | Blood (ASH) | 2025 | Yes | No |
+| `rajeeve2024crs` | CAR-T CRS | MDPI | 2024 | No | No |
+| `hamidi2025multiomics` | Multi-Omics | CLML (IMS) | 2025 | No | No |
+
+### Publication Preview Images
+
+Location: `/Users/ali/Downloads/resume/ali-maq.github.io/assets/img/publication_preview/`
+
+| Image | Used By |
+|-------|---------|
+| `oncocite.png` | quidwai2025oncocite |
+| `oncodif.png` | quidwai2025oncodif |
+| `rag.png` | quidwai2024rag |
+| `IMS.png` | quidwai2024decision |
+| `acl.png` | quidwai2023plagiarism |
+| `prime.png` | mouhieddine2025prime |
+| `cart.png` | rajeeve2024crs |
+| `multiomics.png` | hamidi2025multiomics |
+
 ---
-layout: page
-title: Project Name
-description: Short description for cards
-img: assets/img/project_image.png
-importance: 1              # Lower = higher priority
-category: research         # research, engineering, or startup
-related_publications: true # Set false if not first-author
----
 
-Project content in markdown here...
+## TAB 4: BLOG
+
+**Page:** `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/blog.md`
+**Posts:** `/Users/ali/Downloads/resume/ali-maq.github.io/_posts/` (currently empty)
+**URL:** `https://ali-maq.github.io/blog/`
+
+### Blog Page Front Matter
+
+```yaml
+---
+layout: default
+permalink: /blog/
+title: blog
+nav: true
+nav_order: 4
+pagination:
+  enabled: true
+  collection: posts
+  permalink: /page/:num/
+  per_page: 5
+  sort_field: date
+  sort_reverse: true
+---
 ```
 
-**Categories:** `research`, `engineering`, `startup`
+### Creating a Blog Post
 
-### Add News Announcement
+Create file in `_posts/` with naming: `YYYY-MM-DD-title-slug.md`
 
-Create file in `_news/` folder: `announcement_X.md`
+Example: `2025-01-15-building-oncocite.md`
 
-```markdown
+```yaml
 ---
 layout: post
-title: Your announcement title
-date: 2025-01-15
-inline: true
-related_posts: false
+title: Your Post Title
+date: 2025-01-15 10:00:00
+description: Short description for preview
+tags: tag1 tag2 tag3
+categories: category1
+thumbnail: assets/img/post_image.png    # Optional
+giscus_comments: false
+related_posts: true
 ---
 
-Your announcement text here.
+Your post content in Markdown here...
 ```
 
-### Update CV
+---
 
-Edit: `_data/cv.yml`
+## TAB 5: REPOSITORIES
 
-Sections use these types:
-- `type: map` — key-value pairs
-- `type: time_table` — timeline entries (jobs, education)
-- `type: nested_list` — skills with sub-items
-- `type: list` — simple list
+**Page:** `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/repositories.md`
+**Data:** `/Users/ali/Downloads/resume/ali-maq.github.io/_data/repositories.yml`
+**URL:** `https://ali-maq.github.io/repositories/`
 
-### Change Profile Photo
+### Repositories YAML Format
 
-Replace: `assets/img/prof_pic.png`
+```yaml
+github_users:
+  - Ali-Maq                    # GitHub username(s) to show profile card
 
-Referenced in `_pages/about.md` under `profile: image:`
+repo_description_lines_max: 2  # Max lines for repo description
 
-### Change Favicon
+github_repos:                  # Specific repos to feature
+  - Ali-Maq/repo-name
+  - Ali-Maq/another-repo
+  # Add repos as: username/repository-name
+```
 
-Replace: `assets/img/fire.gif`
+### Current Configuration
 
-Set in `_config.yml` under `icon:`
+```yaml
+github_users:
+  - Ali-Maq
 
-### Update Social Links
+repo_description_lines_max: 2
 
-Edit: `_data/socials.yml`
+github_repos:
+  # Add repos later
+```
+
+---
+
+## TAB 6: TEACHING
+
+**File:** `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/teaching.md`
+**URL:** `https://ali-maq.github.io/teaching/`
+
+### Front Matter
+
+```yaml
+---
+layout: page
+permalink: /teaching/
+title: teaching
+description: Teaching experience and graduate student mentorship...
+nav: true
+nav_order: 6
+---
+```
+
+### Current Sections
+
+1. **Graduate Research Mentorship**
+   - CMU Capstone Project (CAR-T, Sep-Dec 2024)
+   - AI/ML Integration Mentorship (Oct 2023 - Present)
+
+2. **Teaching Experience**
+   - Data Structures & Algorithms for Bioinformatics (NYU, 3 semesters)
+
+3. **Conference Presentations & Engagement**
+   - ACL 2023 (Toronto)
+   - IMS 2024 (Rio de Janeiro)
+   - ASH 2025 (San Diego)
+
+4. **Speaking & Collaboration**
+   - Contact: quidwaiali@gmail.com
+
+---
+
+## TAB 7: CV
+
+**Page:** `/Users/ali/Downloads/resume/ali-maq.github.io/_pages/cv.md`
+**Data:** `/Users/ali/Downloads/resume/ali-maq.github.io/_data/cv.yml`
+**URL:** `https://ali-maq.github.io/cv/`
+
+### CV Page Front Matter
+
+```yaml
+---
+layout: cv
+permalink: /cv/
+title: cv
+nav: true
+nav_order: 7
+cv_pdf: Mujahid_Ali_Quidwai_Resume.docx.pdf  # PDF in assets/pdf/
+description: Your description here
+toc:
+  sidebar: left                              # Table of contents position
+---
+```
+
+### CV YAML Structure
+
+The CV uses different section types:
+
+#### Type: map (key-value pairs)
+
+```yaml
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Mujahid Ali Quidwai
+    - name: Email
+      value: quidwaiali@gmail.com
+```
+
+#### Type: time_table (timeline entries)
+
+```yaml
+- title: Experience
+  type: time_table
+  contents:
+    - title: Job Title
+      institution: Company Name, Location
+      year: Start - End
+      description:
+        - Bullet point 1
+        - Bullet point 2
+        - title: Nested Section
+          contents:
+            - Nested bullet 1
+            - Nested bullet 2
+```
+
+#### Type: nested_list (skills with categories)
+
+```yaml
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Category Name
+      items:
+        - Skill 1
+        - Skill 2
+        - Skill 3
+```
+
+#### Type: list (simple list)
+
+```yaml
+- title: Professional Affiliations
+  type: list
+  contents:
+    - Association for Computational Linguistics (ACL)
+    - American Society of Hematology (ASH)
+```
+
+### Current CV Sections
+
+1. General Information (map)
+2. Professional Summary (map)
+3. Education (time_table)
+4. Experience (time_table)
+5. Publications (time_table)
+6. Technical Skills (nested_list)
+7. Honors and Awards (time_table)
+8. Professional Affiliations (list)
+
+---
+
+## SOCIAL LINKS
+
+**File:** `/Users/ali/Downloads/resume/ali-maq.github.io/_data/socials.yml`
+
+### All Available Fields
+
+```yaml
+# Academic
+scholar_userid: rAAtZi0AAAAJ      # Google Scholar ID
+orcid_id: 0000-0000-0000-0000     # ORCID (optional)
+semanticscholar_id: XXXXX          # Semantic Scholar (optional)
+research_gate_profile: username    # ResearchGate (optional)
+
+# Professional
+github_username: Ali-Maq
+linkedin_username: mujahid-ali-q
+email: quidwaiali@gmail.com
+
+# Social
+twitter_username: username         # X/Twitter (optional)
+mastodon_username: username        # Mastodon (optional)
+medium_username: username          # Medium (optional)
+
+# Other
+rss_icon: false                    # RSS feed icon (enable when blog has posts)
+```
+
+### Current Configuration
 
 ```yaml
 scholar_userid: rAAtZi0AAAAJ
 github_username: Ali-Maq
 linkedin_username: mujahid-ali-q
 email: quidwaiali@gmail.com
-rss_icon: false  # Enable when blog posts exist
+rss_icon: false
 ```
 
-### Add GitHub Repositories
+---
 
-Edit: `_data/repositories.yml`
+## _config.yml Key Settings
+
+**File:** `/Users/ali/Downloads/resume/ali-maq.github.io/_config.yml`
+
+### Personal Info (Lines 1-25)
 
 ```yaml
-github_users:
-  - Ali-Maq
+title: Ali Quidwai
+first_name: Mujahid Ali
+last_name: Quidwai
+email: quidwaiali@gmail.com
 
-github_repos:
-  - Ali-Maq/repo-name
-  - Ali-Maq/another-repo
+description: >
+  AI Systems Engineer at Mount Sinai | Precision Oncology...
+
+footer_text: >
+  Powered by Jekyll with al-folio theme...
+
+keywords: computational-biology, precision-oncology, machine-learning...
+lang: en
+icon: fire.gif                    # Favicon in assets/img/
+
+url: https://ali-maq.github.io
+baseurl:                          # Leave empty for root domain
 ```
+
+### Important Settings
+
+| Setting | Line | Purpose |
+|---------|------|---------|
+| `title` | ~1 | Site title |
+| `first_name` / `last_name` | ~2-3 | Your name |
+| `email` | ~4 | Contact email |
+| `description` | ~11-12 | Site meta description |
+| `footer_text` | ~13-15 | Footer content |
+| `icon` | ~19 | Favicon filename |
+| `url` | ~21 | Site URL |
 
 ---
 
 ## Navigation Order
 
-Controlled by `nav_order` in each page's front matter:
+| Position | Page | nav_order | File |
+|----------|------|-----------|------|
+| 1 | about | (home) | `_pages/about.md` |
+| 2 | projects | 2 | `_pages/projects.md` |
+| 3 | publications | 3 | `_pages/publications.md` |
+| 4 | blog | 4 | `_pages/blog.md` |
+| 5 | repositories | 5 | `_pages/repositories.md` |
+| 6 | teaching | 6 | `_pages/teaching.md` |
+| 7 | cv | 7 | `_pages/cv.md` |
 
-| Page | nav_order | File |
-|------|-----------|------|
-| about | (home) | `_pages/about.md` |
-| projects | 2 | `_pages/projects.md` |
-| publications | 3 | `_pages/publications.md` |
-| blog | 4 | `_pages/blog.md` |
-| repositories | 5 | `_pages/repositories.md` |
-| teaching | 6 | `_pages/teaching.md` |
-| cv | 7 | `_pages/cv.md` |
+To change order, edit `nav_order` in each page's front matter.
 
----
-
-## Images
-
-**Project images:** `assets/img/`
-- Format: `project_name.png` or descriptive name
-- Referenced in project markdown: `img: assets/img/filename.png`
-
-**Publication previews:** `assets/img/publication_preview/`
-- Must match `preview={filename.png}` in papers.bib
-- Recommended size: 300-500px wide
-
-**Current publication images:**
-- `oncocite.png`, `oncodif.png`, `rag.png`, `acl.png`
-- `cart.png`, `prime.png`, `IMS.png`, `multiomics.png`
+To hide from navbar, set `nav: false`.
 
 ---
 
-## Publication Links
+## Images Reference
 
-| Paper | Type | Link |
-|-------|------|------|
-| OncoCITE | Under review | No link yet |
-| OncoDIF | ASH 2025 | https://www.sciencedirect.com/science/article/pii/S0006497125053935 |
-| RAG | medRxiv | https://doi.org/10.1101/2024.03.14.24304293 |
-| ACL | ACL 2023 | https://aclanthology.org/2023.bea-1.58/ |
-| PRIME | ASH 2025 | https://doi.org/10.1182/blood-2025-3996 |
-| CAR-T CRS | Preprint | https://ssrn.com/abstract=5217949 |
+### Profile & Favicon
+| Image | Path | Used In |
+|-------|------|---------|
+| Profile Photo | `assets/img/prof_pic.png` | about.md |
+| Favicon | `assets/img/fire.gif` | _config.yml |
+
+### Project Images
+| Image | Path | Project |
+|-------|------|---------|
+| oncocite_architecture.png | `assets/img/` | OncoCITE |
+| blood.png | `assets/img/` | PRIME |
+| project_mmap.png | `assets/img/` | MMAP |
+| project_rag.png | `assets/img/` | Clinical RAG |
+| project_multiomics.png | `assets/img/` | Multi-Omics |
+| project_cart.png | `assets/img/` | CAR-T CRS |
+| project_voice.png | `assets/img/` | Voice Agent |
+| AYA.png | `assets/img/` | AYA |
+| project_carcrew.png | `assets/img/` | Carcrew |
+
+### Publication Previews
+| Image | Path | Paper |
+|-------|------|-------|
+| oncocite.png | `assets/img/publication_preview/` | OncoCITE |
+| oncodif.png | `assets/img/publication_preview/` | OncoDIF |
+| rag.png | `assets/img/publication_preview/` | RAG medRxiv |
+| IMS.png | `assets/img/publication_preview/` | P-145 IMS |
+| acl.png | `assets/img/publication_preview/` | ACL 2023 |
+| prime.png | `assets/img/publication_preview/` | PRIME |
+| cart.png | `assets/img/publication_preview/` | CAR-T CRS |
+| multiomics.png | `assets/img/publication_preview/` | Multi-Omics |
 
 ---
 
-## Local Development
+## Publication Links Reference
 
-```bash
-# Using Docker (recommended)
-docker compose up
+| Paper | Key | Link |
+|-------|-----|------|
+| OncoCITE | `quidwai2025oncocite` | Under review (no link) |
+| OncoDIF | `quidwai2025oncodif` | https://www.sciencedirect.com/science/article/pii/S0006497125053935 |
+| RAG medRxiv | `quidwai2024rag` | https://doi.org/10.1101/2024.03.14.24304293 |
+| P-145 IMS | `quidwai2024decision` | IMS 2024 abstract |
+| ACL 2023 | `quidwai2023plagiarism` | https://aclanthology.org/2023.bea-1.58/ |
+| PRIME | `mouhieddine2025prime` | https://doi.org/10.1182/blood-2025-3996 |
+| CAR-T CRS | `rajeeve2024crs` | https://ssrn.com/abstract=5217949 |
+| Multi-Omics | `hamidi2025multiomics` | IMS 2025 abstract |
 
-# Access at http://localhost:8080
-```
+---
+
+## Common Tasks Checklist
+
+### Adding a New Publication
+1. Edit `_bibliography/papers.bib`
+2. Add BibTeX entry with unique key
+3. Add preview image to `assets/img/publication_preview/`
+4. Set `selected={true}` if should appear on homepage
+5. Commit and push
+
+### Adding a New Project
+1. Create file in `_projects/` (e.g., `9_newproject.md`)
+2. Add front matter with title, description, img, importance, category
+3. Add project image to `assets/img/`
+4. Write content in Markdown
+5. Commit and push
+
+### Updating the About Page
+1. Edit `_pages/about.md`
+2. Modify bio content after `---` block
+3. Commit and push
+
+### Updating CV
+1. Edit `_data/cv.yml`
+2. Follow YAML structure (map, time_table, nested_list, list)
+3. Commit and push
+
+### Adding News
+1. Create file in `_news/` (e.g., `announcement_4.md`)
+2. Add front matter with layout, title, date
+3. Write announcement content
+4. Commit and push
 
 ---
 
 ## Troubleshooting
 
 ### Push fails with HTTP 400
-Large files. Check for videos or files >50MB:
 ```bash
+# Check for large files
 find . -type f -size +10M
+
+# Increase buffer if needed
+git config http.postBuffer 524288000
 ```
-Remove and retry.
 
 ### Site shows 404
-1. Check GitHub Pages settings: Settings > Pages > Source = `gh-pages` branch
-2. Wait 2-3 minutes for deploy
-3. Check Actions tab for build errors
+1. Go to repo Settings > Pages
+2. Ensure Source = `gh-pages` branch, folder = `/ (root)`
+3. Wait 2-3 minutes
+4. Check Actions tab for errors
 
 ### Images not showing
-1. Verify file exists in `assets/img/`
-2. Check case sensitivity (Linux is case-sensitive)
-3. Ensure path in markdown matches exactly
+1. Verify file exists (case-sensitive!)
+2. Check path matches exactly
+3. Ensure no typos in filename
 
 ### Publication not appearing
-1. Check BibTeX syntax in `papers.bib`
-2. Ensure closing braces `}` are correct
-3. Preview image must exist if `preview={}` is set
+1. Check BibTeX syntax (matching braces)
+2. Verify `preview` image exists
+3. Check for YAML/BibTeX errors in build log
+
+### Blog posts not showing
+1. Filename must be `YYYY-MM-DD-title.md`
+2. Front matter must include `layout: post` and `date`
+3. File must be in `_posts/` directory
 
 ---
 
-## Key Files Summary
+## Local Development
 
-| What | Where |
-|------|-------|
-| Site config | `_config.yml` |
-| Bio/About | `_pages/about.md` |
-| Publications | `_bibliography/papers.bib` |
-| CV content | `_data/cv.yml` |
-| Social links | `_data/socials.yml` |
-| Projects | `_projects/*.md` |
-| News | `_news/*.md` |
-| Images | `assets/img/` |
-| PDF files | `assets/pdf/` |
+```bash
+# Using Docker
+cd /Users/ali/Downloads/resume/ali-maq.github.io
+docker compose up
+
+# Access at http://localhost:8080
+```
 
 ---
 
@@ -288,4 +729,5 @@ Remove and retry.
 - **Email:** quidwaiali@gmail.com
 - **GitHub:** https://github.com/Ali-Maq
 - **LinkedIn:** https://linkedin.com/in/mujahid-ali-q
+- **Google Scholar:** https://scholar.google.com/citations?user=rAAtZi0AAAAJ
 - **Site:** https://ali-maq.github.io
