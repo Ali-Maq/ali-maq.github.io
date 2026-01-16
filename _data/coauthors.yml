@@ -1,34 +1,59 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"lagana":
+  - firstname: ["Alessandro", "A."]
+    url: https://scholar.google.com/citations?user=LAGANA_ID
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"parekh":
+  - firstname: ["Samir", "S."]
+    url: https://scholar.google.com/citations?user=PAREKH_ID
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"dube":
+  - firstname: ["Parijat", "P."]
+    url: https://scholar.google.com/citations?user=DUBE_ID
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"thibaud":
+  - firstname: ["Santiago", "S."]
+    url: https://scholar.google.com/citations?user=THIBAUD_ID
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"richter":
+  - firstname: ["Joshua", "J."]
+    url: https://scholar.google.com/citations?user=RICHTER_ID
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"richard":
+  - firstname: ["Shambavi", "S."]
+    url: https://scholar.google.com/citations?user=RICHARD_ID
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"rajeeve":
+  - firstname: ["Sridevi", "S."]
+    url: https://scholar.google.com/citations?user=RAJEEVE_ID
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"tomalin":
+  - firstname: ["Lewis", "L.", "Lewis E."]
+    url: https://scholar.google.com/citations?user=TOMALIN_ID
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"wilkes":
+  - firstname: ["Matt", "M."]
+    url: https://scholar.google.com/citations?user=WILKES_ID
+
+"hamidi":
+  - firstname: ["Habib", "H."]
+    url: https://scholar.google.com/citations?user=HAMIDI_ID
+
+"bhasin":
+  - firstname: ["Manoj", "M.", "Manoj K."]
+    url: https://scholar.google.com/citations?user=BHASIN_ID
+
+"park":
+  - firstname: ["Alison", "A.", "Alison S."]
+    url: https://scholar.google.com/citations?user=PARK_ID
+
+"mulligan":
+  - firstname: ["George", "G.", "George J."]
+    url: https://scholar.google.com/citations?user=MULLIGAN_ID
+
+"vieira":
+  - firstname: ["Junia", "J.", "Junia Vieira"]
+    url: https://scholar.google.com/citations?user=VIEIRA_ID
+
+"mouhieddine":
+  - firstname: ["Tarek", "T."]
+    url: https://scholar.google.com/citations?user=MOUHIEDDINE_ID

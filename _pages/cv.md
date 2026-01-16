@@ -3,9 +3,9 @@ layout: cv
 permalink: /cv/
 title: cv
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+nav_order: 7
+cv_pdf: Mujahid_Ali_Quidwai_Resume.docx.pdf
+description: Computational Scientist specializing in AI/ML for precision oncology, multi-agent systems, and clinical decision support.
 toc:
   sidebar: left
 ---

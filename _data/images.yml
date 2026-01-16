@@ -1,0 +1,43 @@
+# Centralized image configuration
+# All images stored in /assets/img/ with project_* prefix
+# Both projects and publications reference these same files
+
+oncocite:
+  file: project_oncocite.png
+  alt: OncoCITE Multi-Agent System Architecture
+
+prime:
+  file: project_prime.png
+  alt: PRIME Model for Myeloma T-Cell Engagers
+
+mmap:
+  file: project_mmap.png
+  alt: MMAP GPU-Accelerated Pipeline
+
+rag:
+  file: project_rag.png
+  alt: Clinical RAG System Architecture
+
+multiomics:
+  file: project_multiomics.png
+  alt: Multi-Omics GNN Patient Stratification
+
+cart:
+  file: project_cart.png
+  alt: CAR-T CRS Prediction System
+
+llm:
+  file: project_llm.png
+  alt: LLM Inference Gateway
+
+voice:
+  file: project_voice.png
+  alt: Real-Time Voice Agent Pipeline
+
+aya:
+  file: project_aya.png
+  alt: AYA EdTech Platform
+
+carcrew:
+  file: project_carcrew.png
+  alt: Carcrew Automotive Marketplace

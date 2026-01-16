@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-03-14 09:00:00-0500
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+**RAG Chatbot for Multiple Myeloma** preprint on medRxiv - Now at **36 citations**. Production RAG system for precision medicine achieving 88% effectiveness.

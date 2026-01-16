@@ -2,16 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: AI Systems Engineer @ <a href='https://icahn.mssm.edu/'>Icahn School of Medicine at Mount Sinai</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +24,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I've always been drawn to building things that matter. After finishing my Computer Science degree in India, I joined **Carcrew** as Technical Lead—a scrappy automotive startup where I learned what it takes to ship products that real people use. I built the product and team from scratch—learning what it takes to ship fast and iterate faster. It was exhilarating, but something kept nagging at me: I wanted to go deeper.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+That pull brought me to **NYU Tandon** for my MS in Computer Engineering, where everything changed. Working with **Prof. Dennis Shasha**, **Prof. Manpreet Katari**, and **Prof. Parijat Dube** (IBM Research) opened my eyes to the beauty of deep learning—not just as a tool, but as a way of thinking about problems. I founded **AYA**, an EdTech startup that got selected for NYU's Entrepreneurial Sprint (10 of 150). I published my first paper at **ACL 2023** on detecting AI-generated text. Graduated with Honors. But more importantly, I found my calling: using AI to solve problems where the stakes are real.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Now I'm at **Mount Sinai**, building AI systems for precision oncology. The work is hard—when a clinician uses your tool to make treatment decisions, there's no margin for error. I've built multi-agent systems that extract genomic evidence (**OncoCITE**: 97.8% precision, Nature Cancer under review), GPU pipelines that turned week-long workflows into 3-hour runs, and voice interfaces with <600ms latency. First-author on 4 papers; **70+ citations**.
+
+Outside of work, I'm focused on two things: **open source** and **interpretability**. I've built a lot of tools that stayed locked in production—this year I'm changing that. This site is where I'll document what I've learned and release projects for others to use and improve. I'm also deep in the weeds of **model interpretability**, participating in **SPAR** and other AI safety programs. After years of making models work, I want to understand *why* they work—and when they don't.
+
+If you're curious about multi-agent systems, clinical AI, or interpretability—I'd love to connect. The best ideas come from unexpected conversations.

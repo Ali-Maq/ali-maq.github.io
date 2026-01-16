@@ -1,200 +1,460 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Mujahid Ali Quidwai",
+    "label": "AI Systems Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "quidwaiali@gmail.com",
+    "phone": "(224) 322-6446",
+    "url": "https://ali-maq.github.io/",
+    "summary": "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 6 agents, 97.8% precision on 11K evidence items), GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board), and real-time voice interfaces (<600ms latency). Deep expertise across the AI stack: fine-tuning 7B-235B parameter models, inference optimization (KV caching, PagedAttention, context minimization), multi-agent orchestration (state serialization, deterministic replay), and production deployment on distributed H100/A100 infrastructure. OncoCITE under review at Nature Cancer; first-author at ACL (IBM Research); contributing author in The Lancet and Blood. 70+ citations.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "city": "New York",
       "countryCode": "US",
-      "region": "California"
+      "region": "NY"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "Ali-Maq",
+        "url": "https://github.com/Ali-Maq"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ali-quidwai",
+        "url": "https://linkedin.com/in/ali-quidwai"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "rAAtZi0AAAAJ",
+        "url": "https://scholar.google.com/citations?user=rAAtZi0AAAAJ"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Icahn School of Medicine at Mount Sinai",
+      "position": "Computational Scientist",
+      "location": "New York, NY",
+      "url": "https://icahn.mssm.edu/",
+      "startDate": "2024-12-01",
+      "summary": "Leading AI/ML initiatives for precision oncology including multi-agent genomic systems, GPU-accelerated pipelines, and predictive modeling.",
+      "highlights": [
+        "OncoCITE (Nature Cancer, under review): Performed systematic EDA on CIViC database (11,312 evidence items, 3,083 publications) quantifying 12 structural bottlenecks. Architected 6-agent solution (Claude Agent SDK, 22 MCP tools) with state serialization and vision-based PDF extraction. Validated on 15-paper corpus: 84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors (n=108). Published at ASH 2025.",
+        "PRIME Model (Blood 2025): Co-developed predictive model for patients receiving BCMA- and GPRC5D-targeting T-cell engagers. Integrated clinical, genomic, and treatment response data. Presented at ASH 2025.",
+        "MMAP Pipeline: Engineered HPC pipeline on Minerva cluster using 4x NVIDIA H100 GPUs with Parabricks and cuDF. Orchestrated 57 computational processes across 3 integrated workflows. Achieved 92.3% processing time reduction (7 days to 13 hours). Enabled same-day molecular tumor board readiness.",
+        "Multi-Omics Integration (Clin Lymph Myel Leuk 2025): Applied modified IntegrAO GNN to MMRF COMPASS cohort (N=655). Achieved 50% classification granularity improvement and 258% high-risk detection enhancement. Identified 18 distinct vulnerability profiles with 94% actionable targets."
+      ]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Icahn School of Medicine at Mount Sinai",
+      "position": "Associate Computational Scientist",
+      "location": "New York, NY",
+      "url": "https://icahn.mssm.edu/",
+      "startDate": "2023-10-01",
+      "endDate": "2024-12-01",
+      "summary": "Developed production AI systems for clinical decision support, inference optimization, and CAR-T therapy monitoring.",
+      "highlights": [
+        "LLM Inference Optimization: Designed model-routing gateway for cost-performance optimization. Implemented KV cache optimization and prompt compression. Achieved 60-80% inference cost reduction using vLLM batch inference on HPC. Multi-cloud deployment across AWS and Azure OpenAI.",
+        "RAG System (medRxiv, 36 citations): Led development using LangGraph orchestration, BAAI/bge-large-en-v1.5 embeddings, and Mistral-7B. Processed 5,000+ documents achieving 88% clinical effectiveness. First prototype deployed and used by 2-3 clinicians for multiple myeloma research. Presented at IMS 2024.",
+        "CAR-T Adverse Event Prediction (Information MDPI, under review): Led ML development for early CRS detection (N=25 patients). Engineered time-lagged features from wearables and 92-biomarker Olink panel. Achieved 84.62% accuracy (ide-cel), 80.62% (cilta-cel) within 6-hour prediction window. SHAP analysis identified IFN-gamma as cross-product predictor.",
+        "Real-Time Voice Agent Pipeline: Fine-tuned OpenAI Whisper Large on local voice data. Built low-latency voice pipeline using WebSocket streaming with Silero VAD. Achieved <600ms end-to-end latency for real-time conversational AI.",
+        "Graduate Student Mentorship: Mentored 6 Carnegie Mellon University graduate students on CAR-T therapy monitoring capstone project. Guided experiment design, baselining, and reporting."
+      ]
+    },
+    {
+      "name": "AYA",
+      "position": "Founder",
+      "location": "New York, NY",
+      "startDate": "2023-07-01",
+      "endDate": "2023-10-01",
+      "summary": "Founded EdTech startup leveraging RL-optimized NLP for academic video content extraction.",
+      "highlights": [
+        "Selected for Summer Sprint at NYU's Entrepreneurial Institute (10 selected from 150 startups)",
+        "Developed end-to-end product combining speech processing, natural language generation, and educational content analysis"
+      ]
+    },
+    {
+      "name": "New York University",
+      "position": "Machine Learning Researcher & Teaching Assistant",
+      "location": "New York, NY",
+      "url": "https://nyu.edu/",
+      "startDate": "2021-09-01",
+      "endDate": "2023-05-01",
+      "summary": "Research on AI-generated text detection with IBM Research; taught bioinformatics algorithms.",
+      "highlights": [
+        "AI-Generated Plagiarism Detection (ACL 2023): Developed novel multi-faceted NLP approach with Prof. Parijat Dube (IBM Research) achieving 94% accuracy in human-AI text classification. Method employs contrastive loss and LLM-generated paraphrases. [31 citations]",
+        "Teaching Assistant - Data Structures & Algorithms for Bioinformatics: Supported graduate course under Prof. Manpreet S. Katari for 3 semesters, teaching 130+ master's students. Created assignments bridging CS fundamentals with bioinformatics applications."
+      ]
+    },
+    {
+      "name": "Carcrew",
+      "position": "Technical Lead",
+      "location": "New Delhi, India",
+      "startDate": "2016-08-01",
+      "endDate": "2017-09-01",
+      "summary": "Founding technical team member for automotive marketplace startup.",
+      "highlights": [
+        "Built MVP using Django, Flask, PostgreSQL",
+        "Contributed to technical due diligence that secured $2M Series A from TVS Group",
+        "Scaled to 10,000+ DAU"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "New York University, Tandon School of Engineering",
+      "location": "New York, NY",
+      "url": "https://engineering.nyu.edu/",
+      "area": "Computer Engineering",
+      "studyType": "MS (Honors)",
+      "startDate": "2021-09-01",
+      "endDate": "2023-05-01",
+      "score": "",
+      "courses": [
+        "Deep Learning",
+        "Machine Learning",
+        "High Performance ML",
+        "Natural Language Processing",
+        "ML for Cyber-Security",
+        "Algorithms & Data Structures for Bioinformatics"
+      ]
+    },
+    {
+      "institution": "Dr. A.P.J. Abdul Kalam Technical University",
+      "location": "Ghaziabad, India",
+      "area": "Computer Science",
+      "studyType": "BTech",
+      "startDate": "2012-08-01",
+      "endDate": "2016-05-01"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "ASH 2025 Presentations",
+      "date": "2025-01-01",
+      "awarder": "American Society of Hematology",
+      "summary": "Two presentations: OncoCITE multi-agent system and PRIME predictive model"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "title": "IMS 2024 Presentation",
+      "date": "2024-03-01",
+      "awarder": "International Myeloma Society",
+      "summary": "RAG for Multiple Myeloma clinical decision support"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "title": "Lambda Labs Research Grant",
+      "date": "2024-01-01",
+      "awarder": "Lambda Labs",
+      "summary": "GPU compute grant for AI research"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "title": "NYU Entrepreneurial Institute Summer Sprint",
+      "date": "2023-07-01",
+      "awarder": "NYU Entrepreneurial Institute",
+      "summary": "Selected as top 7% (10 of 150 startups) for AYA EdTech startup"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "title": "NYU Tandon Graduate Scholarship",
+      "date": "2021-09-01",
+      "awarder": "New York University",
+      "summary": "Merit-based scholarship award ($8,000/year) for academic excellence"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "OncoCITE: AI-Driven Genomic Evidence Curation",
+      "publisher": "Nature Cancer",
+      "releaseDate": "2025-01-01",
+      "summary": "Multi-agent system for automated genomic evidence extraction. 6 agents, 22 MCP tools, 84% ground truth recovery, 97.8% novel discovery precision. Under review."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "A RAG Chatbot for Precision Medicine of Multiple Myeloma",
+      "publisher": "medRxiv",
+      "releaseDate": "2024-03-01",
+      "url": "https://doi.org/10.1101/2024.03.14.24304293",
+      "summary": "Production RAG system using LangGraph, BAAI/bge-large-en-v1.5 embeddings, and Mistral-7B achieving 88% effectiveness. 36 citations."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Beyond Black Box AI-Generated Plagiarism Detection: From Sentence to Document Level",
+      "publisher": "ACL BEA 2023",
+      "releaseDate": "2023-07-01",
+      "url": "https://doi.org/10.18653/v1/2023.bea-1.58",
+      "summary": "Novel multi-faceted NLP approach achieving 94% accuracy in human-AI text classification. IBM Research collaboration. 31 citations."
+    },
+    {
+      "name": "Early Detection of CRS Using Wearable Devices Following CAR-T Therapy",
+      "publisher": "Information (MDPI)",
+      "releaseDate": "2024-01-01",
+      "summary": "ML for early CRS detection (N=25). 84.62% accuracy within 6-hour window. SHAP analysis identified IFN-gamma as predictor. Under review."
+    },
+    {
+      "name": "PRIME: Predictive Relapse Indicators for Myeloma T-Cell Engagers",
+      "publisher": "Blood",
+      "releaseDate": "2025-01-01",
+      "summary": "Predictive model for BCMA- and GPRC5D-targeting T-cell engagers. ASH 2025."
+    },
+    {
+      "name": "Multi-Omics Integration for Multiple Myeloma Subtypes",
+      "publisher": "Clinical Lymphoma Myeloma Leukemia",
+      "releaseDate": "2025-01-01",
+      "summary": "IntegrAO GNN on MMRF COMPASS cohort (N=655). 50% classification granularity improvement, 258% high-risk detection enhancement."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "LLM Fine-tuning & Training",
+      "level": "Expert",
+      "icon": "fa-solid fa-brain",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Fine-tuned 7B-235B parameter models (Qwen, Qwen VL, Mistral, MedGemma, Whisper Large)",
+        "LoRA/QLoRA adapters",
+        "Full fine-tuning",
+        "DPO (Direct Preference Optimization)",
+        "Hugging Face Transformers",
+        "Multi-GPU training (H100 NVL, A100)",
+        "LSF/SLURM scheduling",
+        "Singularity containers"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems & Orchestration",
+      "level": "Expert",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "Claude Agent SDK",
+        "OpenAI Agent SDK",
+        "LangChain",
+        "LangGraph",
+        "DSPy",
+        "6-agent collaborative architectures",
+        "State Serialization",
+        "Pause-Resume Workflows",
+        "Deterministic Replay",
+        "MCP (22 tools)",
+        "Vector databases (OpenSearch, FAISS)",
+        "Hallucination prevention"
+      ]
+    },
+    {
+      "name": "Model Serving & Deployment",
+      "level": "Expert",
+      "icon": "fa-solid fa-server",
+      "keywords": [
+        "vLLM",
+        "SGLang",
+        "TGI",
+        "TensorRT-LLM",
+        "Ollama",
+        "PagedAttention",
+        "KV Cache Optimization",
+        "Context Minimization",
+        "<100ms TTFT",
+        "FP8/INT4 quantization",
+        "Model routing for cost optimization"
+      ]
+    },
+    {
+      "name": "Real-Time AI & Voice Systems",
+      "level": "Advanced",
+      "icon": "fa-solid fa-microphone",
+      "keywords": [
+        "Whisper Fine-tuning",
+        "Voice Activity Detection (Silero VAD)",
+        "WebSocket Streaming",
+        "Barge-in Handling",
+        "<600ms End-to-End Latency",
+        "WebRTC",
+        "Hume AI",
+        "Cartesia",
+        "Custom TTS (Piper)"
+      ]
+    },
+    {
+      "name": "Distributed Computing",
+      "level": "Expert",
+      "icon": "fa-solid fa-microchip",
+      "keywords": [
+        "NVIDIA H100 NVL/A100/A10",
+        "196-GPU cluster (Minerva)",
+        "Multi-GPU (144 GPU-hours)",
+        "CUDA",
+        "HPC (LSF/SLURM)",
+        "NVLink",
+        "Parabricks",
+        "cuDF/cuML",
+        "Spark"
+      ]
+    },
+    {
+      "name": "Genomics & Bioinformatics",
+      "level": "Expert",
+      "icon": "fa-solid fa-dna",
+      "keywords": [
+        "Nextflow",
+        "NGS Processing (STAR, BWA-MEM, fastp, GATK)",
+        "Variant Calling (Mutect2, Lancet, HaplotypeCaller)",
+        "CNV Analysis (FACETS, BEDTools)",
+        "Gene Fusion (Arriba)",
+        "Annotation (VEP, SnpEff, Funcotator)",
+        "Scanpy",
+        "Geneformer",
+        "IntegrAO",
+        "RNA-seq",
+        "WES"
+      ]
+    },
+    {
+      "name": "Clinical AI & Healthcare",
+      "level": "Expert",
+      "icon": "fa-solid fa-hospital",
+      "keywords": [
+        "Precision Medicine",
+        "Clinical NLP",
+        "Variant Annotation",
+        "EHR Integration (EPIC)",
+        "REDCap",
+        "HIPAA Compliance",
+        "Regulatory validation (CAP/CLIA)",
+        "Clinical Decision Support"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cloud",
+      "keywords": [
+        "AWS (Bedrock, EC2, OpenSearch, SageMaker)",
+        "Azure OpenAI",
+        "Multi-cloud deployment",
+        "Docker",
+        "Singularity",
+        "Kubernetes",
+        "MLflow",
+        "CI/CD"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Hindi",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Urdu",
+      "fluency": "Native speaker",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Clinical AI Systems",
+      "icon": "fa-solid fa-microscope",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Precision Oncology",
+        "Multi-Agent AI Systems",
+        "Real-Time Clinical Decision Support",
+        "Genomics",
+        "Drug Discovery"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "OncoCITE - Multi-Agent Genomic Evidence Extraction",
+      "summary": "6-agent system using Claude Agent SDK with 22 MCP tools for automated genomic curation from scientific literature. Nature Cancer under review.",
+      "highlights": [
+        "Systematic EDA on CIViC database (11,312 evidence items, 3,083 publications)",
+        "84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors",
+        "State serialization enabling pause-resume for long-running extractions",
+        "Identified 24.2% curation errors in expert-curated databases"
+      ],
+      "startDate": "2024-12-01",
+      "url": ""
+    },
+    {
+      "name": "MMAP - GPU-Accelerated Genomic Pipeline",
+      "summary": "HPC pipeline on Minerva cluster using 4x NVIDIA H100 GPUs with Parabricks and cuDF.",
+      "highlights": [
+        "92.3% processing time reduction (7 days to 13 hours, 12.9x speedup)",
+        "57 computational processes across 3 integrated workflows",
+        "Enabled same-day molecular tumor board readiness",
+        "Local MedGemma and DeepSeek deployment, ~$100/report savings"
+      ],
+      "startDate": "2024-12-01",
+      "url": ""
+    },
+    {
+      "name": "Real-Time Voice Agent Pipeline",
+      "summary": "Low-latency voice pipeline for real-time conversational AI applications.",
+      "highlights": [
+        "Fine-tuned Whisper Large for domain-specific ASR",
+        "WebSocket streaming with Silero VAD",
+        "<600ms end-to-end latency",
+        "Barge-in handling for user interruptions"
+      ],
+      "startDate": "2024-01-01",
+      "url": ""
+    },
+    {
+      "name": "Clinical RAG System",
+      "summary": "Production RAG system for multiple myeloma clinical decision support. Deployed and used by clinicians.",
+      "highlights": [
+        "LangGraph orchestration with Mistral-7B",
+        "5,000+ documents processed",
+        "88% clinical effectiveness",
+        "36 citations on medRxiv"
+      ],
+      "startDate": "2023-10-01",
+      "url": "https://doi.org/10.1101/2024.03.14.24304293"
+    }
+  ],
+  "references": [],
+  "volunteer": [
+    {
+      "organization": "Icahn School of Medicine at Mount Sinai",
+      "position": "Graduate Research Mentor",
+      "location": "New York, NY",
+      "startDate": "2024-09-01",
+      "endDate": "2024-12-01",
+      "summary": "Mentored 6 Carnegie Mellon University graduate students on CAR-T therapy monitoring capstone project.",
+      "highlights": [
+        "Guided experiment design, baselining, and reporting for CRS prediction using wearables and cytokines",
+        "Coordinated with clinical team on project scope and deliverables",
+        "Students developed ML models for early adverse event detection"
+      ]
+    },
+    {
+      "organization": "Icahn School of Medicine at Mount Sinai",
+      "position": "AI/ML Integration Mentor",
+      "location": "New York, NY",
+      "startDate": "2023-10-01",
+      "summary": "Mentored team members on AI/ML integration workflows and best practices.",
+      "highlights": [
+        "Trained clinical research staff on RAG system usage and interpretation",
+        "Developed documentation and tutorials for AI tools in clinical workflows",
+        "Guided junior team members on production ML system development"
+      ]
+    },
+    {
+      "organization": "New York University",
+      "position": "Teaching Assistant - Data Structures & Algorithms for Bioinformatics",
+      "location": "New York, NY",
+      "url": "https://engineering.nyu.edu/",
+      "startDate": "2022-01-01",
+      "endDate": "2023-05-01",
+      "summary": "Graduate-level course under Prof. Manpreet S. Katari for 3 semesters (Spring 2022, Fall 2022, Spring 2023).",
+      "highlights": [
+        "Taught data structures, algorithms, and genomic algorithms to 130+ master's students",
+        "Created assignments bridging computer science fundamentals with bioinformatics applications",
+        "Held office hours and provided one-on-one support for complex algorithmic concepts",
+        "Developed course materials covering sequence alignment, graph algorithms, and dynamic programming for genomics"
+      ]
     }
   ]
 }
