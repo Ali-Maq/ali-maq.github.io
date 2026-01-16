@@ -1,5 +1,7 @@
 # Deployment & Maintenance Guide
 
+> **Note:** This file is processed by Jekyll. Do not use curly braces with percent signs (Liquid tags) directly in this file - they will cause build errors. When documenting Jekyll syntax, describe it in plain text instead.
+
 **Site:** https://ali-maq.github.io
 **Theme:** al-folio (Jekyll)
 **Owner:** Mujahid Ali Quidwai (Ali)
@@ -192,12 +194,15 @@ related_publications: true            # Enable cite tags
 
 ### Citing Publications in Projects
 
-Only use `{%raw%}{% cite key %}{%endraw%}` in projects where you are **first author**:
-```markdown
-{%raw%}{% cite quidwai2025oncocite %}{%endraw%}
+To cite a publication in a project, use the cite tag with the BibTeX key:
+
+```
+cite quidwai2025oncocite
 ```
 
-For contributing author projects, set `related_publications: false` and mention paper in text without cite tag.
+(Wrap the above in curly braces and percent signs when using in actual project files)
+
+**Important:** Only use cite tags in projects where you are the **first author**. For contributing author projects, set `related_publications: false` and mention the paper in plain text.
 
 ---
 
