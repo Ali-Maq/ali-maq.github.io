@@ -84,7 +84,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-oncocite",
           title: 'OncoCITE',
-          description: "Multi-Agent Genomic Evidence Extraction System (Nature Cancer, under review)",
+          description: "Multi-Agent Genomic Evidence Extraction System (Submitted to Nature Cancer)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_oncocite/";
             },},{id: "projects-prime-model",
