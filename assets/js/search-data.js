@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "Open source projects and contributions. More coming as I build in public.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -60,6 +60,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2026/welcome/";
+          
+        },
+      },{id: "post-medgemma-1-5-google-39-s-open-medical-ai-just-got-serious",
+        
+          title: "MedGemma 1.5: Google&#39;s Open Medical AI Just Got Serious",
+        
+        description: "A deep dive into Google&#39;s MedGemma 1.5 4B - architecture, capabilities, benchmarks, and what it means for clinical AI development.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/medgemma-deep-dive/";
           
         },
       },{id: "news-rag-chatbot-for-multiple-myeloma-preprint-on-medrxiv-now-at-36-citations-production-rag-system-for-precision-medicine-achieving-88-effectiveness",

@@ -1,1 +1,172 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://ali-maq.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://ali-maq.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-01-16T06:09:15+00:00</updated><id>https://ali-maq.github.io/feed.xml</id><title type="html">Ali Quidwai</title><subtitle>AI Systems Engineer at Mount Sinai | Precision Oncology | Multi-Agent Systems | Clinical AI | 70+ Citations </subtitle><entry><title type="html">Why I’m Finally Building in Public</title><link href="https://ali-maq.github.io/blog/2026/welcome/" rel="alternate" type="text/html" title="Why I’m Finally Building in Public"/><published>2026-01-16T00:00:00+00:00</published><updated>2026-01-16T00:00:00+00:00</updated><id>https://ali-maq.github.io/blog/2026/welcome</id><content type="html" xml:base="https://ali-maq.github.io/blog/2026/welcome/"><![CDATA[<p>For years, I’ve built tools that stayed locked in production silos. Internal pipelines. Clinical systems. Things that worked, but that nobody outside my team would ever see.</p> <p>That changes this year.</p> <h2 id="the-problem-with-building-in-private">The Problem with Building in Private</h2> <p>When you work in clinical AI, there’s a natural tendency toward secrecy. Patient data is sensitive. Institutional knowledge feels proprietary. And honestly, it’s easier to ship fast when you’re not thinking about documentation.</p> <p>But I’ve started to feel the cost of this approach. Every time I solve a problem, I solve it alone. Every time someone else hits the same wall, they start from scratch. The wheel gets reinvented constantly.</p> <h2 id="what-im-sharing">What I’m Sharing</h2> <p>This site is my commitment to building in public. Here’s what you’ll find:</p> <p><strong>Projects</strong> — Production systems I’ve built at Mount Sinai, including multi-agent architectures, GPU-accelerated pipelines, and clinical RAG systems. Where possible, I’ll share code, architectures, and lessons learned.</p> <p><strong>Publications</strong> — My papers on genomic curation, clinical decision support, and AI-generated text detection. All with links to preprints and code.</p> <p><strong>Blog</strong> — Deep dives into problems I’m solving. Not polished tutorials—more like field notes from someone figuring things out in real time.</p> <h2 id="what-im-learning">What I’m Learning</h2> <p>I’m also using this year to go deeper on <strong>model interpretability</strong>. I’ve spent years making models work. Now I want to understand <em>why</em> they work—and more importantly, when they don’t.</p> <p>I’m currently participating in SPAR and other AI safety programs. Expect posts on mechanistic interpretability, feature visualization, and what happens when you actually look inside the black box.</p> <h2 id="lets-connect">Let’s Connect</h2> <p>If you’re working on multi-agent systems, clinical AI, or interpretability—I’d love to hear from you. The best ideas come from unexpected conversations.</p> <p>You can reach me at <a href="mailto:quidwaiali@gmail.com">quidwaiali@gmail.com</a> or connect on <a href="https://linkedin.com/in/mujahid-ali-q">LinkedIn</a>.</p> <p>Let’s build something.</p>]]></content><author><name></name></author><category term="reflections"/><category term="open-source"/><category term="interpretability"/><summary type="html"><![CDATA[After years of keeping tools locked in production, I'm committing to open source.]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://ali-maq.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://ali-maq.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2026-01-16T06:49:56+00:00</updated><id>https://ali-maq.github.io/feed.xml</id><title type="html">Ali Quidwai</title><subtitle>AI Systems Engineer at Mount Sinai | Precision Oncology | Multi-Agent Systems | Clinical AI | 70+ Citations </subtitle><entry><title type="html">MedGemma 1.5: Google’s Open Medical AI Just Got Serious</title><link href="https://ali-maq.github.io/blog/2026/medgemma-deep-dive/" rel="alternate" type="text/html" title="MedGemma 1.5: Google’s Open Medical AI Just Got Serious"/><published>2026-01-16T00:00:00+00:00</published><updated>2026-01-16T00:00:00+00:00</updated><id>https://ali-maq.github.io/blog/2026/medgemma-deep-dive</id><content type="html" xml:base="https://ali-maq.github.io/blog/2026/medgemma-deep-dive/"><![CDATA[<p>Google just dropped MedGemma 1.5, and it’s a significant upgrade for anyone building clinical AI systems. As someone who’s spent the last two years building production medical AI at Mount Sinai, I want to break down what’s actually new and why it matters.</p> <h2 id="whats-new-in-15">What’s New in 1.5</h2> <p>MedGemma 1.5 isn’t just an incremental update. It adds entirely new capabilities:</p> <pre><code class="language-mermaid">mindmap
+  root((MedGemma 1.5))
+    3D Imaging
+      CT Volumes
+      MRI Sequences
+    Longitudinal
+      Prior Comparisons
+      Disease Progression
+    Pathology
+      Whole Slide Images
+      Multi-patch Input
+    Documents
+      Lab Reports
+      EHR Data
+    Localization
+      Bounding Boxes
+      Anatomical Features
+</code></pre> <h2 id="architecture-overview">Architecture Overview</h2> <p>MedGemma builds on Gemma 3’s decoder-only transformer with a specialized medical image encoder:</p> <pre><code class="language-mermaid">flowchart TB
+    subgraph Input
+        A[Medical Image] --&gt; B[MedSigLIP Encoder]
+        C[Text Prompt] --&gt; D[Tokenizer]
+    end
+
+    subgraph Processing
+        B --&gt; E[256 Image Tokens]
+        D --&gt; F[Text Tokens]
+        E --&gt; G[Gemma 3 Decoder]
+        F --&gt; G
+    end
+
+    subgraph Output
+        G --&gt; H[Generated Text]
+        H --&gt; I[Diagnosis/Report/Analysis]
+    end
+</code></pre> <h3 id="key-specs">Key Specs</h3> <table> <thead> <tr> <th>Specification</th> <th>Value</th> </tr> </thead> <tbody> <tr> <td>Parameters</td> <td>4B</td> </tr> <tr> <td>Context Length</td> <td>128K tokens</td> </tr> <tr> <td>Image Resolution</td> <td>896 x 896</td> </tr> <tr> <td>Image Tokens</td> <td>256 per image</td> </tr> <tr> <td>Output Length</td> <td>8192 tokens</td> </tr> <tr> <td>Architecture</td> <td>Decoder-only Transformer</td> </tr> <tr> <td>Attention</td> <td>Grouped-Query Attention (GQA)</td> </tr> </tbody> </table> <h2 id="performance-deep-dive">Performance Deep Dive</h2> <h3 id="medical-text-reasoning">Medical Text Reasoning</h3> <p>The text-only benchmarks show solid improvements over the previous version:</p> <pre><code class="language-echarts">{
+  "title": {
+    "text": "Medical QA Benchmarks",
+    "left": "center"
+  },
+  "tooltip": {
+    "trigger": "axis"
+  },
+  "legend": {
+    "data": ["Gemma 3 4B", "MedGemma 1 4B", "MedGemma 1.5 4B"],
+    "top": "10%"
+  },
+  "xAxis": {
+    "type": "category",
+    "data": ["MedQA", "MedMCQA", "PubMedQA", "MMLU Med"]
+  },
+  "yAxis": {
+    "type": "value",
+    "min": 40,
+    "max": 80
+  },
+  "series": [
+    {
+      "name": "Gemma 3 4B",
+      "type": "bar",
+      "data": [50.7, 45.4, 68.4, 67.2]
+    },
+    {
+      "name": "MedGemma 1 4B",
+      "type": "bar",
+      "data": [64.4, 55.7, 73.4, 70.0]
+    },
+    {
+      "name": "MedGemma 1.5 4B",
+      "type": "bar",
+      "data": [69.1, 59.8, 68.2, 69.6]
+    }
+  ]
+}
+</code></pre> <h3 id="imaging-performance">Imaging Performance</h3> <p>The real story is in the imaging benchmarks. MedGemma 1.5 shows dramatic improvements in 3D imaging and whole-slide pathology:</p> <table> <thead> <tr> <th>Task</th> <th>Gemma 3 4B</th> <th>MedGemma 1 4B</th> <th>MedGemma 1.5 4B</th> </tr> </thead> <tbody> <tr> <td>CT Classification (7 conditions)</td> <td>54.5%</td> <td>58.2%</td> <td><strong>61.1%</strong></td> </tr> <tr> <td>MRI Classification (10 conditions)</td> <td>51.1%</td> <td>51.3%</td> <td><strong>64.7%</strong></td> </tr> <tr> <td>WSI Pathology (ROUGE)</td> <td>2.3</td> <td>2.2</td> <td><strong>49.4</strong></td> </tr> <tr> <td>EyePACS Fundus</td> <td>14.4%</td> <td>64.9%</td> <td><strong>76.8%</strong></td> </tr> <tr> <td>Longitudinal CXR</td> <td>59.0%</td> <td>61.1%</td> <td><strong>65.7%</strong></td> </tr> </tbody> </table> <p>The jump from 2.2 to 49.4 ROUGE on whole-slide pathology is remarkable.</p> <h2 id="quick-start-code">Quick Start Code</h2> <p>Here’s how to get started with the pipeline API:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">pipeline</span>
+<span class="kn">from</span> <span class="n">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="n">requests</span>
+<span class="kn">import</span> <span class="n">torch</span>
+
+<span class="c1"># Initialize the pipeline
+</span><span class="n">pipe</span> <span class="o">=</span> <span class="nf">pipeline</span><span class="p">(</span>
+    <span class="sh">"</span><span class="s">image-text-to-text</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">model</span><span class="o">=</span><span class="sh">"</span><span class="s">google/medgemma-1.5-4b-it</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">torch_dtype</span><span class="o">=</span><span class="n">torch</span><span class="p">.</span><span class="n">bfloat16</span><span class="p">,</span>
+    <span class="n">device</span><span class="o">=</span><span class="sh">"</span><span class="s">cuda</span><span class="sh">"</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Load a chest X-ray
+</span><span class="n">image_url</span> <span class="o">=</span> <span class="sh">"</span><span class="s">https://upload.wikimedia.org/wikipedia/commons/c/c8/Chest_Xray_PA_3-8-2010.png</span><span class="sh">"</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span>
+    <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">image_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="sh">"</span><span class="s">User-Agent</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">example</span><span class="sh">"</span><span class="p">},</span> <span class="n">stream</span><span class="o">=</span><span class="bp">True</span><span class="p">).</span><span class="n">raw</span>
+<span class="p">)</span>
+
+<span class="c1"># Create the prompt
+</span><span class="n">messages</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="sh">"</span><span class="s">role</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">user</span><span class="sh">"</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">content</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">image</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">image</span><span class="sh">"</span><span class="p">:</span> <span class="n">image</span><span class="p">},</span>
+            <span class="p">{</span><span class="sh">"</span><span class="s">type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">text</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">text</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Describe this X-ray</span><span class="sh">"</span><span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># Generate
+</span><span class="n">output</span> <span class="o">=</span> <span class="nf">pipe</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">messages</span><span class="p">,</span> <span class="n">max_new_tokens</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">output</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="sh">"</span><span class="s">generated_text</span><span class="sh">"</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="sh">"</span><span class="s">content</span><span class="sh">"</span><span class="p">])</span>
+</code></pre></div></div> <p>Or using the model directly for more control:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">AutoProcessor</span><span class="p">,</span> <span class="n">AutoModelForImageTextToText</span>
+<span class="kn">import</span> <span class="n">torch</span>
+
+<span class="n">model_id</span> <span class="o">=</span> <span class="sh">"</span><span class="s">google/medgemma-1.5-4b-it</span><span class="sh">"</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">AutoModelForImageTextToText</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span>
+    <span class="n">model_id</span><span class="p">,</span>
+    <span class="n">torch_dtype</span><span class="o">=</span><span class="n">torch</span><span class="p">.</span><span class="n">bfloat16</span><span class="p">,</span>
+    <span class="n">device_map</span><span class="o">=</span><span class="sh">"</span><span class="s">auto</span><span class="sh">"</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">processor</span> <span class="o">=</span> <span class="n">AutoProcessor</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="n">model_id</span><span class="p">)</span>
+
+<span class="c1"># Process inputs
+</span><span class="n">inputs</span> <span class="o">=</span> <span class="n">processor</span><span class="p">.</span><span class="nf">apply_chat_template</span><span class="p">(</span>
+    <span class="n">messages</span><span class="p">,</span>
+    <span class="n">add_generation_prompt</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">tokenize</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">return_dict</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">return_tensors</span><span class="o">=</span><span class="sh">"</span><span class="s">pt</span><span class="sh">"</span>
+<span class="p">).</span><span class="nf">to</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="p">.</span><span class="n">bfloat16</span><span class="p">)</span>
+
+<span class="c1"># Generate with control over parameters
+</span><span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="nf">inference_mode</span><span class="p">():</span>
+    <span class="n">generation</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">generate</span><span class="p">(</span>
+        <span class="o">**</span><span class="n">inputs</span><span class="p">,</span>
+        <span class="n">max_new_tokens</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span>
+        <span class="n">do_sample</span><span class="o">=</span><span class="bp">False</span>
+    <span class="p">)</span>
+</code></pre></div></div> <h2 id="integration-architecture">Integration Architecture</h2> <p>Here’s how I’m thinking about integrating MedGemma into a clinical RAG system:</p> <pre><code class="language-mermaid">flowchart LR
+    subgraph Input Layer
+        A[Clinical Query] --&gt; B{Query Type?}
+        I[Medical Image] --&gt; B
+    end
+
+    subgraph Processing
+        B --&gt;|Text Only| C[Text RAG Pipeline]
+        B --&gt;|Image + Text| D[MedGemma 1.5]
+        C --&gt; E[Vector Search]
+        E --&gt; F[Context Assembly]
+        F --&gt; D
+    end
+
+    subgraph Output
+        D --&gt; G[Clinical Response]
+        G --&gt; H[Citation + Evidence]
+    end
+</code></pre> <h2 id="what-this-means-for-clinical-ai">What This Means for Clinical AI</h2> <h3 id="the-good">The Good</h3> <ol> <li><strong>Open weights</strong> - Unlike GPT-4V or Med-PaLM, you can actually run this locally</li> <li><strong>4B parameters</strong> - Fits on a single GPU, practical for production</li> <li><strong>3D imaging support</strong> - CT/MRI interpretation was a major gap</li> <li><strong>EHR understanding</strong> - Finally, a model that can parse clinical notes</li> </ol> <h3 id="the-limitations">The Limitations</h3> <blockquote> <p><strong>Important</strong>: MedGemma is not intended for direct clinical use. All outputs require independent verification.</p> </blockquote> <ul> <li>Single-image evaluation only (no multi-image comparison in benchmarks)</li> <li>Not optimized for multi-turn conversations</li> <li>Prompt-sensitive (more than base Gemma)</li> <li>English-only evaluation</li> </ul> <h2 id="comparison-with-alternatives">Comparison with Alternatives</h2> <pre><code class="language-mermaid">quadrantChart
+    title Model Positioning
+    x-axis Closed Source --&gt; Open Source
+    y-axis General Purpose --&gt; Medical Specialized
+    quadrant-1 Best for Research
+    quadrant-2 Enterprise Only
+    quadrant-3 Limited Medical Use
+    quadrant-4 Production Ready
+    GPT-4V: [0.2, 0.4]
+    Med-PaLM: [0.15, 0.85]
+    LLaVA-Med: [0.75, 0.6]
+    MedGemma: [0.8, 0.8]
+    Gemma-3: [0.85, 0.3]
+</code></pre> <h2 id="next-steps">Next Steps</h2> <p>I’m planning to:</p> <ol> <li><strong>Benchmark against our RAG system</strong> - How does MedGemma compare to Mistral-7B for clinical QA?</li> <li><strong>Test 3D imaging</strong> - We have CT data from the MMAP pipeline</li> <li><strong>Fine-tune for hematology</strong> - Our OncoCITE system could benefit from better image understanding</li> </ol> <h2 id="resources">Resources</h2> <ul> <li><a href="https://huggingface.co/google/medgemma-1.5-4b-it">Model on Hugging Face</a></li> <li><a href="https://arxiv.org/abs/2507.05201">Technical Report</a></li> <li><a href="https://github.com/Google-Health/medgemma">Tutorial Notebooks</a></li> </ul> <hr/> <p><em>What are you building with MedGemma? I’d love to hear about your use cases in the comments below.</em></p>]]></content><author><name></name></author><category term="research"/><category term="clinical-ai"/><category term="deep-learning"/><category term="multi-agent-systems"/><category term="genomics"/><category term="open-source"/><summary type="html"><![CDATA[A deep dive into Google's MedGemma 1.5 4B - architecture, capabilities, benchmarks, and what it means for clinical AI development.]]></summary></entry><entry><title type="html">Why I’m Finally Building in Public</title><link href="https://ali-maq.github.io/blog/2026/welcome/" rel="alternate" type="text/html" title="Why I’m Finally Building in Public"/><published>2026-01-16T00:00:00+00:00</published><updated>2026-01-16T00:00:00+00:00</updated><id>https://ali-maq.github.io/blog/2026/welcome</id><content type="html" xml:base="https://ali-maq.github.io/blog/2026/welcome/"><![CDATA[<p>For years, I’ve built tools that stayed locked in production silos. Internal pipelines. Clinical systems. Things that worked, but that nobody outside my team would ever see.</p> <p>That changes this year.</p> <h2 id="the-problem-with-building-in-private">The Problem with Building in Private</h2> <p>When you work in clinical AI, there’s a natural tendency toward secrecy. Patient data is sensitive. Institutional knowledge feels proprietary. And honestly, it’s easier to ship fast when you’re not thinking about documentation.</p> <p>But I’ve started to feel the cost of this approach. Every time I solve a problem, I solve it alone. Every time someone else hits the same wall, they start from scratch. The wheel gets reinvented constantly.</p> <h2 id="what-im-sharing">What I’m Sharing</h2> <p>This site is my commitment to building in public. Here’s what you’ll find:</p> <p><strong>Projects</strong> — Production systems I’ve built at Mount Sinai, including multi-agent architectures, GPU-accelerated pipelines, and clinical RAG systems. Where possible, I’ll share code, architectures, and lessons learned.</p> <p><strong>Publications</strong> — My papers on genomic curation, clinical decision support, and AI-generated text detection. All with links to preprints and code.</p> <p><strong>Blog</strong> — Deep dives into problems I’m solving. Not polished tutorials—more like field notes from someone figuring things out in real time.</p> <h2 id="a-glimpse-at-what-i-build">A Glimpse at What I Build</h2> <p>Here’s an example of the kind of systems I work on—a multi-agent architecture for genomic evidence extraction:</p> <pre><code class="language-mermaid">flowchart LR
+    A[Literature] --&gt; B[Extraction Agent]
+    B --&gt; C[Validation Agent]
+    C --&gt; D[Knowledge Graph]
+    D --&gt; E[Clinical Query]
+    E --&gt; F[Evidence Report]
+</code></pre> <p>This is a simplified view of <a href="/projects/1_oncocite/">OncoCITE</a>, a system that automatically extracts genomic evidence from scientific papers. I’ll be writing more about the architecture decisions and lessons learned.</p> <h2 id="what-im-learning">What I’m Learning</h2> <p>I’m also using this year to go deeper on <strong>model interpretability</strong>. I’ve spent years making models work. Now I want to understand <em>why</em> they work—and more importantly, when they don’t.</p> <p>I’m currently participating in SPAR and other AI safety programs. Expect posts on mechanistic interpretability, feature visualization, and what happens when you actually look inside the black box.</p> <h2 id="lets-connect">Let’s Connect</h2> <p>If you’re working on multi-agent systems, clinical AI, or interpretability—I’d love to hear from you. The best ideas come from unexpected conversations.</p> <p>You can reach me at <a href="mailto:quidwaiali@gmail.com">quidwaiali@gmail.com</a> or connect on <a href="https://linkedin.com/in/mujahid-ali-q">LinkedIn</a>.</p> <p>Let’s build something.</p>]]></content><author><name></name></author><category term="reflections"/><category term="open-source"/><category term="interpretability"/><summary type="html"><![CDATA[After years of keeping tools locked in production, I'm committing to open source.]]></summary></entry></feed>
