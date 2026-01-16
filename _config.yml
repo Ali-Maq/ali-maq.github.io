@@ -69,8 +69,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -92,8 +92,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Ali's Blog # blog_name will be displayed in your blog page
-blog_description: Technical deep-dives on AI/ML, genomics, and clinical systems
+blog_name: Notes from the Lab # blog_name will be displayed in your blog page
+blog_description: Field notes on AI/ML and clinical systems
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -108,16 +108,16 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
+  repo: Ali-Maq/ali-maq.github.io
+  repo_id: R_kgDOQ6zfyw
   category: Comments # name of the category under which discussions will be created
-  category_id: # leave empty or specify your category_id (see https://giscus.app/)
+  category_id: DIC_kwDOQ6zfy84C1BVb
   mapping: title # identify discussions by post title
-  strict: 1 # use strict identification mode
+  strict: 0 # use strict identification mode
   reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
   input_position: bottom # whether to display input form below (bottom) or above (top) the comments
-  dark_theme: dark # name of the dark color scheme (preferred works well with al-folio dark mode)
-  light_theme: light # name of the light color scheme (preferred works well with al-folio light mode)
+  dark_theme: preferred_color_scheme # name of the dark color scheme (preferred works well with al-folio dark mode)
+  light_theme: preferred_color_scheme # name of the light color scheme (preferred works well with al-folio light mode)
   emit_metadata: 0
   lang: en
 
@@ -263,8 +263,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["multi-agent-systems", "clinical-ai", "interpretability", "genomics", "open-source", "deep-learning"] # these tags will be displayed on the front page of your blog
-display_categories: ["research", "engineering", "reflections"] # these categories will be displayed on the front page of your blog
+display_tags: [] # these tags will be displayed on the front page of your blog
+display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

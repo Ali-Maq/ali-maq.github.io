@@ -4,7 +4,6 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  # Add your public repositories here in format: username/repo-name
-  # Example:
-  # - Ali-Maq/oncocite
-  # - Ali-Maq/clinical-rag
+  - Ali-Maq/ali-maq.github.io
+  - Ali-Maq/Final_Dataset_Civic
+  - Ali-Maq/agentXhackathon

@@ -2,10 +2,16 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Open source projects and contributions. More coming as I build in public.
 nav: true
 nav_order: 5
 ---
+
+<noscript>
+  <p class="text-muted small">Enable JavaScript to view GitHub stats cards.</p>
+</noscript>
+
+<p class="text-muted small mb-4">Stats powered by <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a>. Cards may take a moment to load.</p>
 
 {% if site.data.repositories.github_users %}
 
