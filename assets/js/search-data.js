@@ -45,28 +45,28 @@ ninja.data = [{
             window.location.href = "/teaching/";
           },
         },{id: "nav-cv",
-          title: "cv",
-          description: "Selected experience in AI systems, agents, model post-training, and evaluation.",
+          title: "CV",
+          description: "Experience, research publications, and technical leadership in AI systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-why-i-39-m-finally-building-in-public",
+        },{id: "post-why-i-m-finally-building-in-public",
         
-          title: "Why I&#39;m Finally Building in Public",
+          title: "Why I'm Finally Building in Public",
         
-        description: "After years of keeping tools locked in production, I&#39;m committing to open source.",
+        description: "After years of keeping tools locked in production, I'm committing to open source.",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2026/welcome/";
           
         },
-      },{id: "post-medgemma-1-5-google-39-s-open-medical-ai-just-got-serious",
+      },{id: "post-medgemma-1-5-google-s-open-medical-ai-just-got-serious",
         
-          title: "MedGemma 1.5: Google&#39;s Open Medical AI Just Got Serious",
+          title: "MedGemma 1.5: Google's Open Medical AI Just Got Serious",
         
-        description: "A deep dive into Google&#39;s MedGemma 1.5 4B - architecture, capabilities, benchmarks, and what it means for clinical AI development.",
+        description: "A deep dive into Google's MedGemma 1.5 4B - architecture, capabilities, benchmarks, and what it means for clinical AI development.",
         section: "Posts",
         handler: () => {
           
@@ -74,70 +74,78 @@ ninja.data = [{
           
         },
       },{id: "news-our-rag-chatbot-for-precision-medicine-of-multiple-myeloma-preprint-is-available-on-medrxiv",
-          title: 'Our RAG Chatbot for Precision Medicine of Multiple Myeloma preprint is available on...',
+          title: "Our RAG Chatbot for Precision Medicine of Multiple Myeloma preprint is available on...",
           description: "",
           section: "News",},{id: "news-our-oncodif-and-prime-conference-abstracts-appeared-in-the-ash-2025-supplement-of-blood-oncodif-prime",
-          title: 'Our OncoDIF and PRIME conference abstracts appeared in the ASH 2025 supplement of...',
+          title: "Our OncoDIF and PRIME conference abstracts appeared in the ASH 2025 supplement of...",
           description: "",
           section: "News",},{id: "news-the-oncocite-preprint-is-available-on-research-square-with-public-code-and-source-grounded-evaluation-read-the-paper",
-          title: 'The OncoCITE preprint is available on Research Square, with public code and source-grounded...',
+          title: "The OncoCITE preprint is available on Research Square, with public code and source-grounded...",
+          description: "",
+          section: "News",},{id: "news-built-aya-ai-for-small-businesses-at-nvidia-spark-hack-nyc-and-won-a-hackathon-award-the-prototype-connects-385-nyc-open-data-sources-to-local-agent-workflows",
+          title: "Built AYA — AI for Small Businesses at NVIDIA Spark Hack NYC and...",
           description: "",
           section: "News",},{id: "news-our-study-of-wearables-and-cytokine-profiling-after-car-t-therapy-was-published-in-jci-insight-read-the-article",
-          title: 'Our study of wearables and cytokine profiling after CAR-T therapy was published in...',
+          title: "Our study of wearables and cytokine profiling after CAR-T therapy was published in...",
           description: "",
-          section: "News",},{id: "projects-aya-agent-workflow-evaluation",
-          title: 'AYA — Agent Workflow Evaluation',
-          description: "A public controller and evaluation layer for software agents",
+          section: "News",},{id: "projects-aya-agent-evaluation-prototype",
+          title: "AYA — Agent Evaluation Prototype",
+          description: "2026 prototype · controller and evaluation layer for software agents",
           section: "Projects",handler: () => {
               window.location.href = "/projects/0_aya_agents/";
+            },},{id: "projects-aya-ai-for-small-businesses",
+          title: "AYA — AI for Small Businesses",
+          description: "NVIDIA Spark Hack NYC 2026 · Local agents grounded in 385 NYC Open Data sources",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/0_aya_small_business/";
             },},{id: "projects-oncocite",
-          title: 'OncoCITE',
+          title: "OncoCITE",
           description: "Multimodal agents for source-grounded scientific evidence extraction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_oncocite/";
             },},{id: "projects-prime-model",
-          title: 'PRIME Model',
+          title: "PRIME Model",
           description: "Collaborative relapse-risk modeling research; ASH 2025 abstract",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1b_prime/";
             },},{id: "projects-oncodif",
-          title: 'OncoDIF',
+          title: "OncoDIF",
           description: "Model adaptation and evaluation for genomic curation and natural-language SQL",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1c_oncodif/";
             },},{id: "projects-mmap-pipeline",
-          title: 'MMAP Pipeline',
+          title: "MMAP Pipeline",
           description: "GPU-accelerated genomics with Nextflow",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_mmap/";
             },},{id: "projects-clinical-rag-system",
-          title: 'Clinical RAG System',
+          title: "Clinical RAG System",
           description: "Retrieval, source attribution, and evaluation for oncology research",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_rag_clinical/";
-            },},{id: "projects-multi-omics-amp-single-cell-research",
-          title: 'Multi-Omics &amp;amp; Single-Cell Research',
+            },},{id: "projects-multi-omics-single-cell-research",
+          title: "Multi-Omics \u0026 Single-Cell Research",
           description: "Collaborative research on myeloma heterogeneity and immune signatures",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_multiomics/";
-            },},{id: "projects-car-t-wearables-amp-ml",
-          title: 'CAR-T Wearables &amp;amp; ML',
+            },},{id: "projects-car-t-wearables-ml",
+          title: "CAR-T Wearables \u0026 ML",
           description: "Data analysis for a published pilot study of cytokine release syndrome",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_cart/";
             },},{id: "projects-voice-asr-prototype",
-          title: 'Voice ASR Prototype',
+          title: "Voice ASR Prototype",
           description: "Domain adaptation for myeloma terminology",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6a_voice_agent/";
             },},{id: "projects-aya-education-venture-2023",
-          title: 'AYA — Education Venture (2023)',
+          title: "AYA — Education Venture (2023)",
           description: "Academic-video learning tools developed during NYU Summer Sprint",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_aya/";
             },},{id: "projects-carcrew",
-          title: 'Carcrew',
-          description: "Automotive Marketplace ($2M Series A, 10K+ DAU)",
+          title: "Carcrew",
+          description: "Automotive repair marketplace · founding-team technical leadership",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_carcrew/";
             },},{
