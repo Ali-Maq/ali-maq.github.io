@@ -98,6 +98,11 @@ ninja.data = [{
           description: "NVIDIA Spark Hack NYC 2026 · Local agents grounded in 385 NYC Open Data sources",
           section: "Projects",handler: () => {
               window.location.href = "/projects/0_aya_small_business/";
+            },},{id: "projects-shajam",
+          title: "SHAJAM",
+          description: "Clinical research agents with source and SQL traceability",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/0_shajam/";
             },},{id: "projects-oncocite",
           title: "OncoCITE",
           description: "Multimodal agents for source-grounded scientific evidence extraction",
@@ -115,7 +120,7 @@ ninja.data = [{
               window.location.href = "/projects/1c_oncodif/";
             },},{id: "projects-mmap-pipeline",
           title: "MMAP Pipeline",
-          description: "GPU-accelerated genomics with Nextflow",
+          description: "A 57-process Nextflow genomics pipeline; observed per-patient processing from 7 days to 3 hours (56×).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_mmap/";
             },},{id: "projects-clinical-rag-system",
