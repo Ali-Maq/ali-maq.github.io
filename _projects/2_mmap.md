@@ -1,7 +1,8 @@
 ---
 layout: page
 title: MMAP Pipeline
-description: GPU-accelerated genomics with Nextflow
+description: A 57-process Nextflow genomics pipeline; observed per-patient processing from 7 days to 3 hours (56×).
+og_image: https://ali-maq.github.io/assets/img/mmap_overview.png
 importance: 3
 category: engineering
 related_publications: false

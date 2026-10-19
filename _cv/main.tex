@@ -70,13 +70,14 @@
 
 \entry{Icahn School of Medicine at Mount Sinai}{New York, NY}{Computational Scientist, Oncological Sciences}{Dec 2024 -- Jun 2026}
 \begin{bullets}
-  \item \lead{OncoCITE:} Designed and implemented a multimodal, six-agent system with 22 MCP tools for extracting structured
-  oncology evidence from scientific papers. Linked records to source quotes and page references; used ontology resolution,
-  a critic loop, and checkpoints for inspection and resuming longer runs.
-  \item \lead{Evidence evaluation:} In 10 retrospective myeloma papers, recovered \textbf{21/25 source-verified reference items};
-  expert review confirmed \textbf{44/45 novel extractions} and identified discrepancies in 8/33 curated items. Five additional
-  prospective papers were evaluated separately. Published the \href{https://doi.org/10.21203/rs.3.rs-9160944/v1}{preprint}
-  and \href{https://github.com/Ali-Maq/civic-extraction-agent}{implementation}; under review at Nature Communications.
+  \item \lead{SHAJAM:} Designed and built a clinical research agent platform spanning records, notes, pathology, imaging,
+  and genomics, with answers traceable to source data and SQL. Connected a source warehouse covering \textbf{12M+ patients};
+  deployed a myeloma instance covering \textbf{11,030 patients}.
+  \item \lead{OncoCITE:} Built a multimodal, six-agent system with 22 MCP tools for oncology evidence extraction, source
+  verification, ontology resolution, and resumable runs. In 10 retrospective papers, recovered \textbf{21/25 reference items};
+  experts confirmed \textbf{44/45 novel extractions} and found discrepancies in 8/33 curated items. Five prospective papers
+  were evaluated separately. Public \href{https://doi.org/10.21203/rs.3.rs-9160944/v1}{preprint} and
+  \href{https://github.com/Ali-Maq/civic-extraction-agent}{code}; under review at Nature Communications.
   \item \lead{OncoDIF model adaptation:} Fine-tuned a Llama-3 model with LoRA on \textbf{21,000 synthetic question--SQL pairs}.
   Correct SQL improved from \textbf{55\% to 83.24\%} on the study's unseen questions. Work reported in an ASH 2025 conference
   abstract; evaluated terminology variation and flagged low-confidence outputs for review.
