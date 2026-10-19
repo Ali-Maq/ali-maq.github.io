@@ -100,7 +100,7 @@ ninja.data = [{
               window.location.href = "/projects/0_aya_small_business/";
             },},{id: "projects-shajam",
           title: "SHAJAM",
-          description: "Clinical research agents with source and SQL traceability",
+          description: "A deployed platform for physicians to analyze real patient data and conduct myeloma research",
           section: "Projects",handler: () => {
               window.location.href = "/projects/0_shajam/";
             },},{id: "projects-oncocite",
