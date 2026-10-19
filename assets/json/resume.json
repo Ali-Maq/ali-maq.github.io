@@ -39,11 +39,11 @@
       "startDate": "2024-12-01",
       "summary": "Designed and built AI systems for oncology research across agent architecture, model adaptation, evaluation, data workflows, and deployment, in collaboration with clinical and research teams.",
       "highlights": [
-        "SHAJAM: Conceived, designed and built a deployed clinical research platform used daily by seven Tisch Cancer Institute oncologists for IRB-approved research. Inventor; patent pending through Mount Sinai Innovation Partners. Analyses of real patient data have supported research outputs at IMS and ASH (Blood).",
+        "<a href=\"/projects/0_shajam/\">SHAJAM</a>: Conceived, designed and built a deployed clinical research platform used daily by seven Tisch Cancer Institute oncologists for IRB-approved research. Inventor; patent pending through Mount Sinai Innovation Partners. Analyses of real patient data have supported research outputs at IMS and ASH (Blood).",
         "SHAJAM data platform: Built a swappable relay for the 12M+ patient, 14B+ row source warehouse and deployed a curated myeloma dataset on AWS with DuckDB/S3: 11,030 patients, approximately 93M rows, 4.67M notes and 9.21M indexed passages.",
         "SHAJAM agents and analysis: Built question clarification, concept-first cohort selection, five MCP servers, Qdrant hybrid retrieval with GPU reranking, and Python statistical analysis. Results retain SQL and source evidence for independent verification.",
         "SHAJAM production: Terraform, EC2, S3, ALB/WAF, immutable builds, deployment health checks, rollback support, column-level PHI filtering and a 48-event audit taxonomy.",
-        "SHAJAM research workflows: 378-patient extramedullary-disease cohort, 345-patient BCMA CAR-T/bispecific cohort and immune-recovery analyses for 75 CAR-T patients. Live platform: https://shajam-mm.com/ (authorized sign-in required).",
+        "SHAJAM research workflows: 378-patient extramedullary-disease cohort, 345-patient BCMA CAR-T/bispecific cohort and immune-recovery analyses for 75 CAR-T patients. Live platform: <a href=\"https://shajam-mm.com/\">shajam-mm.com</a> (authorized sign-in required).",
         "Built OncoCITE with six agents and 22 MCP tools. In ten retrospective myeloma papers, recovered 21/25 source-verified reference items; expert review confirmed 44/45 novel extractions. Public preprint and code; under review at Nature Communications.",
         "For OncoDIF, fine-tuned a Llama-3 model with LoRA on 21,000 question–SQL pairs; correct SQL improved from 55% to 83.24% on the study’s unseen questions (ASH 2025 abstract).",
         "Built a 57-process Nextflow genomics pipeline, reducing the observed per-patient workflow from seven days to three hours (56×).",
