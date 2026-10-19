@@ -36,7 +36,7 @@ I’m a founding engineer at Kinetic Systems and Technologies, where I build hea
 
 [Experience and CV](/cv/) · [Research publications](/publications/) · [Email](mailto:quidwaiali@gmail.com)
 
-At **Icahn School of Medicine at Mount Sinai (2023–2026)**, I designed and built **[SHAJAM](/projects/0_shajam/)**, a clinical research platform that answers questions across records, notes, pathology, imaging and genomics, with results traceable to source data and SQL. Its source warehouse covered **12M+ patients**; the deployed myeloma instance covered **11,030 patients**.
+At **Icahn School of Medicine at Mount Sinai (2023–2026)**, I conceived, designed and built **[SHAJAM](/projects/0_shajam/)**, a deployed platform that **seven Tisch Cancer Institute oncologists use daily** for IRB-approved research. It turns questions about real patient data into cohorts, statistical analyses and figures, with SQL and source evidence researchers can inspect. I built the agent, retrieval and data systems and the AWS deployment for a myeloma dataset covering **11,030 patients**. Its analyses have supported research outputs at IMS and ASH (Blood). **Inventor; patent pending through Mount Sinai Innovation Partners.** [Live platform](https://shajam-mm.com/) (authorized sign-in required).
 
 I also built agents that extract evidence from papers, models that turn questions into SQL, and GPU pipelines for genomic analysis. Before that, I studied Computer Engineering at **NYU**, worked on AI-generated text detection with IBM Research, and built software in startup teams.
 

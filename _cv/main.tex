@@ -70,28 +70,30 @@
 
 \entry{Icahn School of Medicine at Mount Sinai}{New York, NY}{Computational Scientist, Oncological Sciences}{Dec 2024 -- Jun 2026}
 \begin{bullets}
-  \item \lead{SHAJAM:} Designed and built a clinical research agent platform spanning records, notes, pathology, imaging,
-  and genomics, with answers traceable to source data and SQL. Connected a source warehouse covering \textbf{12M+ patients};
-  deployed a myeloma instance covering \textbf{11,030 patients}.
+  \item \lead{SHAJAM (inventor; patent pending, Mount Sinai Innovation Partners):} Built the
+  \href{https://shajam-mm.com/}{live platform (sign-in required)} end to end. Used daily by \textbf{7 Tisch Cancer Institute oncologists}
+  for IRB-approved research; analyses of real patient data supported research outputs at IMS and ASH (\textit{Blood}).
+  \item \lead{SHAJAM architecture \& deployment:} Five MCP servers, concept-first cohort queries, Qdrant hybrid retrieval,
+  GPU reranking, Python statistics, question clarification and independent re-checking with source/SQL provenance.
+  Deployed on AWS with Terraform, DuckDB/S3, CI/CD, rollback support and audit tracing; dataset snapshot:
+  \textbf{11,030 patients, 4.67M notes, 9.21M passages}. Source warehouse: \textbf{12M+ patients, 14B+ rows}.
   \item \lead{OncoCITE:} Built a multimodal, six-agent system with 22 MCP tools for oncology evidence extraction, source
   verification, ontology resolution, and resumable runs. In 10 retrospective papers, recovered \textbf{21/25 reference items};
   experts confirmed \textbf{44/45 novel extractions} and found discrepancies in 8/33 curated items. Five prospective papers
   were evaluated separately. Public \href{https://doi.org/10.21203/rs.3.rs-9160944/v1}{preprint} and
   \href{https://github.com/Ali-Maq/civic-extraction-agent}{code}; under review at Nature Communications.
-  \item \lead{OncoDIF model adaptation:} Fine-tuned a Llama-3 model with LoRA on \textbf{21,000 synthetic question--SQL pairs}.
-  Correct SQL improved from \textbf{55\% to 83.24\%} on the study's unseen questions. Work reported in an ASH 2025 conference
-  abstract; evaluated terminology variation and flagged low-confidence outputs for review.
+  \item \lead{OncoDIF:} LoRA fine-tuning on \textbf{21,000 synthetic question--SQL pairs} improved correct SQL from
+  \textbf{55\% to 83.24\%} on unseen questions (ASH 2025 abstract); evaluated terminology variation and low-confidence outputs.
   \item \lead{GPU genomics:} Designed a 57-process Nextflow DSL2 pipeline for RNA-seq, whole-exome sequencing, and multi-omics
   integration using NVIDIA Parabricks and RAPIDS. Reduced the observed per-patient workflow from \textbf{7 days to 3 hours (56$\times$)}.
-  \item \lead{Collaborative research:} Contributed to myeloma studies on survival modeling, tumor/immune multi-omics integration,
-  and single-cell analysis, connecting computational workflows with scientific questions.
+  \item \lead{Collaborative research:} Contributed survival modeling, tumor/immune multi-omics and single-cell analyses.
 \end{bullets}
 
 \role{Associate Computational Scientist, Oncological Sciences}{Oct 2023 -- Dec 2024}
 \begin{bullets}
-  \item \lead{Clinical RAG:} Built a retrieval-augmented chatbot for myeloma research with source-linked responses and abstention
-  when retrieval lacked relevant evidence. On the reported oncologist-curated benchmark, achieved similar accuracy and relevance to GPT-3.5/GPT-4 at about\textbf{ one-tenth the cost}
-  (medRxiv preprint and IMS 2024 conference abstract).
+  \item \lead{Clinical RAG:} Built a myeloma research chatbot with source-linked answers and abstention when evidence was missing.
+  On an oncologist-curated benchmark, achieved similar accuracy/relevance to GPT-3.5/GPT-4 at about \textbf{one-tenth the cost}
+  (medRxiv preprint; IMS 2024 abstract).
   \item \lead{Wearables and ML:} Contributed data analysis and predictive modeling to a CAR-T pilot study with 25 evaluable patients,
   published in JCI Insight in 2026. Wearable monitoring detected 18/20 CRS episodes a median of about seven hours before
   nursing detection; this was a separate analysis from the predictive models.
@@ -106,8 +108,8 @@
 \begin{bullets}
   \item \textbf{Winner, NVIDIA Spark Hack NYC 2026.} Built an agent application for Manhattan small businesses, joining \textbf{385 NYC Open Data
   sources} into business-specific briefs for operational analysis. \href{https://github.com/Ali-Maq/aya-ai-for-small-businesses}{Public code and demo walkthrough}.
-  \item Integrated a React interface, Python data layer, and OpenClaw agent workspaces; dispatched risk, foot-traffic, and
-  competitor analysis to three parallel local model endpoints on the hackathon's NVIDIA GB10-based infrastructure.
+  \item Integrated React, Python and OpenClaw; ran risk, foot-traffic and competitor analysis across three local model endpoints
+  on NVIDIA GB10-based infrastructure.
   \item Invited by NVIDIA to present the project at its \href{https://www.linkedin.com/events/7462280238631403520/}{developer community winners livestream}, May 21, 2026.
 \end{bullets}
 
