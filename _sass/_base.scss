@@ -1499,6 +1499,89 @@ mjx-container[jax="CHTML"][display="true"] {
 }
 
 // Portfolio audit: readable hierarchy and keyboard focus.
+.about-page {
+  .post-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .desc {
+    font-size: 1.15rem;
+    color: var(--global-text-color-light);
+  }
+
+  .profile {
+    width: 26%;
+    max-width: 230px;
+    margin: 0.25rem 0 1.5rem 2rem;
+  }
+
+  .home-intro {
+    min-height: 250px;
+  }
+
+  .home-lead {
+    font-size: 1.45rem;
+    line-height: 1.45;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+  }
+
+  .home-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.2rem;
+    margin: 0 0 1.5rem;
+    font-weight: 500;
+  }
+
+  .home-intro h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 1.25rem 0 0.55rem;
+  }
+
+  .home-section {
+    clear: both;
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 1.6rem;
+    margin-top: 1.8rem;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0 0 1rem;
+    }
+
+    p,
+    li {
+      line-height: 1.65;
+      max-width: 76ch;
+    }
+
+    li {
+      margin-bottom: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .about-page {
+    .profile {
+      float: none !important;
+      width: 140px;
+      margin: 0 0 1.2rem;
+    }
+
+    .home-intro {
+      min-height: 0;
+    }
+
+    .home-lead {
+      font-size: 1.25rem;
+    }
+  }
+}
+
 .cv .cv-date {
   font-weight: 600;
   font-size: 0.9rem;
