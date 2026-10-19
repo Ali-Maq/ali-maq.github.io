@@ -1,0 +1,159 @@
+\documentclass[letterpaper,10pt]{article}
+
+% ---------- Packages ----------
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage[left=0.3in,right=0.3in,top=0.3in,bottom=0.3in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Mujahid Ali Quidwai - Public CV},
+  pdfauthor={Mujahid Ali Quidwai}
+}
+
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+% ---------- Section style ----------
+\titleformat{\section}{\scshape\large\bfseries}{}{0em}{}[\vspace{-2pt}\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+% ---------- Commands ----------
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}\vspace{-3pt}}
+\newcommand{\role}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textit{#1} & \textit{#2} \\
+  \end{tabularx}\vspace{-3pt}}
+\newenvironment{bullets}{\begin{itemize}[leftmargin=12pt,itemsep=1pt,parsep=0pt,topsep=1.5pt]}{\end{itemize}\vspace{3pt}}
+\newenvironment{subbullets}{\begin{itemize}[leftmargin=12pt,itemsep=0.5pt,parsep=0pt,topsep=1pt,label=$\circ$]}{\end{itemize}}
+\newcommand{\lead}[1]{\textbf{#1}}
+\newcommand{\centry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1}, \textit{#2} & #3 $\cdot$ \textit{#4} \\
+  \end{tabularx}\vspace{-3pt}}
+\newcommand{\tbd}[1]{\textcolor{red}{\textbf{[#1]}}}
+
+
+\begin{document}
+\begin{center}
+  {\LARGE \textbf{Mujahid Ali Quidwai}}\\[3pt]
+  \small AI Systems Engineer $\mid$ Agents, Model Post-Training \& Evaluation\\[3pt]
+  \href{mailto:quidwaiali@gmail.com}{quidwaiali@gmail.com} $\mid$
+  \href{https://www.linkedin.com/in/mujahid-ali-q/}{LinkedIn} $\mid$
+  \href{https://scholar.google.com/citations?user=rAAtZi0AAAAJ}{Google Scholar} $\mid$
+  \href{https://ali-maq.github.io/}{Portfolio} $\mid$
+  \href{https://github.com/Ali-Maq}{GitHub}
+\end{center}
+\vspace{-7pt}
+
+\section{Profile}
+I build AI systems that turn complex data into working tools. My experience spans agent orchestration, model adaptation,
+evaluation, and research software, with an emphasis on traceable outputs and comparisons against meaningful baselines.
+Healthcare has been a major application area; I also build and evaluate software-agent workflows in public.
+
+\section{Selected Experience}
+\entry{Icahn School of Medicine at Mount Sinai}{New York, NY}{Computational Scientist, Oncological Sciences}{Dec 2024 -- Jun 2026}
+\begin{bullets}
+  \item \lead{OncoCITE:} Designed and implemented a multimodal, six-agent system with 22 MCP tools for extracting structured
+  oncology evidence from scientific papers. Linked records to source quotes and page references; used ontology resolution,
+  a critic loop, and checkpoints for inspection and resuming longer runs.
+  \item \lead{Evidence evaluation:} In 10 retrospective myeloma papers, recovered \textbf{21/25 source-verified reference items};
+  expert review confirmed \textbf{44/45 novel extractions} and identified discrepancies in 8/33 curated items. Five additional
+  prospective papers were evaluated separately. Published the \href{https://doi.org/10.21203/rs.3.rs-9160944/v1}{preprint}
+  and \href{https://github.com/Ali-Maq/civic-extraction-agent}{implementation}; under review at Nature Communications.
+  \item \lead{OncoDIF model adaptation:} Fine-tuned a Llama-3 model with LoRA on \textbf{21,000 synthetic question--SQL pairs}.
+  Correct SQL improved from \textbf{55\% to 83.24\%} on the study's unseen questions. Work reported in an ASH 2025 conference
+  abstract; evaluated terminology variation and flagged low-confidence outputs for review.
+  \item \lead{GPU genomics:} Designed a 57-process Nextflow DSL2 pipeline for RNA-seq, whole-exome sequencing, and multi-omics
+  integration using NVIDIA Parabricks and RAPIDS. Reduced the observed per-patient workflow from \textbf{7 days to 3 hours (56$\times$)}.
+  \item \lead{Collaborative research:} Contributed to myeloma studies on survival modeling, tumor/immune multi-omics integration,
+  and single-cell analysis, connecting computational workflows with scientific questions.
+\end{bullets}
+
+\role{Associate Computational Scientist, Oncological Sciences}{Oct 2023 -- Dec 2024}
+\begin{bullets}
+  \item \lead{Clinical RAG:} Built a retrieval-augmented chatbot for myeloma research with source-linked responses and abstention
+  when retrieval lacked relevant evidence. Evaluated on an oncologist-curated benchmark against GPT-3.5/GPT-4 baselines
+  (medRxiv preprint and IMS 2024 conference abstract).
+  \item \lead{Wearables and ML:} Contributed data analysis and predictive modeling to a CAR-T pilot study with 25 evaluable patients,
+  published in JCI Insight in 2026. Wearable monitoring detected 18/20 CRS episodes a median of about seven hours before
+  nursing detection; this was a separate analysis from the predictive models.
+  \item \lead{Domain adaptation:} Fine-tuned Whisper Small for myeloma terminology recognition, with on-device use as the target.
+  \item \lead{Mentorship:} Mentored six Carnegie Mellon master's students on CAR-T monitoring research (Sep--Dec 2024), guiding
+  experiment design, baseline comparisons, and reporting in collaboration with the research team.
+\end{bullets}
+
+\section{Selected Public Project}
+\centry{AYA}{Agent workflow evaluation}{\href{https://github.com/Ali-Maq/aya-demo}{github.com/Ali-Maq/aya-demo}}{2026}
+\begin{bullets}
+  \item Developed the controller and evaluation layer on an Onyx fork, with independent acceptance checks, fixed SQL tasks,
+  and recorded tool calls. Published baseline comparisons, verification code, and negative results, including cross-episode
+  file access and possible benchmark contamination; credited upstream software and agent-generated components.
+\end{bullets}
+
+\section{Education}
+\centry{New York University, Tandon}{MS, Computer Engineering (Honors)}{New York, NY}{2021 -- 2023}
+\vspace{5pt}
+\centry{Dr. A.P.J. Abdul Kalam Technical University}{BTech, Computer Science}{India}{2012 -- 2016}
+
+\newpage
+\section{Earlier Experience}
+\centry{AYA, NYU Entrepreneurial Institute}{Entrepreneurial Fellow}{New York, NY}{Jul -- Oct 2023}
+\begin{bullets}
+  \item Developed an education product that turned academic video content into learning questions, connecting speech processing,
+  NLP, and product development. Selected for NYU Summer Sprint among 10 of 150 startups. Separate from the 2026 AYA agent project.
+\end{bullets}
+\centry{New York University}{Machine Learning Researcher \& Teaching Assistant}{New York, NY}{2021 -- 2023}
+\begin{bullets}
+  \item First-author BEA 2023 workshop paper with Chunhui Li and Parijat Dube on sentence- and document-level AI-text detection;
+  achieved \textbf{94\% document-level accuracy on HC3} using paraphrase-generated references and contrastive similarity.
+  \item Supported Data Structures \& Algorithms for Bioinformatics under Prof. Manpreet S. Katari for three semesters,
+  teaching and assisting more than 130 master's students through assignments, office hours, and project feedback.
+\end{bullets}
+\centry{Carcrew}{Technical Lead, Founding Team}{New Delhi, India}{Aug 2016 -- Sep 2017}
+\begin{bullets}
+  \item Built the automotive marketplace MVP with Django, Flask, and PostgreSQL; contributed to technical due diligence for
+  a \$2M Series A from TVS Group. The platform grew to more than 10,000 daily active users.
+\end{bullets}
+
+\section{Publications}
+\begin{bullets}
+  \item \href{https://doi.org/10.21203/rs.3.rs-9160944/v1}{\lead{OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology Knowledge Bases from Scientific Literature.}}
+  First author. Research Square preprint, 2026. Under review at Nature Communications.
+  \item \href{https://doi.org/10.1172/jci.insight.203988}{\lead{Detection of cytokine release syndrome using wearables and cytokine profiling following CAR-T therapy for myeloma.}}
+  Coauthor; data analysis. \textit{JCI Insight} 11(12):e203988, 2026.
+  \item \href{https://doi.org/10.1016/s2152-2650(26)03675-x}{\lead{Multi-Modal Single-Cell Profiling of MRD-Negative Patients Identifies Early Immune Signatures Predicting Prolonged Response or Relapse in Multiple Myeloma.}}
+  Coauthor. \textit{Clinical Lymphoma Myeloma and Leukemia} 26:S223, 2026. Conference abstract.
+  \item \href{https://doi.org/10.1182/blood-2025-2646}{\lead{OncoDIF: An auditable AI framework for automated genomic curation and natural-language clinical querying in hematologic malignancies.}}
+  First author. \textit{Blood} 146(Suppl 1):2646, 2025. ASH conference abstract.
+  \item \href{https://doi.org/10.1182/blood-2025-3996}{\lead{Development of predictive relapse indicators for myeloma T cell engagers (PRIME) model.}}
+  Coauthor. \textit{Blood} 146(Suppl 1):3996, 2025. ASH conference abstract.
+  \item \href{https://doi.org/10.1016/s2152-2650(25)03699-7}{\lead{Integrating Microenvironment with Tumor Multi-Omic using Unsupervised Machine Learning to Model Heterogeneity Refines Multiple Myeloma Subtypes and Reveals Immune-Based Clusters with Prognostic Impact.}}
+  Coauthor. \textit{Clinical Lymphoma Myeloma and Leukemia} 25:S181--S182, 2025. IMS conference abstract.
+  \item \href{https://doi.org/10.1101/2024.03.14.24304293}{\lead{A RAG Chatbot for Precision Medicine of Multiple Myeloma.}}
+  First author. medRxiv preprint, 2024.
+  \item \href{https://doi.org/10.1016/s2152-2650(24)02048-2}{\lead{Innovative AI-Driven Decision Support Tool for Multiple Myeloma Using Retrieval Augmented Generation.}}
+  First author. \textit{Clinical Lymphoma Myeloma and Leukemia} 24:S123--S124, 2024. IMS conference abstract.
+  \item \href{https://aclanthology.org/2023.bea-1.58/}{\lead{Beyond Black Box AI generated Plagiarism Detection: From Sentence to Document Level.}}
+  First author (published as Ali Quidwai), with Chunhui Li and Parijat Dube. BEA 2023 workshop, ACL Anthology, pp.727--735.
+\end{bullets}
+
+\section{Research and Engineering Focus}
+Agent orchestration and MCP tools; source-grounded extraction; model adaptation with LoRA; synthetic training data;
+baseline comparisons and failure analysis; retrieval-augmented generation; Python, SQL, and reproducible data workflows.
+
+\end{document}

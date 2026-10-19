@@ -1,59 +1,25 @@
-"lagana":
-  - firstname: ["Alessandro", "A."]
-    url: https://scholar.google.com/citations?user=LAGANA_ID
-
-"parekh":
-  - firstname: ["Samir", "S."]
-    url: https://scholar.google.com/citations?user=PAREKH_ID
-
-"dube":
-  - firstname: ["Parijat", "P."]
-    url: https://scholar.google.com/citations?user=DUBE_ID
-
-"thibaud":
-  - firstname: ["Santiago", "S."]
-    url: https://scholar.google.com/citations?user=THIBAUD_ID
-
-"richter":
-  - firstname: ["Joshua", "J."]
-    url: https://scholar.google.com/citations?user=RICHTER_ID
-
-"richard":
-  - firstname: ["Shambavi", "S."]
-    url: https://scholar.google.com/citations?user=RICHARD_ID
-
-"rajeeve":
-  - firstname: ["Sridevi", "S."]
-    url: https://scholar.google.com/citations?user=RAJEEVE_ID
-
-"tomalin":
-  - firstname: ["Lewis", "L.", "Lewis E."]
-    url: https://scholar.google.com/citations?user=TOMALIN_ID
-
-"wilkes":
-  - firstname: ["Matt", "M."]
-    url: https://scholar.google.com/citations?user=WILKES_ID
-
-"hamidi":
-  - firstname: ["Habib", "H."]
-    url: https://scholar.google.com/citations?user=HAMIDI_ID
-
-"bhasin":
-  - firstname: ["Manoj", "M.", "Manoj K."]
-    url: https://scholar.google.com/citations?user=BHASIN_ID
-
-"park":
-  - firstname: ["Alison", "A.", "Alison S."]
-    url: https://scholar.google.com/citations?user=PARK_ID
-
-"mulligan":
-  - firstname: ["George", "G.", "George J."]
-    url: https://scholar.google.com/citations?user=MULLIGAN_ID
-
-"vieira":
-  - firstname: ["Junia", "J.", "Junia Vieira"]
-    url: https://scholar.google.com/citations?user=VIEIRA_ID
-
-"mouhieddine":
-  - firstname: ["Tarek", "T."]
-    url: https://scholar.google.com/citations?user=MOUHIEDDINE_ID
+{
+  "laganà": [{ "firstname": ["Alessandro", "Alessandro", "A."], "url": "https://scholar.google.com/citations?user=XMDVIo0AAAAJ&hl=en" }],
+  "thibaud": [{ "firstname": ["Santiago", "Santiago", "S."], "url": "https://scholar.google.com/citations?user=Z_gtakgAAAAJ&hl=en" }],
+  "parekh": [{ "firstname": ["Samir", "Samir", "S."], "url": "https://scholar.google.com/citations?user=KQFdSq0AAAAJ&hl=en" }],
+  "dube": [{ "firstname": ["Parijat", "Parijat", "P."], "url": "https://scholar.google.com/citations?user=bOejjQUAAAAJ&hl=en" }],
+  "richter": [{ "firstname": ["Joshua", "Joshua", "J."], "url": "https://scholar.google.com/citations?user=f8i1Y8oAAAAJ&hl=en" }],
+  "richard": [{ "firstname": ["Shambavi", "Shambavi", "S."], "url": "https://scholar.google.com/citations?user=NpbybLwAAAAJ&hl=en" }],
+  "wilkes": [{ "firstname": ["Matt", "Matt", "M."], "url": "https://scholar.google.com/citations?user=OhOP2MUAAAAJ&hl=en" }],
+  "rajeeve": [{ "firstname": ["Sridevi", "Sridevi", "S."], "url": "https://scholar.google.com/citations?user=rGav9toAAAAJ&hl=en" }],
+  "tomalin":
+    [{ "firstname": ["Lewis E", "Lewis", "L.", "Lewis E.", "Lewis E"], "url": "https://scholar.google.com/citations?user=yYHe9ewAAAAJ&hl=en" }],
+  "zahradka": [{ "firstname": ["Nicole", "Nicole", "N."], "url": "https://scholar.google.com/citations?user=8zECTOcAAAAJ&hl=en" }],
+  "santos": [{ "firstname": ["Junia Vieira dos", "Junia", "J."], "url": "https://scholar.google.com/citations?user=vnzXQRwAAAAJ&hl=en" }],
+  "vieira": [{ "firstname": ["Junia", "J."], "url": "https://scholar.google.com/citations?user=vnzXQRwAAAAJ&hl=en" }],
+  "vieira dos santos": [{ "firstname": ["Junia", "J."], "url": "https://scholar.google.com/citations?user=vnzXQRwAAAAJ&hl=en" }],
+  "shasha": [{ "firstname": ["Dennis", "Dennis", "D."], "url": "https://scholar.google.com/citations?user=UH3qseUAAAAJ&hl=en" }],
+  "bhasin": [{ "firstname": ["Manoj K.", "Manoj", "M."], "url": "https://scholar.google.com/citations?user=o6Mm3S4AAAAJ&hl=en" }],
+  "hamidi": [{ "firstname": ["Habib", "Habib", "H."], "url": "https://scholar.google.com/citations?user=nvhPakYAAAAJ&hl=en" }],
+  "mulligan": [{ "firstname": ["George J", "George", "G."], "url": "https://scholar.google.com/citations?user=t33EkMkAAAAJ&hl=en" }],
+  "park":
+    [{ "firstname": ["Alison S", "Alison", "A.", "Alison S.", "Alison S"], "url": "https://scholar.google.com/citations?user=dVduBUMAAAAJ&hl=en" }],
+  "gnjatic": [{ "firstname": ["Sacha", "Sacha", "S."], "url": "https://scholar.google.com/citations?user=Kg4P7hwAAAAJ&hl=en" }],
+  "mouhieddine": [{ "firstname": ["Tarek", "Tarek", "T."], "url": "https://scholar.google.com/citations?user=zb7R6h4AAAAJ&hl=en" }],
+  "lagana": [{ "firstname": ["Alessandro", "Alessandro", "A."], "url": "https://scholar.google.com/citations?user=XMDVIo0AAAAJ&hl=en" }],
+}

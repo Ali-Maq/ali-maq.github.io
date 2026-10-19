@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI Systems Engineer @ <a href='https://icahn.mssm.edu/'>Icahn School of Medicine at Mount Sinai</a>
+subtitle: AI Systems Engineer · Agents, Model Post-Training & Evaluation
 
 profile:
   align: right
@@ -24,12 +24,16 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I've always been drawn to building things that matter. After finishing my Computer Science degree in India, I joined **Carcrew** as Technical Lead—a scrappy automotive startup where I learned what it takes to ship products that real people use. I built the product and team from scratch—learning what it takes to ship fast and iterate faster. It was exhilarating, but something kept nagging at me: I wanted to go deeper.
+I build AI systems that turn complex data into working tools. My work spans **agents, model post-training, and evaluation**, with an emphasis on making results traceable and testing where systems fail.
 
-That pull brought me to **NYU Tandon** for my MS in Computer Engineering, where everything changed. Working with **Prof. Dennis Shasha**, **Prof. Manpreet Katari**, and **Prof. Parijat Dube** (IBM Research) opened my eyes to the beauty of deep learning—not just as a tool, but as a way of thinking about problems. As an **Entrepreneurial Fellow**, I conceptualized and built **AYA**, an EdTech startup that got selected for NYU's Entrepreneurial Sprint (10 of 150). I published my first paper at **ACL 2023 (BEA Workshop)** on detecting AI-generated text. Graduated with Honors. But more importantly, I found my calling: using AI to solve problems where the stakes are real.
+At **Mount Sinai (2023–2026)**, I built systems for oncology research: agents that extract evidence from papers, models that turn questions into SQL, and GPU pipelines for genomic analysis. Before that, I studied Computer Engineering at **NYU**, worked on AI-generated text detection with IBM Research, and built software in startup teams.
 
-Now I'm at **Mount Sinai**, building AI systems for precision oncology. The work is hard—when a clinician uses your tool to make treatment decisions, there's no margin for error. I've built multi-agent systems that extract genomic evidence (**OncoCITE**: 97.8% precision, submitted to Nature Cancer), GPU pipelines that turned week-long workflows into 3-hour runs (92.3% time reduction), and fine-tuned voice ASR for clinical terminology. Research includes a widely cited clinical RAG framework (**35+ citations**) and first-author work at **ACL (BEA Workshop)**.
+Three projects show how I work:
 
-Outside of work, I'm focused on two things: **open source** and **interpretability**. I've built a lot of tools that stayed locked in production—this year I'm changing that. This site is where I'll document what I've learned and release projects for others to use and improve. I'm also deep in the weeds of **model interpretability**, participating in **SPAR** and other AI safety programs. After years of making models work, I want to understand *why* they work—and when they don't.
+- **[OncoCITE](/projects/1_oncocite/):** a multimodal, six-agent system that reads scientific papers and checks extracted evidence against its sources. The [2026 preprint](https://doi.org/10.21203/rs.3.rs-9160944/v1) and [implementation](https://github.com/Ali-Maq/civic-extraction-agent) are public.
+- **[OncoDIF](/projects/1c_oncodif/):** domain adaptation and evaluation for natural-language querying. LoRA fine-tuning improved correct SQL from 55% to 83.24% on the study's unseen questions.
+- **[AYA — agent workflow evaluation](/projects/0_aya_agents/):** a public project exploring software agents with independent acceptance checks, recorded tool calls, baseline comparisons, and documented failure cases.
 
-If you're curious about multi-agent systems, clinical AI, or interpretability—I'd love to connect. The best ideas come from unexpected conversations.
+I like working across the whole system: framing the problem, building the data and model workflow, evaluating it, and making it usable. Healthcare has been a major application area; the engineering questions I care about extend to other domains.
+
+You can explore my [projects](/projects/), read my [publications](/publications/), or find the code on [GitHub](https://github.com/Ali-Maq). For conversations about AI systems and research engineering, reach me at [quidwaiali@gmail.com](mailto:quidwaiali@gmail.com).

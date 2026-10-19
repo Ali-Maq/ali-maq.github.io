@@ -1,75 +1,24 @@
 ---
 layout: page
 title: Clinical RAG System
-description: Production RAG for Multiple Myeloma (medRxiv, 36 citations)
+description: Retrieval, source attribution, and evaluation for oncology research
 img: assets/img/project_rag.png
 importance: 3
 category: research
-related_publications: true
+related_publications: false
 ---
 
-## Overview
+## What I built
 
-A production Retrieval-Augmented Generation (RAG) system for clinical decision support in multiple myeloma.
+I built a retrieval-augmented chatbot for multiple myeloma research. The system retrieves relevant literature, generates answers with source links, and declines questions when retrieval does not provide enough relevant evidence.
 
-## The Problem
+## Evaluation approach
 
-Clinicians needed rapid access to the latest multiple myeloma research across thousands of documents while ensuring accuracy and traceability for clinical decision-making.
+We evaluated answers on an oncologist-curated benchmark and compared them with GPT-3.5 and GPT-4 baselines. The work focused on accuracy, relevance, source traceability, and cost. It did not establish improved patient outcomes.
 
-## Technical Architecture
+## Publications
 
-### RAG Pipeline
-Built using **LangGraph** for sophisticated orchestration:
+- [medRxiv preprint, 2024](https://doi.org/10.1101/2024.03.14.24304293)
+- [IMS 2024 conference abstract](<https://doi.org/10.1016/s2152-2650(24)02048-2>)
 
-- **Embeddings**: BAAI/bge-large-en-v1.5 (state-of-the-art dense retrieval)
-- **Generation**: Mistral-7B (optimized for clinical text)
-- **Vector Store**: Amazon OpenSearch with hybrid search
-- **Reranking**: Cohere reranker for precision
-
-### Document Processing
-- Processed **5,000+ clinical documents**
-- Multi-format support (PDFs, clinical notes, research papers)
-- Chunk optimization for clinical context preservation
-
-## Results
-
-| Metric | Value |
-|--------|-------|
-| Clinical Effectiveness | **88%** |
-| Documents Processed | 5,000+ |
-| Active Clinical Users | 2-3 oncologists |
-| Citations | **36** (medRxiv) |
-
-## Key Features
-
-- **Source Attribution**: Every response linked to source documents
-- **Clinical Guardrails**: Input/output guardrails prevent hallucination
-- **Query Understanding**: Handles complex clinical terminology
-- **Hybrid Search**: Combines semantic and keyword matching
-
-## Related Publications
-
-This project resulted in the following publications:
-
-- {% cite quidwai2024rag %} - Preprint with 36 citations
-- {% cite quidwai2024decision %} - Conference abstract at IMS 2024
-
-## Impact
-
-First prototype of an AI-powered clinical decision support system deployed in active clinical use at a major cancer center, demonstrating the feasibility of production RAG systems in healthcare.
-
-## Technical Stack
-
-```
-Orchestration:  LangGraph
-Embeddings:     BAAI/bge-large-en-v1.5
-Generation:     Mistral-7B
-Vector Store:   Amazon OpenSearch
-Reranking:      Cohere
-Deployment:     AWS (Bedrock, EC2)
-Monitoring:     MLflow
-```
-
-## Links
-
-- [medRxiv Paper](https://doi.org/10.1101/2024.03.14.24304293)
+{% cite quidwai2024rag quidwai2024decision %}

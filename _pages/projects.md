@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Production AI systems for clinical oncology, multi-agent architectures, and GPU-accelerated genomics pipelines.
+description: Agents, model adaptation, evaluation, and research software.
 nav: true
 nav_order: 2
-display_categories: [research, engineering, startup]
+display_categories: [engineering, research, startup]
 horizontal: false
 ---
 

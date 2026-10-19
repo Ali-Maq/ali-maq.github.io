@@ -200,6 +200,12 @@
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
+      {% if entry.scholar_url %}
+        <a href="{{ entry.scholar_url }}" class="btn btn-sm z-depth-0" role="button">Scholar</a>
+      {% endif %}
+      {% if entry.project_url %}
+        <a href="{{ entry.project_url | relative_url }}" class="btn btn-sm z-depth-0" role="button">Project</a>
+      {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
@@ -381,7 +387,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 

@@ -2,16 +2,9 @@
   "basics": {
     "name": "Mujahid Ali Quidwai",
     "label": "AI Systems Engineer",
-    "image": "",
     "email": "quidwaiali@gmail.com",
-    "phone": "(224) 322-6446",
     "url": "https://ali-maq.github.io/",
-    "summary": "AI Systems Engineer with production deployments in clinical oncology — systems actively used by Mount Sinai oncologists for treatment decisions. Architect of multi-agent genomic curation (OncoCITE: 97.8% precision; Submitted to Nature Cancer) and GPU-accelerated pipelines (92.3% time reduction enabling same-day tumor board). Full-stack AI expertise from fine-tuning 7B-235B models to inference optimization on H100/A100 infrastructure. Research includes a widely cited clinical RAG framework (35+ citations) and first-author work at ACL (BEA Workshop).",
-    "location": {
-      "city": "New York",
-      "countryCode": "US",
-      "region": "NY"
-    },
+    "summary": "I build AI systems that turn complex data into working tools, with a focus on agents, model post-training, and evaluation. My experience spans scientific research and software product development.",
     "profiles": [
       {
         "network": "GitHub",
@@ -20,8 +13,8 @@
       },
       {
         "network": "LinkedIn",
-        "username": "ali-quidwai",
-        "url": "https://linkedin.com/in/ali-quidwai"
+        "username": "mujahid-ali-q",
+        "url": "https://www.linkedin.com/in/mujahid-ali-q/"
       },
       {
         "network": "Google Scholar",
@@ -37,13 +30,14 @@
       "location": "New York, NY",
       "url": "https://icahn.mssm.edu/",
       "startDate": "2024-12-01",
-      "summary": "Leading AI/ML initiatives for precision oncology including multi-agent genomic systems, GPU-accelerated pipelines, and predictive modeling.",
+      "summary": "Built agents, adapted language models, and developed data workflows for oncology research.",
       "highlights": [
-        "OncoCITE (Submitted to Nature Cancer): Performed systematic EDA on CIViC database (11,312 evidence items, 3,083 publications) quantifying 12 structural bottlenecks. Architected 6-agent solution (Claude Agent SDK, 22 MCP tools) with state serialization and vision-based PDF extraction. Validated on 15-paper corpus: 84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors (n=108). Published at ASH 2025.",
-        "PRIME Model (Blood 2025): Co-developed predictive model for patients receiving BCMA- and GPRC5D-targeting T-cell engagers. Integrated clinical, genomic, and treatment response data. Presented at ASH 2025.",
-        "MMAP Pipeline (56x Speedup): Engineered production pipeline on Minerva HPC using NVIDIA H100 GPUs with Parabricks and RAPIDS. Orchestrated 57 computational processes across 3 integrated workflows. Achieved 95.8% processing time reduction (7 days → 3 hours), enabling 8 patients/day throughput. Enabled same-day molecular tumor board readiness.",
-        "Multi-Omics Integration (Clin Lymph Myel Leuk 2025): Applied modified IntegrAO GNN to MMRF COMPASS cohort (N=655). Achieved 50% classification granularity improvement and 258% high-risk detection enhancement. Identified 18 distinct vulnerability profiles with 94% actionable targets."
-      ]
+        "Designed and implemented OncoCITE: six agents, 22 MCP tools, source attribution, a critic loop, and expert-adjudicated evaluation. Public preprint and code are available.",
+        "For OncoDIF, fine-tuned a Llama-3 model with LoRA on 21,000 question–SQL pairs; correct SQL improved from 55% to 83.24% on the study’s unseen questions (ASH 2025 abstract).",
+        "Built a 57-process Nextflow genomics pipeline, reducing the observed per-patient workflow from seven days to three hours (56×).",
+        "Contributed to collaborative myeloma research in survival modeling, multi-omics integration, and single-cell analysis."
+      ],
+      "endDate": "2026-06"
     },
     {
       "name": "Icahn School of Medicine at Mount Sinai",
@@ -52,13 +46,12 @@
       "url": "https://icahn.mssm.edu/",
       "startDate": "2023-10-01",
       "endDate": "2024-12-01",
-      "summary": "Developed production AI systems for clinical decision support, inference optimization, and CAR-T therapy monitoring.",
+      "summary": "Developed retrieval and machine-learning workflows for scientific research.",
       "highlights": [
-        "LLM Inference Optimization: Designed model-routing gateway for cost-performance optimization. Implemented KV cache optimization and prompt compression. Achieved 60-80% inference cost reduction using vLLM batch inference on HPC. Multi-cloud deployment across AWS and Azure OpenAI.",
-        "RAG System (medRxiv, 36 citations): Led development using LangGraph orchestration, BAAI/bge-large-en-v1.5 embeddings, and Mistral-7B. Processed 5,000+ documents achieving 88% clinical effectiveness. First prototype deployed and used by 2-3 clinicians for multiple myeloma research. Presented at IMS 2024.",
-        "CAR-T Adverse Event Prediction (Information MDPI, under review): Led ML development for early CRS detection (N=25 patients). Engineered time-lagged features from wearables and 92-biomarker Olink panel. Achieved 84.62% accuracy (ide-cel), 80.62% (cilta-cel) within 6-hour prediction window. SHAP analysis identified IFN-gamma as cross-product predictor.",
-        "Voice ASR Prototype for Clinical Terminology: Fine-tuned OpenAI Whisper Small for on-device deployment. Trained on recorded patient voice dataset to reduce word error rate for multiple myeloma terminology. Prototype demonstrated improved recognition accuracy for domain-specific medical terms.",
-        "Graduate Student Mentorship: Mentored 6 Carnegie Mellon University graduate students on CAR-T therapy monitoring capstone project. Guided experiment design, baselining, and reporting."
+        "Built a myeloma RAG chatbot with source-linked responses and abstention when retrieval lacked relevant evidence; evaluated against language-model baselines (medRxiv 2024; IMS 2024).",
+        "Contributed data analysis and ML work to a wearables/cytokine pilot study after CAR-T therapy (JCI Insight 2026).",
+        "Fine-tuned Whisper Small for myeloma terminology recognition with on-device use as the target.",
+        "Mentored six Carnegie Mellon graduate students on experiment design, baseline comparisons, and reporting for a CAR-T monitoring capstone."
       ]
     },
     {
@@ -67,10 +60,10 @@
       "location": "New York, NY",
       "startDate": "2023-07-01",
       "endDate": "2023-10-01",
-      "summary": "Conceptualized and built AYA, leveraging RL-optimized NLP model to extract and formulate questions from academic video content.",
+      "summary": "Developed an education product that turned academic video content into learning questions.",
       "highlights": [
-        "Selected for Summer Sprint at NYU's Entrepreneurial Institute (10 selected from 150 startups)",
-        "Developed end-to-end product combining speech processing, natural language generation, and educational content analysis"
+        "Selected for NYU Entrepreneurial Institute Summer Sprint, among 10 of 150 startups.",
+        "Connected speech processing, NLP, and product development."
       ]
     },
     {
@@ -82,8 +75,8 @@
       "endDate": "2023-05-01",
       "summary": "Research on AI-generated text detection with IBM Research; taught bioinformatics algorithms.",
       "highlights": [
-        "AI-Generated Plagiarism Detection (ACL 2023, BEA Workshop): Developed novel multi-faceted NLP approach with Prof. Parijat Dube (IBM Research) achieving 94% accuracy in human-AI text classification. Method employs contrastive loss and LLM-generated paraphrases. [31 citations]",
-        "Teaching Assistant - Data Structures & Algorithms for Bioinformatics: Supported graduate course under Prof. Manpreet S. Katari for 3 semesters, teaching 130+ master's students. Created assignments bridging CS fundamentals with bioinformatics applications."
+        "First-author BEA 2023 workshop paper with Chunhui Li and Parijat Dube: 94% document-level AI-text detection accuracy on HC3.",
+        "Teaching assistant for Data Structures & Algorithms for Bioinformatics over three semesters, supporting 130+ master’s students."
       ]
     },
     {
@@ -130,18 +123,6 @@
   ],
   "awards": [
     {
-      "title": "ASH 2025 Presentations",
-      "date": "2025-01-01",
-      "awarder": "American Society of Hematology",
-      "summary": "Two presentations: OncoCITE multi-agent system and PRIME predictive model"
-    },
-    {
-      "title": "IMS 2024 Presentation",
-      "date": "2024-03-01",
-      "awarder": "International Myeloma Society",
-      "summary": "RAG for Multiple Myeloma clinical decision support"
-    },
-    {
       "title": "Lambda Labs Research Grant",
       "date": "2024-01-01",
       "awarder": "Lambda Labs",
@@ -162,173 +143,81 @@
   ],
   "publications": [
     {
-      "name": "OncoCITE: AI-Driven Genomic Evidence Curation",
-      "publisher": "Nature Cancer",
-      "releaseDate": "2025-01-01",
-      "summary": "Multi-agent system for automated genomic evidence extraction. 6-agent solution with 22 MCP tools, 84% ground truth recovery, 97.8% novel discovery precision. Submitted to Nature Cancer."
+      "name": "PA-312 Multi-Modal Single-Cell Profiling of MRD-Negative Patients Identifies Early Immune Signatures Predicting Prolonged Response or Relapse in Multiple Myeloma",
+      "publisher": "Clinical Lymphoma Myeloma and Leukemia",
+      "releaseDate": "2026-09",
+      "url": "https://doi.org/10.1016/s2152-2650(26)03675-x",
+      "summary": "Conference abstract. Collaborative single-cell study of immune signatures associated with response duration or relapse in MRD-negative myeloma patients."
+    },
+    {
+      "name": "Detection of cytokine release syndrome using wearables and cytokine profiling following CAR-T therapy for myeloma",
+      "publisher": "JCI Insight",
+      "releaseDate": "2026-05-05",
+      "url": "https://doi.org/10.1172/jci.insight.203988",
+      "summary": "Journal article. Prospective pilot with 30 enrolled and 25 evaluable patients. Wearables detected 18/20 CRS episodes with a median lead of about seven hours. Contribution: data analysis."
+    },
+    {
+      "name": "OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology Knowledge Bases from Scientific Literature",
+      "publisher": "Research Square",
+      "releaseDate": "2026-03-31",
+      "url": "https://doi.org/10.21203/rs.3.rs-9160944/v1",
+      "summary": "Preprint; under review at Nature Communications. Six agents and 22 MCP tools extract and check oncology evidence against source publications. In 10 retrospective papers, expert review confirmed 44/45 novel extractions and the system recovered 21/25 reference items."
+    },
+    {
+      "name": "Oncodif: An auditable AI framework for automated genomic curation and natural-language clinical querying in hematologic malignancies",
+      "publisher": "Blood",
+      "releaseDate": "2025-11-03",
+      "url": "https://doi.org/10.1182/blood-2025-2646",
+      "summary": "ASH 2025 conference abstract. LoRA adaptation of a Llama-3 model on 21,000 synthetic question–SQL pairs improved correct SQL on unseen questions from 55% to 83.24%."
+    },
+    {
+      "name": "Development of predictive relapse indicators for myeloma T cell engagers (PRIME) model for myeloma patients receiving BCMA- and GPRC5D-targeting T cell engagers",
+      "publisher": "Blood",
+      "releaseDate": "2025-11-03",
+      "url": "https://doi.org/10.1182/blood-2025-3996",
+      "summary": "ASH 2025 conference abstract. Collaborative research on predictive relapse indicators for patients receiving BCMA- and GPRC5D-targeting T-cell engagers."
+    },
+    {
+      "name": "Integrating Microenvironment with Tumor Multi-Omic using Unsupervised Machine Learning to Model Heterogeneity Refines Multiple Myeloma Subtypes and Reveals Immune-Based Clusters with Prognostic Impact",
+      "publisher": "Clinical Lymphoma Myeloma and Leukemia",
+      "releaseDate": "2025-09",
+      "url": "https://doi.org/10.1016/s2152-2650(25)03699-7",
+      "summary": "IMS 2025 conference abstract. Collaborative unsupervised learning study combining tumor multi-omic and microenvironment data to investigate myeloma heterogeneity."
+    },
+    {
+      "name": "P-145 Innovative AI-Driven Decision Support Tool for Multiple Myeloma Using Retrieval Augmented Generation",
+      "publisher": "Clinical Lymphoma Myeloma and Leukemia",
+      "releaseDate": "2024-09",
+      "url": "https://doi.org/10.1016/s2152-2650(24)02048-2",
+      "summary": "IMS 2024 conference abstract. Conference abstract describing retrieval-augmented research support for multiple myeloma."
     },
     {
       "name": "A RAG Chatbot for Precision Medicine of Multiple Myeloma",
       "publisher": "medRxiv",
-      "releaseDate": "2024-03-01",
+      "releaseDate": "2024-03-18",
       "url": "https://doi.org/10.1101/2024.03.14.24304293",
-      "summary": "Production RAG system using LangGraph, BAAI/bge-large-en-v1.5 embeddings, and Mistral-7B achieving 88% effectiveness. 36 citations."
+      "summary": "Preprint. A retrieval-augmented chatbot for myeloma research, evaluated on an oncologist-curated benchmark with source attribution and abstention when relevant evidence is missing."
     },
     {
-      "name": "Beyond Black Box AI-Generated Plagiarism Detection: From Sentence to Document Level",
-      "publisher": "ACL BEA 2023",
-      "releaseDate": "2023-07-01",
+      "name": "Beyond Black Box AI generated Plagiarism Detection: From Sentence to Document Level",
+      "publisher": "Proceedings of the 18th Workshop on Innovative Use of NLP for Building Educational Applications (BEA 2023)",
+      "releaseDate": "2023",
       "url": "https://doi.org/10.18653/v1/2023.bea-1.58",
-      "summary": "Novel multi-faceted NLP approach achieving 94% accuracy in human-AI text classification. IBM Research collaboration. 31 citations."
-    },
-    {
-      "name": "Early Detection of CRS Using Wearable Devices Following CAR-T Therapy",
-      "publisher": "Information (MDPI)",
-      "releaseDate": "2024-01-01",
-      "summary": "ML for early CRS detection (N=25). 84.62% accuracy within 6-hour window. SHAP analysis identified IFN-gamma as predictor. Under review."
-    },
-    {
-      "name": "PRIME: Predictive Relapse Indicators for Myeloma T-Cell Engagers",
-      "publisher": "Blood",
-      "releaseDate": "2025-01-01",
-      "summary": "Predictive model for BCMA- and GPRC5D-targeting T-cell engagers. ASH 2025."
-    },
-    {
-      "name": "Multi-Omics Integration for Multiple Myeloma Subtypes",
-      "publisher": "Clinical Lymphoma Myeloma Leukemia",
-      "releaseDate": "2025-01-01",
-      "summary": "IntegrAO GNN on MMRF COMPASS cohort (N=655). 50% classification granularity improvement, 258% high-risk detection enhancement."
+      "summary": "Peer-reviewed workshop paper. Sentence- and document-level AI-text detection using paraphrase-generated references and contrastive cosine similarity; 94% document-level accuracy on HC3."
     }
   ],
   "skills": [
     {
-      "name": "LLM Fine-tuning & Training",
-      "level": "Expert",
-      "icon": "fa-solid fa-brain",
-      "keywords": [
-        "Fine-tuned 7B-235B parameter models (Qwen, Qwen VL, Mistral, MedGemma, Whisper Large)",
-        "LoRA/QLoRA adapters",
-        "Full fine-tuning",
-        "DPO (Direct Preference Optimization)",
-        "Hugging Face Transformers",
-        "Multi-GPU training (H100 NVL, A100)",
-        "LSF/SLURM scheduling",
-        "Singularity containers"
-      ]
+      "name": "Agents and evaluation",
+      "keywords": ["Tool orchestration", "MCP", "Source attribution", "Acceptance checks", "Baseline comparisons", "Failure analysis"]
     },
     {
-      "name": "Multi-Agent Systems & Orchestration",
-      "level": "Expert",
-      "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Claude Agent SDK",
-        "OpenAI Agent SDK",
-        "LangChain",
-        "LangGraph",
-        "DSPy",
-        "6-agent collaborative architectures",
-        "State Serialization",
-        "Pause-Resume Workflows",
-        "Deterministic Replay",
-        "MCP (22 tools)",
-        "Vector databases (OpenSearch, FAISS)",
-        "Hallucination prevention"
-      ]
+      "name": "Model adaptation",
+      "keywords": ["LoRA fine-tuning", "Synthetic training data", "Task-specific evaluation", "Retrieval-augmented generation"]
     },
     {
-      "name": "Model Serving & Deployment",
-      "level": "Expert",
-      "icon": "fa-solid fa-server",
-      "keywords": [
-        "vLLM",
-        "SGLang",
-        "TGI",
-        "TensorRT-LLM",
-        "Ollama",
-        "PagedAttention",
-        "KV Cache Optimization",
-        "Context Minimization",
-        "<100ms TTFT",
-        "FP8/INT4 quantization",
-        "Model routing for cost optimization"
-      ]
-    },
-    {
-      "name": "Multimodal AI",
-      "level": "Advanced",
-      "icon": "fa-solid fa-microphone",
-      "keywords": [
-        "Vision (Claude 3.5, Qwen-VL, DeepSeek-OCR)",
-        "PDF-to-Image Processing (300 DPI)",
-        "Whisper Fine-tuning",
-        "Voice Activity Detection (Silero VAD)",
-        "Piper TTS",
-        "Domain-specific ASR"
-      ]
-    },
-    {
-      "name": "Distributed Computing",
-      "level": "Expert",
-      "icon": "fa-solid fa-microchip",
-      "keywords": [
-        "NVIDIA H100 NVL/A100/A10",
-        "196-GPU cluster (Minerva)",
-        "Multi-GPU (144 GPU-hours)",
-        "CUDA",
-        "HPC (LSF/SLURM)",
-        "NVLink",
-        "Parabricks",
-        "cuDF/cuML",
-        "Spark"
-      ]
-    },
-    {
-      "name": "Genomics & Bioinformatics",
-      "level": "Expert",
-      "icon": "fa-solid fa-dna",
-      "keywords": [
-        "Nextflow",
-        "NGS Processing (STAR, BWA-MEM, fastp, GATK)",
-        "Variant Calling (Mutect2, Lancet, HaplotypeCaller)",
-        "CNV Analysis (FACETS, BEDTools)",
-        "Gene Fusion (Arriba)",
-        "Annotation (VEP, SnpEff, Funcotator)",
-        "Scanpy",
-        "Geneformer",
-        "IntegrAO",
-        "RNA-seq",
-        "WES"
-      ]
-    },
-    {
-      "name": "Clinical AI & Healthcare",
-      "level": "Expert",
-      "icon": "fa-solid fa-hospital",
-      "keywords": [
-        "Precision Medicine",
-        "Clinical NLP",
-        "Variant Annotation",
-        "EHR Integration (EPIC)",
-        "REDCap",
-        "HIPAA Compliance",
-        "Regulatory validation (CAP/CLIA)",
-        "Clinical Decision Support"
-      ]
-    },
-    {
-      "name": "Cloud & DevOps",
-      "level": "Advanced",
-      "icon": "fa-solid fa-cloud",
-      "keywords": [
-        "AWS (Bedrock, EC2, OpenSearch, SageMaker)",
-        "Azure OpenAI",
-        "Multi-cloud deployment",
-        "Docker",
-        "Singularity",
-        "Kubernetes",
-        "MLflow",
-        "CI/CD"
-      ]
+      "name": "Research software",
+      "keywords": ["Python", "SQL", "Nextflow", "GPU data processing", "Django", "Flask"]
     }
   ],
   "languages": [
@@ -350,65 +239,25 @@
   ],
   "interests": [
     {
-      "name": "Clinical AI Systems",
-      "icon": "fa-solid fa-microscope",
-      "keywords": [
-        "Precision Oncology",
-        "Multi-Agent AI Systems",
-        "Real-Time Clinical Decision Support",
-        "Genomics",
-        "Drug Discovery"
-      ]
+      "name": "AI systems and research engineering",
+      "keywords": ["Agent workflows", "Model post-training", "Evaluation", "Multimodal evidence", "Reproducible software"]
     }
   ],
   "projects": [
     {
-      "name": "OncoCITE - Multi-Agent Genomic Evidence Extraction",
-      "summary": "6-agent system using Claude Agent SDK with 22 MCP tools for automated genomic curation from scientific literature. Submitted to Nature Cancer.",
+      "name": "AYA — Agent Workflow Evaluation (2026)",
+      "summary": "Public controller and evaluation layer on an Onyx fork.",
       "highlights": [
-        "Systematic EDA on CIViC database (11,312 evidence items, 3,083 publications)",
-        "84% ground truth recovery, 97.8% novel discovery precision, 0% critical errors",
-        "State serialization enabling pause-resume for long-running extractions",
-        "Identified 24.2% curation errors in expert-curated databases"
+        "Independent acceptance checks, fixed SQL tasks, and recorded tool calls.",
+        "Published baseline comparisons, verification code, and negative results; upstream and generated components are credited."
       ],
-      "startDate": "2024-12-01",
-      "url": ""
+      "url": "https://github.com/Ali-Maq/aya-demo"
     },
     {
-      "name": "MMAP - GPU-Accelerated Genomic Pipeline (56x Speedup)",
-      "summary": "Production pipeline on Minerva HPC using NVIDIA H100 GPUs with Parabricks, RAPIDS, and DeepVariant.",
-      "highlights": [
-        "95.8% processing time reduction (7 days → 3 hours, 56x speedup)",
-        "57 computational processes across 3 integrated workflows",
-        "8 patients/day throughput vs. 0.14 previously",
-        "Enabled same-day molecular tumor board readiness"
-      ],
-      "startDate": "2024-12-01",
-      "url": ""
-    },
-    {
-      "name": "Voice ASR Prototype for Clinical Terminology",
-      "summary": "Fine-tuned ASR for multiple myeloma medical terminology recognition.",
-      "highlights": [
-        "Fine-tuned Whisper Small for on-device deployment",
-        "Trained on patient voice recordings",
-        "Reduced word error rate for myeloma terminology",
-        "Improved recognition of domain-specific medical terms"
-      ],
-      "startDate": "2024-01-01",
-      "url": ""
-    },
-    {
-      "name": "Clinical RAG System",
-      "summary": "Production RAG system for multiple myeloma clinical decision support. Deployed and used by clinicians.",
-      "highlights": [
-        "LangGraph orchestration with Mistral-7B",
-        "5,000+ documents processed",
-        "88% clinical effectiveness",
-        "36 citations on medRxiv"
-      ],
-      "startDate": "2023-10-01",
-      "url": "https://doi.org/10.1101/2024.03.14.24304293"
+      "name": "OncoCITE",
+      "summary": "Six agents and 22 MCP tools extract and check oncology evidence against source publications. In 10 retrospective papers, expert review confirmed 44/45 novel extractions and the system recovered 21/25 reference items.",
+      "highlights": ["Public Research Square preprint (2026); under review at Nature Communications."],
+      "url": "https://github.com/Ali-Maq/civic-extraction-agent"
     }
   ],
   "references": [],
@@ -421,21 +270,8 @@
       "endDate": "2024-12-01",
       "summary": "Mentored 6 Carnegie Mellon University graduate students on CAR-T therapy monitoring capstone project.",
       "highlights": [
-        "Guided experiment design, baselining, and reporting for CRS prediction using wearables and cytokines",
-        "Coordinated with clinical team on project scope and deliverables",
-        "Students developed ML models for early adverse event detection"
-      ]
-    },
-    {
-      "organization": "Icahn School of Medicine at Mount Sinai",
-      "position": "AI/ML Integration Mentor",
-      "location": "New York, NY",
-      "startDate": "2023-10-01",
-      "summary": "Mentored team members on AI/ML integration workflows and best practices.",
-      "highlights": [
-        "Trained clinical research staff on RAG system usage and interpretation",
-        "Developed documentation and tutorials for AI tools in clinical workflows",
-        "Guided junior team members on production ML system development"
+        "Guided experiment design, baseline comparisons, and reporting.",
+        "Coordinated capstone scope and deliverables with the research team."
       ]
     },
     {

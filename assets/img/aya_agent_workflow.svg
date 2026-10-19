@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">AYA agent workflow evaluation</title>
+  <desc id="desc">A task passes to an agent, then an independent check, producing a result and an inspectable trace.</desc>
+  <rect width="1200" height="650" fill="#f4f0f8"/>
+  <text x="72" y="115" fill="#45145b" font-family="Arial,sans-serif" font-size="62" font-weight="700">AYA</text>
+  <text x="72" y="170" fill="#413748" font-family="Arial,sans-serif" font-size="32">Agent workflow evaluation</text>
+  <g stroke="#75458d" stroke-width="4" fill="#fff">
+    <rect x="70" y="260" width="290" height="140" rx="18"/>
+    <rect x="455" y="260" width="290" height="140" rx="18"/>
+    <rect x="840" y="260" width="290" height="140" rx="18"/>
+    <path d="M365 330 H440 M750 330 H825" fill="none"/>
+    <path d="m422 316 18 14-18 14 m385-28 18 14-18 14" fill="none"/>
+  </g>
+  <g fill="#34203e" font-family="Arial,sans-serif" font-size="34" text-anchor="middle">
+    <text x="215" y="343">Task</text><text x="600" y="343">Agent</text>
+    <text x="985" y="323">Independent</text><text x="985" y="366">check</text>
+  </g>
+  <text x="72" y="520" fill="#413748" font-family="Arial,sans-serif" font-size="29">Tool traces · Baselines · Failure analysis</text>
+</svg>

@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-01-10 09:00:00-0500
+date: 2026-03-31 09:00:00-0500
 inline: true
 related_posts: false
 ---
 
-**OncoDIF** published in Blood 2025 - An auditable AI framework for automated genomic curation achieving 97.8% precision in novel discovery with 0% critical errors.
+The **OncoCITE** preprint is available on Research Square, with public code and source-grounded evaluation. [Read the paper](https://doi.org/10.21203/rs.3.rs-9160944/v1).

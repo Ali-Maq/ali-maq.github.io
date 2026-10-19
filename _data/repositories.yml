@@ -1,9 +1,25 @@
-github_users:
-  - Ali-Maq
-
-repo_description_lines_max: 2
-
-github_repos:
-  - Ali-Maq/ali-maq.github.io
-  - Ali-Maq/Final_Dataset_Civic
-  - Ali-Maq/agentXhackathon
+{
+  "projects":
+    [
+      {
+        "name": "AYA \u2014 Agent Workflow Evaluation",
+        "repo": "Ali-Maq/aya-demo",
+        "description": "Controller, acceptance checks, baseline comparisons, and documented limitations.",
+      },
+      {
+        "name": "OncoCITE",
+        "repo": "Ali-Maq/civic-extraction-agent",
+        "description": "Public implementation accompanying the 2026 multimodal evidence-extraction preprint.",
+      },
+      {
+        "name": "OncoCITE \u2014 LangChain/LangGraph",
+        "repo": "Ali-Maq/oncocite-langchain",
+        "description": "Companion implementation of the source-grounded extraction workflow.",
+      },
+      {
+        "name": "Portfolio",
+        "repo": "Ali-Maq/ali-maq.github.io",
+        "description": "Source for this website, including project descriptions and publication metadata.",
+      },
+    ],
+}

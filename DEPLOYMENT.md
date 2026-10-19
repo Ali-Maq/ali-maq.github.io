@@ -1,5 +1,14 @@
 # Deployment & Maintenance Guide
 
+## Content refresh — October 2026
+
+The public narrative now covers AI systems, agents, model post-training, and evaluation. Mount Sinai is prior experience ending June 2026. Keep private employer/client work out of this public repository.
+
+Publication metadata lives in `_bibliography/papers.bib`; `_data/publication_map.json` records the nine canonical DOI-to-Scholar mappings and their project pages. Older OncoCITE and wearables versions are not additional publications. The historical examples below predate this refresh and are not authoritative publication metadata.
+
+The CV uses `assets/json/resume.json` with `_data/cv.yml` as its fallback. Its downloadable PDF is `assets/pdf/Mujahid_Ali_Quidwai_Resume_2Page.pdf`; editable source is `_cv/main.tex`. The older Word files are excluded from Jekyll output. Keep publication status and dates synchronized across these sources.
+
+
 > **Note:** This file is processed by Jekyll. Do not use curly braces with percent signs (Liquid tags) directly in this file - they will cause build errors. When documenting Jekyll syntax, describe it in plain text instead.
 
 **Site:** https://ali-maq.github.io

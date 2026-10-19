@@ -1,0 +1,110 @@
+[
+  {
+    "key": "quidwai2025oncocite",
+    "title": "OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology Knowledge Bases from Scientific Literature",
+    "authors": "Quidwai, Mujahid and Thibaud, Santiago and Shasha, Dennis and Jagannath, Sundar and Parekh, Samir and Laganà, Alessandro",
+    "year": 2026,
+    "type": "Preprint; under review at Nature Communications",
+    "doi": "10.21203/rs.3.rs-9160944/v1",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:Tyk-4Ss8FVUC",
+    "project_url": "/projects/1_oncocite/",
+    "metadata_source": "https://api.crossref.org/works/10.21203/rs.3.rs-9160944/v1",
+    "verified_on": "2026-10-19"
+  },
+  {
+    "key": "quidwai2025oncodif",
+    "title": "Oncodif: An auditable AI framework for automated genomic curation and natural-language clinical querying in hematologic malignancies",
+    "authors": "Quidwai, Mujahid and Thibaud, Santiago and Jagannath, Sundar and Parekh, Samir and Lagana, Alessandro",
+    "year": 2025,
+    "type": "ASH 2025 conference abstract",
+    "doi": "10.1182/blood-2025-2646",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:IjCSPb-OGe4C",
+    "project_url": "/projects/1c_oncodif/",
+    "metadata_source": "https://api.crossref.org/works/10.1182/blood-2025-2646",
+    "verified_on": "2026-10-19"
+  },
+  {
+    "key": "quidwai2024rag",
+    "title": "A RAG Chatbot for Precision Medicine of Multiple Myeloma",
+    "authors": "Quidwai, Mujahid Ali and Lagana, Alessandro",
+    "year": 2024,
+    "type": "Preprint",
+    "doi": "10.1101/2024.03.14.24304293",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:d1gkVwhDpl0C",
+    "project_url": "/projects/3_rag_clinical/",
+    "metadata_source": "https://api.crossref.org/works/10.1101/2024.03.14.24304293",
+    "verified_on": "2026-10-19"
+  },
+  {
+    "key": "quidwai2023plagiarism",
+    "title": "Beyond Black Box AI generated Plagiarism Detection: From Sentence to Document Level",
+    "authors": "Quidwai, Ali and Li, Chunhui and Dube, Parijat",
+    "year": 2023,
+    "type": "Peer-reviewed workshop paper",
+    "doi": "10.18653/v1/2023.bea-1.58",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:u5HHmVD_uO8C",
+    "project_url": "",
+    "metadata_source": "https://api.crossref.org/works/10.18653/v1/2023.bea-1.58",
+    "verified_on": "2026-10-19"
+  },
+  {
+    "key": "rajeeve2024crs",
+    "title": "Detection of cytokine release syndrome using wearables and cytokine profiling following CAR-T therapy for myeloma",
+    "authors": "Rajeeve, Sridevi and Wilkes, Matt and Zahradka, Nicole and Tomalin, Lewis and Quidwai, Mujahid and Pan, Darren and Calafat, Nicholas J. and Cusack, Martin and Aleman, Adolfo and Serebryakova, Kseniya and Kappes, Katerina and Jackson, Hayley and Agte, Sarita and Thibaud, Santiago and Sanchez, Larysa and Richard, Shambavi and Richter, Joshua and Rodriguez, Cesar and Cho, Hearn Jay and Chari, Ajai and Jagannath, Sundar and Laganà, Alessandro and Rossi, Adriana C. and Parekh, Samir",
+    "year": 2026,
+    "type": "Journal article",
+    "doi": "10.1172/jci.insight.203988",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:W7OEmFMy1HYC",
+    "project_url": "/projects/5_cart/",
+    "metadata_source": "https://api.crossref.org/works/10.1172/jci.insight.203988",
+    "verified_on": "2026-10-19"
+  },
+  {
+    "key": "mouhieddine2025prime",
+    "title": "Development of predictive relapse indicators for myeloma T cell engagers (PRIME) model for myeloma patients receiving BCMA- and GPRC5D-targeting T cell engagers",
+    "authors": "Mouhieddine, Tarek and Sheng, Tianxiang and Vieira, Junia and Aleman, Adolfo and Avigan, Zachary and Siegel, Ariel and Quidwai, Mujahid and Lu, Jordan and Rattu, Mohammad and Thibaud, Santiago and Kaur, Gurbakhash and Richard, Shambavi and Rossi, Adriana and Cho, Hearn and Lagana, Alessandro and Stclair, Samantha and Abdel Azim, Dalia and Sanchez, Larysa and Richter, Joshua and Rodriguez Valdes, Cesar and Salib, Christian and Moshier, Erin and Parekh, Samir and Jagannath, Sundar",
+    "year": 2025,
+    "type": "ASH 2025 conference abstract",
+    "doi": "10.1182/blood-2025-3996",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:zYLM7Y9cAGgC",
+    "project_url": "/projects/1b_prime/",
+    "metadata_source": "https://api.crossref.org/works/10.1182/blood-2025-3996",
+    "verified_on": "2026-10-19"
+  },
+  {
+    "key": "quidwai2024decision",
+    "title": "P-145 Innovative AI-Driven Decision Support Tool for Multiple Myeloma Using Retrieval Augmented Generation",
+    "authors": "Quidwai, Mujahid and Thibaud, Santiago and Richter, Joshua and Jagannath, Sundar and Parekh, Samir and Lagana, Alessandro",
+    "year": 2024,
+    "type": "IMS 2024 conference abstract",
+    "doi": "10.1016/s2152-2650(24)02048-2",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:9yKSN-GCB0IC",
+    "project_url": "/projects/3_rag_clinical/",
+    "metadata_source": "https://api.crossref.org/works/10.1016/s2152-2650(24)02048-2",
+    "verified_on": "2026-10-19"
+  },
+  {
+    "key": "hamidi2025multiomics",
+    "title": "Integrating Microenvironment with Tumor Multi-Omic using Unsupervised Machine Learning to Model Heterogeneity Refines Multiple Myeloma Subtypes and Reveals Immune-Based Clusters with Prognostic Impact",
+    "authors": "Hamidi, Habib and Park, Alison and Dos Santos, Junia Vieira and Diaz, Giovanni and Okholm, Trine Line and Quidwai, Mujahid and Gonzalez-Kozlova, Edgar and Hatzi, Katerina and Pilcher, William and Ferguson, Katherine and Mantrala, Sowmitri Karthikeya and Acharya, Chaitanya and Gnjatic, Sacha and Bhasin, Manoj and Cho, Hearn Jay and Mulligan, George and Parekh, Samir and Lagana, Alessandro",
+    "year": 2025,
+    "type": "IMS 2025 conference abstract",
+    "doi": "10.1016/s2152-2650(25)03699-7",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:UeHWp8X0CEIC",
+    "project_url": "/projects/4_multiomics/",
+    "metadata_source": "https://api.crossref.org/works/10.1016/s2152-2650(25)03699-7",
+    "verified_on": "2026-10-19"
+  },
+  {
+    "key": "park2026singlecell",
+    "title": "PA-312 Multi-Modal Single-Cell Profiling of MRD-Negative Patients Identifies Early Immune Signatures Predicting Prolonged Response or Relapse in Multiple Myeloma",
+    "authors": "Park, Alison S. and Avigan, Zachary M. and Andrlova, Hana and Quidwai, Mujahid and Jagannath, Sundar and Parekh, Samir and Lagana, Alessandro",
+    "year": 2026,
+    "type": "Conference abstract",
+    "doi": "10.1016/s2152-2650(26)03675-x",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rAAtZi0AAAAJ&sortby=pubdate&citation_for_view=rAAtZi0AAAAJ:YsMSGLbcyi4C",
+    "project_url": "/projects/4_multiomics/",
+    "metadata_source": "https://api.crossref.org/works/10.1016/s2152-2650(26)03675-x",
+    "verified_on": "2026-10-19"
+  }
+]

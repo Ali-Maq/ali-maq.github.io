@@ -1,63 +1,19 @@
 ---
 layout: page
-title: AYA
-description: AI-Powered Educational Content Extraction (NYU Sprint Top 7%)
+title: AYA — Education Venture (2023)
+description: Academic-video learning tools developed during NYU Summer Sprint
 img: assets/img/AYA.png
-importance: 7
+importance: 1
 category: startup
+related_publications: false
 ---
 
-## Overview
+## What I built
 
-AYA was an EdTech startup leveraging **reinforcement learning-optimized NLP** to extract and formulate questions from academic video content. Selected for **NYU Entrepreneurial Institute Summer Sprint** (Top 7% - 10 of 150 startups).
+As an **Entrepreneurial Fellow at NYU (July–October 2023)**, I developed AYA, an education product that turned academic video content into learning questions. The work connected speech processing, NLP, question generation, and product development.
 
-## The Problem
+AYA was selected for the NYU Entrepreneurial Institute Summer Sprint, among **10 selected from 150 startups**.
 
-Students struggle to efficiently learn from video lectures:
-- **Passive consumption**: Videos don't encourage active recall
-- **Note-taking burden**: Manual extraction is time-consuming
-- **Question generation**: Creating practice questions requires expertise
+The experience shaped how I build AI tools: start with the user's workflow, make a usable prototype, and test whether the output helps them complete the task.
 
-## Technical Approach
-
-### Speech Processing Pipeline
-- Automatic speech recognition for lecture transcription
-- Speaker diarization for multi-speaker content
-- Timestamp alignment for navigation
-
-### NLP for Question Generation
-- **Reinforcement learning** optimization for question quality
-- Entity and concept extraction from transcripts
-- Difficulty calibration based on content complexity
-
-### Educational Design
-- Bloom's taxonomy-aligned question types
-- Spaced repetition integration
-- Progress tracking and analytics
-
-## Achievements
-
-| Milestone | Detail |
-|-----------|--------|
-| Selection | **NYU Entrepreneurial Institute Summer Sprint** |
-| Ranking | **Top 10 of 150 startups** (Top 7%) |
-| Duration | Jul 2023 - Oct 2023 |
-
-## Technical Stack
-
-```
-Speech:     Whisper, pyannote
-NLP:        Transformers, RL-based generation
-Backend:    Python, FastAPI
-Frontend:   React
-```
-
-## Lessons Learned
-
-- **Product-market fit**: Educational tools require deep integration with existing workflows
-- **User research**: Teachers and students have different needs
-- **Startup execution**: Speed of iteration matters more than initial feature set
-
-## Impact on Career
-
-The experience building AYA informed my approach to production AI systems at Mount Sinai—understanding that technical capability must align with user needs and deployment constraints. The speech processing and NLP skills directly transferred to clinical voice agent development.
+This venture is separate from [AYA — Agent Workflow Evaluation (2026)](/projects/0_aya_agents/).
