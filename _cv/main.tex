@@ -1,9 +1,9 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 % ---------- Packages ----------
 \usepackage[T1]{fontenc}
 \usepackage{charter}
-\usepackage[left=0.3in,right=0.3in,top=0.3in,bottom=0.3in]{geometry}
+\usepackage[left=0.25in,right=0.25in,top=0.20in,bottom=0.25in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -15,18 +15,19 @@
 \fi
 
 \hypersetup{
-  pdftitle={Mujahid Ali Quidwai - Public CV},
+  pdftitle={Mujahid Ali Quidwai - Public Resume},
   pdfauthor={Mujahid Ali Quidwai}
 }
 
 \pagestyle{empty}
+\linespread{1.12}
 \raggedright
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0pt}
 
 % ---------- Section style ----------
 \titleformat{\section}{\scshape\large\bfseries}{}{0em}{}[\vspace{-2pt}\titlerule]
-\titlespacing*{\section}{0pt}{5pt}{2pt}
+\titlespacing*{\section}{0pt}{7pt}{2pt}
 
 % ---------- Commands ----------
 \newcommand{\entry}[4]{%
@@ -38,7 +39,7 @@
   \begin{tabularx}{\textwidth}{@{}X r@{}}
     \textit{#1} & \textit{#2} \\
   \end{tabularx}\vspace{-3pt}}
-\newenvironment{bullets}{\begin{itemize}[leftmargin=12pt,itemsep=1pt,parsep=0pt,topsep=1.5pt]}{\end{itemize}\vspace{3pt}}
+\newenvironment{bullets}{\begin{itemize}[leftmargin=12pt,itemsep=2pt,parsep=0pt,topsep=1.5pt]}{\end{itemize}\vspace{3pt}}
 \newenvironment{subbullets}{\begin{itemize}[leftmargin=12pt,itemsep=0.5pt,parsep=0pt,topsep=1pt,label=$\circ$]}{\end{itemize}}
 \newcommand{\lead}[1]{\textbf{#1}}
 \newcommand{\centry}[4]{%
@@ -47,8 +48,8 @@
   \end{tabularx}\vspace{-3pt}}
 \newcommand{\tbd}[1]{\textcolor{red}{\textbf{[#1]}}}
 
-
 \begin{document}
+\fontsize{11.2}{13.6}\selectfont
 \begin{center}
   {\LARGE \textbf{Mujahid Ali Quidwai}}\\[3pt]
   \small AI Systems Engineer $\mid$ Agents, Model Post-Training \& Evaluation\\[3pt]
@@ -60,12 +61,13 @@
 \end{center}
 \vspace{-7pt}
 
-\section{Profile}
-I build AI systems that turn complex data into working tools. My experience spans agent orchestration, model adaptation,
-evaluation, and research software, with an emphasis on traceable outputs and comparisons against meaningful baselines.
-Healthcare has been a major application area; I also build and evaluate software-agent workflows in public.
+\section{Experience}
+\entry{Kinetic Systems and Technologies}{San Francisco, CA}{Member of Technical Staff (Founding Engineer)}{Jun 2026 -- Present}
+\begin{bullets}
+  \item I build healthcare RL environments and agent evaluations. My work includes reconstructing software from workflow videos
+        and designing RL tasks in the Harbor framework that test how agents interact with it.
+\end{bullets}
 
-\section{Selected Experience}
 \entry{Icahn School of Medicine at Mount Sinai}{New York, NY}{Computational Scientist, Oncological Sciences}{Dec 2024 -- Jun 2026}
 \begin{bullets}
   \item \lead{OncoCITE:} Designed and implemented a multimodal, six-agent system with 22 MCP tools for extracting structured
@@ -87,73 +89,109 @@ Healthcare has been a major application area; I also build and evaluate software
 \role{Associate Computational Scientist, Oncological Sciences}{Oct 2023 -- Dec 2024}
 \begin{bullets}
   \item \lead{Clinical RAG:} Built a retrieval-augmented chatbot for myeloma research with source-linked responses and abstention
-  when retrieval lacked relevant evidence. Evaluated on an oncologist-curated benchmark against GPT-3.5/GPT-4 baselines
+  when retrieval lacked relevant evidence. On the reported oncologist-curated benchmark, achieved similar accuracy and relevance to GPT-3.5/GPT-4 at about\textbf{ one-tenth the cost}
   (medRxiv preprint and IMS 2024 conference abstract).
   \item \lead{Wearables and ML:} Contributed data analysis and predictive modeling to a CAR-T pilot study with 25 evaluable patients,
   published in JCI Insight in 2026. Wearable monitoring detected 18/20 CRS episodes a median of about seven hours before
   nursing detection; this was a separate analysis from the predictive models.
   \item \lead{Domain adaptation:} Fine-tuned Whisper Small for myeloma terminology recognition, with on-device use as the target.
+  \item \lead{Research software:} Built Python REST APIs connecting Epic EHR, REDCap laboratory data, and Nextflow genomics outputs.
   \item \lead{Mentorship:} Mentored six Carnegie Mellon master's students on CAR-T monitoring research (Sep--Dec 2024), guiding
   experiment design, baseline comparisons, and reporting in collaboration with the research team.
 \end{bullets}
 
-\section{Selected Public Project}
-\centry{AYA}{Agent workflow evaluation}{\href{https://github.com/Ali-Maq/aya-demo}{github.com/Ali-Maq/aya-demo}}{2026}
+\section{Independent Engineering \& Recognition}
+\centry{AYA -- AI for Small Businesses}{NVIDIA Spark Hack NYC}{New York, NY}{Apr 2026}
 \begin{bullets}
-  \item Developed the controller and evaluation layer on an Onyx fork, with independent acceptance checks, fixed SQL tasks,
-  and recorded tool calls. Published baseline comparisons, verification code, and negative results, including cross-episode
-  file access and possible benchmark contamination; credited upstream software and agent-generated components.
+  \item \textbf{Winner, NVIDIA Spark Hack NYC 2026.} Built an agent application for Manhattan small businesses, joining \textbf{385 NYC Open Data
+  sources} into business-specific briefs for operational analysis. \href{https://github.com/Ali-Maq/aya-ai-for-small-businesses}{Public code and demo walkthrough}.
+  \item Integrated a React interface, Python data layer, and OpenClaw agent workspaces; dispatched risk, foot-traffic, and
+  competitor analysis to three parallel local model endpoints on the hackathon's NVIDIA GB10-based infrastructure.
+  \item Invited by NVIDIA to present the project at its \href{https://www.linkedin.com/events/7462280238631403520/}{developer community winners livestream}, May 21, 2026.
 \end{bullets}
-
-\section{Education}
-\centry{New York University, Tandon}{MS, Computer Engineering (Honors)}{New York, NY}{2021 -- 2023}
-\vspace{5pt}
-\centry{Dr. A.P.J. Abdul Kalam Technical University}{BTech, Computer Science}{India}{2012 -- 2016}
 
 \newpage
+\linespread{1}\fontsize{11.2}{13}\selectfont
 \section{Earlier Experience}
-\centry{AYA, NYU Entrepreneurial Institute}{Entrepreneurial Fellow}{New York, NY}{Jul -- Oct 2023}
+% ---------- AYA ----------
+\centry{AYA (NYU Entrepreneurial Institute)}{Entrepreneurial Fellow}{New York, NY}{Jul 2023 -- Oct 2023}
 \begin{bullets}
-  \item Developed an education product that turned academic video content into learning questions, connecting speech processing,
-  NLP, and product development. Selected for NYU Summer Sprint among 10 of 150 startups. Separate from the 2026 AYA agent project.
-\end{bullets}
-\centry{New York University}{Machine Learning Researcher \& Teaching Assistant}{New York, NY}{2021 -- 2023}
-\begin{bullets}
-  \item First-author BEA 2023 workshop paper with Chunhui Li and Parijat Dube on sentence- and document-level AI-text detection;
-  achieved \textbf{94\% document-level accuracy on HC3} using paraphrase-generated references and contrastive similarity.
-  \item Supported Data Structures \& Algorithms for Bioinformatics under Prof. Manpreet S. Katari for three semesters,
-  teaching and assisting more than 130 master's students through assignments, office hours, and project feedback.
-\end{bullets}
-\centry{Carcrew}{Technical Lead, Founding Team}{New Delhi, India}{Aug 2016 -- Sep 2017}
-\begin{bullets}
-  \item Built the automotive marketplace MVP with Django, Flask, and PostgreSQL; contributed to technical due diligence for
-  a \$2M Series A from TVS Group. The platform grew to more than 10,000 daily active users.
+  \item Built AYA, an end-to-end product using a reinforcement-learning-optimized NLP model to extract and generate questions from
+        academic video content; selected for NYU's Summer Sprint (10 of 150 startups).
 \end{bullets}
 
-\section{Publications}
+% ---------- Growsquares ----------
+\centry{Growsquares}{Summer Data Scientist}{New York, NY}{Jun 2022 -- Aug 2022}
 \begin{bullets}
-  \item \href{https://doi.org/10.21203/rs.3.rs-9160944/v1}{\lead{OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology Knowledge Bases from Scientific Literature.}}
-  First author. Research Square preprint, 2026. Under review at Nature Communications.
-  \item \href{https://doi.org/10.1172/jci.insight.203988}{\lead{Detection of cytokine release syndrome using wearables and cytokine profiling following CAR-T therapy for myeloma.}}
-  Coauthor; data analysis. \textit{JCI Insight} 11(12):e203988, 2026.
-  \item \href{https://doi.org/10.1016/s2152-2650(26)03675-x}{\lead{Multi-Modal Single-Cell Profiling of MRD-Negative Patients Identifies Early Immune Signatures Predicting Prolonged Response or Relapse in Multiple Myeloma.}}
-  Coauthor. \textit{Clinical Lymphoma Myeloma and Leukemia} 26:S223, 2026. Conference abstract.
-  \item \href{https://doi.org/10.1182/blood-2025-2646}{\lead{OncoDIF: An auditable AI framework for automated genomic curation and natural-language clinical querying in hematologic malignancies.}}
+  \item Developed a dynamic growth model predicting plant harvest rates from genotype, weather, and environment;
+        built an ETL pipeline from agricultural journals and weather stations; led the front end for 100+ pilot customers.
+\end{bullets}
+
+% ---------- Carcrew ----------
+\centry{Carcrew Technology}{Technical Lead (Founding Team)}{New Delhi, India}{Aug 2016 -- Sep 2017}
+\begin{bullets}
+  \item Built the MVP of an automotive repair marketplace (Django, Flask, PostgreSQL) and led 3 developers on a backend holding 10M+
+        part-inventory records; scaled to 10,000+ daily active users and supported technical due diligence for a \$2M Series A.
+\end{bullets}
+
+
+% ---------- Publications ----------
+\section{Publications \& Presentations \hfill \normalfont\small\href{https://scholar.google.com/citations?user=rAAtZi0AAAAJ}{Google Scholar: full list}}
+\begin{small}\fontsize{10.2}{11.8}\selectfont\begin{bullets}
+  \item \href{https://doi.org/10.21203/rs.3.rs-9160944/v1}{\textbf{OncoCITE: Multimodal Multi-Agent Reconstruction of Clinical Oncology Knowledge Bases from Scientific Literature.}}
+  First author. Research Square preprint, 2026; under review at \textit{Nature Communications}.
+  \item \href{https://doi.org/10.1182/blood-2025-2646}{\textbf{OncoDIF: An auditable AI framework for automated genomic curation and natural-language clinical querying in hematologic malignancies.}}
   First author. \textit{Blood} 146(Suppl 1):2646, 2025. ASH conference abstract.
-  \item \href{https://doi.org/10.1182/blood-2025-3996}{\lead{Development of predictive relapse indicators for myeloma T cell engagers (PRIME) model.}}
-  Coauthor. \textit{Blood} 146(Suppl 1):3996, 2025. ASH conference abstract.
-  \item \href{https://doi.org/10.1016/s2152-2650(25)03699-7}{\lead{Integrating Microenvironment with Tumor Multi-Omic using Unsupervised Machine Learning to Model Heterogeneity Refines Multiple Myeloma Subtypes and Reveals Immune-Based Clusters with Prognostic Impact.}}
-  Coauthor. \textit{Clinical Lymphoma Myeloma and Leukemia} 25:S181--S182, 2025. IMS conference abstract.
-  \item \href{https://doi.org/10.1101/2024.03.14.24304293}{\lead{A RAG Chatbot for Precision Medicine of Multiple Myeloma.}}
+  \item \href{https://doi.org/10.18653/v1/2023.bea-1.58}{\textbf{Beyond Black Box AI generated Plagiarism Detection: From Sentence to Document Level.}}
+  First author (published as Ali Quidwai), with Chunhui Li and Parijat Dube. BEA 2023 workshop, ACL Anthology, pp.\ 727--735.
+  \item \href{https://doi.org/10.1101/2024.03.14.24304293}{\textbf{A RAG Chatbot for Precision Medicine of Multiple Myeloma.}}
   First author. medRxiv preprint, 2024.
-  \item \href{https://doi.org/10.1016/s2152-2650(24)02048-2}{\lead{Innovative AI-Driven Decision Support Tool for Multiple Myeloma Using Retrieval Augmented Generation.}}
+  \item \href{https://doi.org/10.1016/s2152-2650(24)02048-2}{\textbf{Innovative AI-Driven Decision Support Tool for Multiple Myeloma Using Retrieval Augmented Generation.}}
   First author. \textit{Clinical Lymphoma Myeloma and Leukemia} 24:S123--S124, 2024. IMS conference abstract.
-  \item \href{https://aclanthology.org/2023.bea-1.58/}{\lead{Beyond Black Box AI generated Plagiarism Detection: From Sentence to Document Level.}}
-  First author (published as Ali Quidwai), with Chunhui Li and Parijat Dube. BEA 2023 workshop, ACL Anthology, pp.727--735.
-\end{bullets}
+  \item \href{https://doi.org/10.1172/jci.insight.203988}{\textbf{Detection of cytokine release syndrome using wearables and cytokine profiling following CAR-T therapy for myeloma.}}
+  Coauthor; data analysis. \textit{JCI Insight} 11(12):e203988, 2026. Journal article.
+  \item \href{https://doi.org/10.1016/s2152-2650(26)03675-x}{\textbf{Multi-Modal Single-Cell Profiling of MRD-Negative Patients Identifies Early Immune Signatures Predicting Prolonged Response or Relapse in Multiple Myeloma.}}
+  Coauthor. \textit{Clinical Lymphoma Myeloma and Leukemia} 26:S223, 2026. Conference abstract.
+  \item \href{https://doi.org/10.1182/blood-2025-3996}{\textbf{Development of predictive relapse indicators for myeloma T cell engagers (PRIME) model for myeloma patients receiving BCMA- and GPRC5D-targeting T cell engagers.}}
+  Coauthor. \textit{Blood} 146(Suppl 1):3996, 2025. ASH conference abstract.
+  \item \href{https://doi.org/10.1016/s2152-2650(25)03699-7}{\textbf{Integrating Microenvironment with Tumor Multi-Omic using Unsupervised Machine Learning to Model Heterogeneity Refines Multiple Myeloma Subtypes and Reveals Immune-Based Clusters with Prognostic Impact.}}
+  Coauthor. \textit{Clinical Lymphoma Myeloma and Leukemia} 25:S181--S182, 2025. IMS conference abstract.
+\end{bullets}\end{small}
 
-\section{Research and Engineering Focus}
-Agent orchestration and MCP tools; source-grounded extraction; model adaptation with LoRA; synthetic training data;
-baseline comparisons and failure analysis; retrieval-augmented generation; Python, SQL, and reproducible data workflows.
+
+% ---------- Education ----------
+\section{Education}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textbf{M.S. in Computer Engineering (Honors)}, NYU Tandon School of Engineering & 2021 -- 2023 \\
+\end{tabularx}
+\begin{bullets}
+  \item \lead{Research (first author, ACL 2023 BEA workshop, with IBM Research):} Trained an AI-generated-text detector (contrastive loss,
+        LLM-generated paraphrases) with sentence- and document-level scoring; reached \textbf{94\% document-level accuracy on HC3}.
+  \item \lead{Teaching Assistant:} Data Structures \& Algorithms for Bioinformatics (Prof.\ Katari), Spring 2022--Spring 2023: taught
+        algorithms and genomic algorithms to 130+ master's students, created assignments, and held office hours.
+
+\end{bullets}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textbf{B.Tech. in Computer Science}, Dr. A.P.J. Abdul Kalam Technical University, Ghaziabad, India & 2012 -- 2016 \\
+\end{tabularx}
+
+\section{Technical Skills}
+\begingroup
+\linespread{1}\fontsize{10.2}{11.6}\selectfont
+\textbf{Post-training \& machine learning:} Python, PyTorch, Hugging Face Transformers/PEFT, TRL, Unsloth, LLaMA-Factory,
+Tinker, Fireworks AI; LoRA/QLoRA SFT, DPO, GRPO, PPO, reward modeling, RLHF; scikit-learn, XGBoost, SHAP, Whisper.\\[2pt]
+\textbf{Agent systems \& inference:} Claude Agent SDK, OpenAI Agents SDK, LangGraph, LangChain, Hermes Agent;
+MCP/FastMCP, LiteLLM, Pydantic, FastAPI, React, Open WebUI; SGLang/sglang-router, vLLM, Ollama; NVFP4 (ModelOpt), FP8,
+NVIDIA B200/H100/L40S, NVLink; RAG, hybrid retrieval, Qdrant, Qwen3-Embedding/Reranker-8B, OpenSearch.\\[2pt]
+\textbf{Evaluation \& observability:} Harbor RL environments (containerized tasks, verifiers, reward functions), Inspect;
+MLflow, LLM-as-judge, Langfuse, OpenTelemetry, OpenAI Evals, DeepEval; source attribution, baseline comparisons, failure analysis.\\[2pt]
+\textbf{Computational biology:} Nextflow DSL2, Parabricks, DeepVariant, GATK4, BWA-MEM, STAR, fastp, featureCounts,
+Manta, FACETS, Arriba, PhyloWGS, RAPIDS cuDF, Scanpy, Geneformer.\\[2pt]
+\textbf{Clinical data \& statistics:} OMOP CDM v5.4, SAP HANA, DuckDB, Polars, Parquet, SQL; Epic, REDCap, DICOM,
+CIViC, ClinVar; pandas, SciPy, statsmodels, lifelines, survival analysis, Plotly.\\[2pt]
+\textbf{Cloud platforms:} AWS (EC2, S3, ALB/WAF, Lambda, Step Functions, DynamoDB, RDS,
+SageMaker, CloudWatch), Terraform, Azure OpenAI, Amazon Bedrock; Argo Workflows, Kubernetes, GitHub Actions, CI/CD,
+Docker, Singularity, LSF, SLURM.
+\par\endgroup
 
 \end{document}

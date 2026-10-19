@@ -1,11 +1,12 @@
 ---
 layout: cv
 permalink: /cv/
-title: cv
+title: CV
 nav: true
 nav_order: 7
 cv_pdf: Mujahid_Ali_Quidwai_Resume_2Page.pdf
-description: Selected experience in AI systems, agents, model post-training, and evaluation.
+cv_pdf_revision: 20261019-draft-fixes
+description: Experience, research publications, and technical leadership in AI systems.
 toc:
   sidebar: left
 ---

@@ -5,7 +5,7 @@ description: Multimodal agents for source-grounded scientific evidence extractio
 img: assets/img/oncocite_architecture.png
 importance: 1
 category: research
-related_publications: false
+related_publications: true
 ---
 
 ## What I built

@@ -19,7 +19,7 @@ During my time at Mount Sinai, I also helped research colleagues use and evaluat
 
 **Teaching Assistant · Data Structures & Algorithms for Bioinformatics · Spring 2022–Spring 2023**
 
-I supported Professor Manpreet S. Katari's graduate course for three semesters, working with more than 130 master's students. I taught algorithms and data structures, developed assignments connecting computer science with bioinformatics, and supported students through office hours and project feedback.
+I supported Professor Manpreet S. Katari's graduate course from Spring 2022 to Spring 2023, working with more than 130 master's students. I taught algorithms and data structures, developed assignments connecting computer science with bioinformatics, and supported students through office hours and project feedback.
 
 ## Topics I enjoy teaching
 

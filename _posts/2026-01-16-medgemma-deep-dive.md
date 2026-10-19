@@ -1,13 +1,12 @@
 ---
 layout: post
 title: "MedGemma 1.5: Google's Open Medical AI Just Got Serious"
-date: 2026-01-16 00:00:00
+date: 2026-01-16 12:00:00 -0800
 description: A deep dive into Google's MedGemma 1.5 4B - architecture, capabilities, benchmarks, and what it means for clinical AI development.
-tags: clinical-ai deep-learning multi-agent-systems genomics open-source
+tags: clinical-ai multimodal-models model-evaluation open-weights
 categories: research
 giscus_comments: true
 related_posts: true
-thumbnail: assets/img/publication_preview/rag.png
 mermaid:
   enabled: true
 code_diff: true
@@ -16,6 +15,8 @@ chart:
 toc:
   sidebar: left
 ---
+
+_Editorial update, October 19, 2026: clarified benchmark comparisons and limitations, and added the later MedGemma 1.5 technical report. The January publication date and original perspective are preserved._
 
 Google just dropped MedGemma 1.5, and it's a significant upgrade for anyone building clinical AI systems. As someone who's spent the last two years building production medical AI at Mount Sinai, I want to break down what's actually new and why it matters.
 
@@ -69,21 +70,21 @@ flowchart TB
 
 ### Key Specs
 
-| Specification | Value |
-|--------------|-------|
-| Parameters | 4B |
-| Context Length | 128K tokens |
-| Image Resolution | 896 x 896 |
-| Image Tokens | 256 per image |
-| Output Length | 8192 tokens |
-| Architecture | Decoder-only Transformer |
-| Attention | Grouped-Query Attention (GQA) |
+| Specification    | Value                         |
+| ---------------- | ----------------------------- |
+| Parameters       | 4B                            |
+| Context Length   | 128K tokens                   |
+| Image Resolution | 896 x 896                     |
+| Image Tokens     | 256 per image                 |
+| Output Length    | 8192 tokens                   |
+| Architecture     | Decoder-only Transformer      |
+| Attention        | Grouped-Query Attention (GQA) |
 
 ## Performance Deep Dive
 
 ### Medical Text Reasoning
 
-The text-only benchmarks show solid improvements over the previous version:
+The results are mixed: MedQA and MedMCQA improve, while PubMedQA and MMLU Med decline relative to MedGemma 1. These are task-specific benchmarks, not evidence of improved clinical outcomes.
 
 ```echarts
 {
@@ -104,8 +105,9 @@ The text-only benchmarks show solid improvements over the previous version:
   },
   "yAxis": {
     "type": "value",
-    "min": 40,
-    "max": 80
+    "name": "Accuracy (%)",
+    "min": 0,
+    "max": 100
   },
   "series": [
     {
@@ -127,19 +129,21 @@ The text-only benchmarks show solid improvements over the previous version:
 }
 ```
 
+Benchmark source: [Google’s model repository](https://huggingface.co/google/medgemma-1.5-4b-it).
+
 ### Imaging Performance
 
 The real story is in the imaging benchmarks. MedGemma 1.5 shows dramatic improvements in 3D imaging and whole-slide pathology:
 
-| Task | Gemma 3 4B | MedGemma 1 4B | MedGemma 1.5 4B |
-|------|-----------|---------------|-----------------|
-| CT Classification (7 conditions) | 54.5% | 58.2% | **61.1%** |
-| MRI Classification (10 conditions) | 51.1% | 51.3% | **64.7%** |
-| WSI Pathology (ROUGE) | 2.3 | 2.2 | **49.4** |
-| EyePACS Fundus | 14.4% | 64.9% | **76.8%** |
-| Longitudinal CXR | 59.0% | 61.1% | **65.7%** |
+| Task                               | Gemma 3 4B | MedGemma 1 4B | MedGemma 1.5 4B |
+| ---------------------------------- | ---------- | ------------- | --------------- |
+| CT Classification (7 conditions)   | 54.5%      | 58.2%         | **61.1%**       |
+| MRI Classification (10 conditions) | 51.1%      | 51.3%         | **64.7%**       |
+| WSI Pathology (ROUGE)              | 2.3        | 2.2           | **49.4**        |
+| EyePACS Fundus                     | 14.4%      | 64.9%         | **76.8%**       |
+| Longitudinal CXR                   | 59.0%      | 61.1%         | **65.7%**       |
 
-The jump from 2.2 to 49.4 ROUGE on whole-slide pathology is remarkable.
+WSI uses ROUGE, while the other rows report task-specific classification accuracy; these metrics are not interchangeable. CT and MRI use internal benchmark datasets, and longitudinal CXR uses MS-CXR-T. The jump from 2.2 to 49.4 ROUGE on whole-slide pathology is remarkable. [Benchmark definitions and results](https://huggingface.co/google/medgemma-1.5-4b-it).
 
 ## Quick Start Code
 
@@ -181,7 +185,9 @@ output = pipe(text=messages, max_new_tokens=2000)
 print(output[0]["generated_text"][-1]["content"])
 ```
 
-Or using the model directly for more control:
+The example image is by Stillwaterising (CC0), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Chest_Xray_PA_3-8-2010.png). See Google’s [model repository](https://huggingface.co/google/medgemma-1.5-4b-it) for model-access and installation prerequisites.
+
+Or, using the `messages` defined above, call the model directly for more control:
 
 ```python
 from transformers import AutoProcessor, AutoModelForImageTextToText
@@ -212,6 +218,10 @@ with torch.inference_mode():
         max_new_tokens=2000,
         do_sample=False
     )
+
+# Decode only newly generated tokens
+continuation = generation[0, inputs["input_ids"].shape[-1]:]
+print(processor.decode(continuation, skip_special_tokens=True))
 ```
 
 ## Integration Architecture
@@ -252,22 +262,24 @@ flowchart LR
 
 > **Important**: MedGemma is not intended for direct clinical use. All outputs require independent verification.
 
-- Single-image evaluation only (no multi-image comparison in benchmarks)
+- Longitudinal and volumetric benchmarks are reported; arbitrary multi-image clinical workflows still require task-specific evaluation. See the [official launch article](https://research.google/blog/next-generation-medical-image-interpretation-with-medgemma-15-and-medical-speech-to-text-with-medasr/) and [model card](https://developers.google.com/health-ai-developer-foundations/medgemma/model-card).
 - Not optimized for multi-turn conversations
 - Prompt-sensitive (more than base Gemma)
 - English-only evaluation
 
 ## Comparison with Alternatives
 
+This is an illustrative positioning diagram, reflecting my view rather than measured scores or deployment readiness.
+
 ```mermaid
 quadrantChart
-    title Model Positioning
-    x-axis Closed Source --> Open Source
+    title Illustrative Model Positioning
+    x-axis Closed Weights --> Open Weights
     y-axis General Purpose --> Medical Specialized
-    quadrant-1 Best for Research
-    quadrant-2 Enterprise Only
-    quadrant-3 Limited Medical Use
-    quadrant-4 Production Ready
+    quadrant-1 Open and medically specialized
+    quadrant-2 Closed and medically specialized
+    quadrant-3 Closed and general purpose
+    quadrant-4 Open and general purpose
     GPT-4V: [0.2, 0.4]
     Med-PaLM: [0.15, 0.85]
     LLaVA-Med: [0.75, 0.6]
@@ -286,9 +298,10 @@ I'm planning to:
 ## Resources
 
 - [Model on Hugging Face](https://huggingface.co/google/medgemma-1.5-4b-it)
-- [Technical Report](https://arxiv.org/abs/2507.05201)
+- [Original MedGemma technical report](https://arxiv.org/abs/2507.05201)
+- [MedGemma 1.5 technical report — April 2026](https://arxiv.org/abs/2604.05081)
 - [Tutorial Notebooks](https://github.com/Google-Health/medgemma)
 
 ---
 
-*What are you building with MedGemma? I'd love to hear about your use cases in the comments below.*
+_What are you building with MedGemma? I'd love to hear about your use cases in the comments below._

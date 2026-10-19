@@ -2,9 +2,9 @@
   "projects":
     [
       {
-        "name": "AYA \u2014 Agent Workflow Evaluation",
-        "repo": "Ali-Maq/aya-demo",
-        "description": "Controller, acceptance checks, baseline comparisons, and documented limitations.",
+        "name": "AYA — AI for Small Businesses",
+        "repo": "Ali-Maq/aya-ai-for-small-businesses",
+        "description": "NVIDIA Spark Hack NYC 2026 entry: 385 city datasets, business-specific briefs, and local agent workflows.",
       },
       {
         "name": "OncoCITE",
@@ -20,6 +20,11 @@
         "name": "Portfolio",
         "repo": "Ali-Maq/ali-maq.github.io",
         "description": "Source for this website, including project descriptions and publication metadata.",
+      },
+      {
+        "name": "AYA \u2014 Agent Workflow Evaluation",
+        "repo": "Ali-Maq/aya-demo",
+        "description": "Controller, acceptance checks, baseline comparisons, and documented limitations.",
       },
     ],
 }

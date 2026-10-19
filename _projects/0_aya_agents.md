@@ -1,9 +1,9 @@
 ---
 layout: page
-title: AYA — Agent Workflow Evaluation
-description: A public controller and evaluation layer for software agents
+title: AYA — Agent Evaluation Prototype
+description: 2026 prototype · controller and evaluation layer for software agents
 img: assets/img/aya_agent_workflow.svg
-importance: 1
+importance: 9
 category: engineering
 related_publications: false
 ---
@@ -26,4 +26,4 @@ The repository credits upstream software and agent-generated components. The exp
 - [Repository, experiments, and limitations](https://github.com/Ali-Maq/aya-demo)
 - [Project demo](https://ali-maq.github.io/aya-demo/)
 
-This **2026 project** is separate from my [AYA education venture at NYU in 2023](/projects/7_aya/).
+This **2026 project** is separate from [AYA — AI for Small Businesses, built at NVIDIA Spark Hack NYC](/projects/0_aya_small_business/) and my [AYA education venture at NYU in 2023](/projects/7_aya/).

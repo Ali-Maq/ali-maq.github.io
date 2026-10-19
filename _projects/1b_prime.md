@@ -5,7 +5,7 @@ description: Collaborative relapse-risk modeling research; ASH 2025 abstract
 img: assets/img/blood.png
 importance: 6
 category: research
-related_publications: false
+related_publications: true
 ---
 
 ## Research focus

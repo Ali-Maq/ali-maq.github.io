@@ -1,19 +1,14 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract, award and bibtex buttons
-  $("a.abstract").click(function () {
-    $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
-  });
-  $("a.award").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
-  });
-  $("a.bibtex").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
+  // Native buttons provide Enter/Space activation; keep state exposed to assistive technology.
+  $("button.abstract, button.bibtex, a.award").on("click", function () {
+    const root = $(this).parent().parent();
+    const kind = this.classList.contains("abstract") ? "abstract" : this.classList.contains("bibtex") ? "bibtex" : "award";
+    const panel = root.find("." + kind + ".hidden");
+    const shouldOpen = !panel.hasClass("open");
+    root.find(".abstract.hidden, .bibtex.hidden, .award.hidden").removeClass("open").attr("aria-hidden", "true");
+    root.find("button.abstract, button.bibtex").attr("aria-expanded", "false");
+    panel.toggleClass("open", shouldOpen).attr("aria-hidden", String(!shouldOpen));
+    $(this).attr("aria-expanded", String(shouldOpen));
   });
   $("a").removeClass("waves-effect waves-light");
 

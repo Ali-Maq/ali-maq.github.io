@@ -2,10 +2,9 @@
 layout: page
 title: Multi-Omics & Single-Cell Research
 description: Collaborative research on myeloma heterogeneity and immune signatures
-img: assets/img/project_multiomics.png
 importance: 5
 category: research
-related_publications: false
+related_publications: true
 ---
 
 ## Research focus

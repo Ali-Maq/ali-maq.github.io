@@ -15,7 +15,7 @@ Explore my work on [GitHub](https://github.com/Ali-Maq). Each repository documen
     <div class="card h-100 p-4">
       <h2 class="h5"><a href="https://github.com/{{ project.repo }}">{{ project.name }}</a></h2>
       <p>{{ project.description }}</p>
-      <a href="https://github.com/{{ project.repo }}">View repository →</a>
+      <a href="https://github.com/{{ project.repo }}" aria-label="View {{ project.name | escape }} repository on GitHub">View repository →</a>
     </div>
   </div>
 {% endfor %}

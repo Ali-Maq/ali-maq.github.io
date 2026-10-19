@@ -5,12 +5,12 @@ description: Model adaptation and evaluation for genomic curation and natural-la
 img: assets/img/publication_preview/oncodif.png
 importance: 2
 category: engineering
-related_publications: false
+related_publications: true
 ---
 
 ## What I built
 
-OncoDIF combines genomic evidence curation with natural-language clinical querying. I worked on adapting language models to the task and evaluating their outputs against defined baselines.
+OncoDIF combines genomic evidence curation with natural-language clinical querying. I fine-tuned language models for this task and evaluated their outputs against defined baselines.
 
 ## Post-training and evaluation
 

@@ -664,3 +664,6 @@ jsonresume:
   - languages
   - interests
   - references
+
+# Keep authored dates consistent between local and CI builds.
+timezone: America/Los_Angeles

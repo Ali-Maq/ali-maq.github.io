@@ -2,10 +2,9 @@
 layout: page
 title: CAR-T Wearables & ML
 description: Data analysis for a published pilot study of cytokine release syndrome
-img: assets/img/project_cart.png
 importance: 4
 category: research
-related_publications: false
+related_publications: true
 ---
 
 ## My contribution

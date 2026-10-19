@@ -24,11 +24,11 @@ ninja.data = [
         {%- for child in p.children -%}
           {%- unless child.title == 'divider' -%}
             {
-              {%- assign title = child.title | escape | strip -%}
+              {%- assign title = child.title | strip -%}
               {%- if child.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = child.permalink -%}{%- endif -%}
               id: "dropdown-{{ title | slugify }}",
-              title: "{{ title | truncatewords: 13 }}",
-              description: "{{ child.description | strip_html | strip_newlines | escape | strip }}",
+              title: {{ title | truncatewords: 13 | jsonify }},
+              description: {{ child.description | strip_html | strip_newlines | strip | jsonify }},
               section: "Dropdown",
               handler: () => {
                 window.location.href = "{{ url | relative_url }}";
@@ -39,11 +39,11 @@ ninja.data = [
 
       {%- else -%}
         {
-          {%- assign title = p.title | escape | strip -%}
+          {%- assign title = p.title | strip -%}
           {%- if p.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = p.url -%}{%- endif -%}
           id: "nav-{{ title | slugify }}",
-          title: "{{ title | truncatewords: 13 }}",
-          description: "{{ p.description | strip_html | strip_newlines | escape | strip }}",
+          title: {{ title | truncatewords: 13 | jsonify }},
+          description: {{ p.description | strip_html | strip_newlines | strip | jsonify }},
           section: "Navigation",
           handler: () => {
             window.location.href = "{{ url | relative_url }}";
@@ -55,16 +55,16 @@ ninja.data = [
   {%- if site.posts_in_search -%}
     {%- for post in site.posts -%}
       {
-        {%- assign title = post.title | escape | strip -%}
+        {%- assign title = post.title | strip -%}
         id: "post-{{ title | slugify }}",
         {% if post.redirect == blank %}
-          title: "{{ title | truncatewords: 13 }}",
+          title: {{ title | truncatewords: 13 | jsonify }},
         {% elsif post.redirect contains '://' %}
           title: '{{ title | truncatewords: 13 }} <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         {% else %}
-          title: "{{ title | truncatewords: 13 }}",
+          title: {{ title | truncatewords: 13 | jsonify }},
         {% endif %}
-        description: "{{ post.description | strip_html | strip_newlines | escape | strip }}",
+        description: {{ post.description | strip_html | strip_newlines | strip | jsonify }},
         section: "Posts",
         handler: () => {
           {% if post.redirect == blank %}
@@ -83,13 +83,13 @@ ninja.data = [
       {%- for item in collection.docs -%}
         {
           {%- if item.inline -%}
-            {%- assign title = item.content | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
+            {%- assign title = item.content | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | strip -%}
           {%- else -%}
-            {%- assign title = item.title | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
+            {%- assign title = item.title | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | strip -%}
           {%- endif -%}
           id: "{{ collection.label }}-{{ title | slugify }}",
-          title: '{{ title | escape | emojify | truncatewords: 13 }}',
-          description: "{{ item.description | strip_html | strip_newlines | escape | strip }}",
+          title: {{ title | truncatewords: 13 | jsonify }},
+          description: {{ item.description | strip_html | strip_newlines | strip | jsonify }},
           section: "{{ collection.label | capitalize }}",
           {%- unless item.inline -%}
             handler: () => {

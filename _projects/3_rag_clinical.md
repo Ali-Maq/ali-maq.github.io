@@ -2,10 +2,9 @@
 layout: page
 title: Clinical RAG System
 description: Retrieval, source attribution, and evaluation for oncology research
-img: assets/img/project_rag.png
 importance: 3
 category: research
-related_publications: false
+related_publications: true
 ---
 
 ## What I built
